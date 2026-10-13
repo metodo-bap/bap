@@ -82,3 +82,14 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 
 /* Institutional dual-role banner: desktop only */
 @media(min-width:851px){body.bap-has-tiago-banner .section:has(a[href="sobre-o-autor.html"]) .split{grid-template-columns:1fr;gap:22px}body.bap-has-tiago-banner .section:has(a[href="sobre-o-autor.html"]) .split>img{display:none}body.bap-has-tiago-banner .section:has(a[href="sobre-o-autor.html"]) .split:after{content:'';display:block;width:100%;aspect-ratio:2.7/1;background:url('assets/desktop/tiago-banner.webp') center/cover no-repeat;border-radius:12px;border:1px solid var(--line)}}
+
+/* Internal pages: high-definition editorial compositions */
+@media(min-width:851px){
+ .pagehero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 80% 30%,#0b3540 0%,#060a0e 68%)}
+ .pagehero:after{content:'';position:absolute;inset:0;z-index:-1;opacity:.18;pointer-events:none;background:linear-gradient(90deg,#060a0e,transparent),url('assets/desktop/hero-desktop.webp') center 45%/cover no-repeat}
+ .pagehero .shell{position:relative}
+ .pagehero .intro{font-size:clamp(17px,1.35vw,21px);max-width:650px}
+ .section:has(.author-photo) .split{grid-template-columns:1fr;gap:30px}
+ .section .author-photo{display:block;width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:2.7/1;object-fit:cover;object-position:center;border:1px solid var(--line)}
+}
+@media(max-width:850px){.section .author-photo{width:100%;min-height:0;max-height:none;aspect-ratio:16/9;object-fit:cover;object-position:center}}
