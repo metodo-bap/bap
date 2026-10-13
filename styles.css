@@ -175,3 +175,28 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
  .cinematic-author{background-image:linear-gradient(0deg,#060a0e 0%,#060a0eb0 65%,#060a0e77),url('assets/desktop/tiago-banner.webp')}
 }
 @media(prefers-reduced-motion:reduce){.quote-card,.quote-art,.quote-front,.quote-reveal{transition:none}}
+
+/* Desktop visual QA corrections based on 2026-10-13 captures */
+@media(min-width:851px){
+ #corpo.cinematic-panel:before{display:none}
+ #corpo.cinematic-panel{background:radial-gradient(ellipse at 80% 50%,#10212a 0%,#060a0e 62%);min-height:clamp(690px,88svh,900px)}
+ #corpo.cinematic-panel>.split{grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);align-items:center;gap:clamp(35px,5vw,90px)}
+ #corpo .bodywrap{max-width:100%;width:100%;position:relative;align-self:center}
+ #corpo .bodywrap .photo.corpo{display:block;aspect-ratio:16/10;object-fit:contain;width:100%;height:auto;max-height:560px;border-radius:14px;object-position:center;background:transparent}
+ #corpo .bodywrap .detail{margin-top:14px;background:#0d1b23eb;border:1px solid #284450;border-radius:12px;padding:17px 20px}
+ #corpo .bodywrap .bap-area-preview{display:none!important}
+ #corpo .bodywrap .point{z-index:3}
+ .cinematic-course>.split{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+ .cinematic-course>.split>div:last-child{display:none}
+ .cinematic-course:before{background-position:center,right center;background-size:cover,cover,cover}
+ .cinematic-author:before{background-image:linear-gradient(90deg,#060a0ef5 0%,#060a0edc 26%,#060a0e3b 60%,#060a0e16 100%),linear-gradient(0deg,#060a0e,transparent 18%,transparent 90%,#060a0e),url('assets/desktop/tiago-banner.webp');background-size:cover,cover,cover;background-position:center}
+ .cinematic-author>.split{grid-template-columns:minmax(0,.45fr) minmax(0,.55fr)}
+ .cinematic-author>.split>div:first-child{max-width:620px}
+ .cinematic-author .split>img{display:none!important}
+ .cinematic-videos{max-width:none;padding:clamp(80px,7vw,120px) max(5vw,calc((100vw - 1440px)/2 + 52px));position:relative;background:linear-gradient(0deg,#060a0e 0%,#060a0edb 38%,#060a0ebf 76%,#060a0e 100%),url('assets/desktop/curso-desktop.webp') center/cover no-repeat}
+ .cinematic-videos .cards .card{min-height:315px;background:linear-gradient(0deg,#061017 0%,#061017c7 43%,#06101733 100%),url('assets/desktop/ombros.webp') center/cover no-repeat;justify-content:end}
+ .cinematic-videos .cards .card:nth-child(2){background-image:linear-gradient(0deg,#061017 0%,#061017c7 43%,#06101733 100%),url('assets/desktop/coluna.webp')}
+ .cinematic-videos .cards .card:nth-child(3){background-image:linear-gradient(0deg,#061017 0%,#061017c7 43%,#06101733 100%),url('assets/desktop/punhos.webp')}
+ .cinematic-offer{max-width:none;padding:clamp(80px,7vw,130px) max(5vw,calc((100vw - 1440px)/2 + 52px));background:linear-gradient(90deg,#060a0ef5,#060a0edb 57%,#060a0e93),url('assets/desktop/hero-desktop.webp') center/cover no-repeat}
+ .cinematic-offer .offer-box{background:#08141ce9;backdrop-filter:blur(12px)}
+}
