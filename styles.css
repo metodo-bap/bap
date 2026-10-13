@@ -832,3 +832,10 @@ body.author-lightbox-open{overflow:hidden}
 .method-last-actions{display:flex;align-items:flex-start;flex-direction:column;gap:13px}
 @media(max-width:1020px){.method-opening-grid{grid-template-columns:1fr}.method-opening-copy{max-width:780px}.method-video-card{max-width:850px}.method-audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.bap-method-v2 h1{font-size:clamp(58px,12vw,82px)}.bap-method-v2 h2{font-size:clamp(47px,10vw,69px)}.method-opening{padding:60px 0}.method-video-meta{padding:14px}.method-video-footer{flex-direction:column;align-items:flex-start;padding:18px}.method-definition-grid,.method-author-grid,.method-last-grid{grid-template-columns:1fr}.method-audience-grid,.method-foundations-grid{grid-template-columns:1fr}.method-audience-grid article,.method-foundations-grid article{min-height:0}.method-foundations-heading{display:block}.method-opening-micro{line-height:1.8}}
+
+/* Official logos provided by client: preserve shape, pure white, proportional containment. */
+.author-brand-gallery.author-brand-official .author-brand{display:flex;align-items:center;justify-content:center;overflow:hidden;min-width:0}
+.author-brand-gallery.author-brand-official .author-brand img{display:block;width:85%;height:65%;max-width:100%;max-height:180px;object-fit:contain;object-position:center;filter:none}
+.author-brand-gallery.author-brand-official .author-brand:nth-child(1) img{width:78%;height:65%}
+.author-brand-gallery.author-brand-official .author-brand:nth-child(2) img{width:83%;height:70%}
+.author-brand-gallery.author-brand-official .author-brand:nth-child(3) img{width:85%;height:62%}
