@@ -258,3 +258,15 @@ document.querySelectorAll('[data-footer-top]').forEach(el=>el.addEventListener('
  event.preventDefault();
  window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
 }));
+
+/* Activate each testimonial portrait only when the approved image is present. */
+(function(){
+ const names=['sergio-melo','augusto-silva','lufeh','mauricio-mendes'];
+ const cards=document.querySelectorAll('#depoimentos .quote-card');
+ cards.forEach((card,i)=>{
+  if(!names[i])return;
+  const img=new Image();
+  img.onload=()=>card.classList.add('quote-portrait-ready');
+  img.src='assets/depoimentos/'+names[i]+'.webp';
+ });
+})();
