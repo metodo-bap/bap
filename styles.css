@@ -505,3 +505,12 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 }
 @media(max-width:520px){.author-archive-grid{grid-auto-rows:150px}.author-equipment-grid{grid-template-columns:1fr}.author-equipment-grid>div{min-height:0}.author-video-play{width:57px;height:57px;font-size:19px}}
 @media(prefers-reduced-motion:reduce){.author-archive-photo img,.author-video-item>img{transition:none}}
+
+/* Unified Pearl Export and shell configuration; remaining two cards stay balanced */
+.author-equipment-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.author-equipment-grid>.author-equipment-drum{grid-column:span 2;min-height:225px}
+.author-drum-spec{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:baseline;border-top:1px solid #304c56;padding-top:17px;margin-top:19px}
+.author-drum-spec b{font:900 clamp(27px,2.5vw,38px)/1 'Barlow Condensed',Impact,sans-serif;color:#fff}
+.author-drum-spec span{color:#b9cbd2;font-size:14px;line-height:1.5}
+@media(max-width:850px){.author-equipment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.author-equipment-grid>.author-equipment-drum{grid-column:span 2}}
+@media(max-width:520px){.author-equipment-grid{grid-template-columns:1fr}.author-equipment-grid>.author-equipment-drum{grid-column:span 1}}
