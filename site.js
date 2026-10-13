@@ -45,35 +45,38 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  });
 })();
 
-/* Three anatomical hotspots anchored to the actual 1672 x 941 HD background. */
+/* Calibrated indicators: source pixels of the approved 1672x941 hero image.
+   Two printed targets are (1328,173) shoulder and (1338,609) elbow.
+   Wrist is anatomically placed at the left hand joint (906,699). */
 (function(){
- const hero=document.querySelector('#inicio.hero');
+ const hero=document.getElementById('inicio');
  if(!hero)return;
- const points=[
+ const indicators=[
   {el:hero.querySelector('.hero-pain-point.shoulder'),x:1328,y:173},
-  {el:hero.querySelector('.hero-pain-point.elbow'),x:1338,y:610},
-  {el:hero.querySelector('.hero-pain-point.wrist'),x:915,y:704}
+  {el:hero.querySelector('.hero-pain-point.elbow'),x:1338,y:609},
+  {el:hero.querySelector('.hero-pain-point.wrist'),x:906,y:699}
  ];
- if(points.some(p=>!p.el))return;
- const image=new Image();
- function reposition(){
-  if(window.innerWidth<=850||!image.naturalWidth||!document.body.classList.contains('bap-has-desktop-hero')){
-   points.forEach(p=>p.el.style.visibility='hidden');return;
+ if(indicators.some(p=>!p.el))return;
+ const src=new Image();
+ const place=()=>{
+  const desktop=window.matchMedia('(min-width:851px)').matches;
+  if(!desktop||!src.naturalWidth||!document.body.classList.contains('bap-has-desktop-hero')){
+   indicators.forEach(p=>p.el.style.visibility='hidden');return;
   }
-  const width=hero.clientWidth,height=hero.clientHeight;
-  // Match desktop .hero:before background-size: cover and position: 68% center.
-  const scale=Math.max(width/image.naturalWidth,height/image.naturalHeight);
-  const imgW=image.naturalWidth*scale,imgH=image.naturalHeight*scale;
-  const originX=(width-imgW)*.68,originY=(height-imgH)*.5;
-  points.forEach(p=>{
-   p.el.style.left=(originX+p.x*scale)+'px';
-   p.el.style.top=(originY+p.y*scale)+'px';
+  const w=hero.clientWidth,h=hero.clientHeight;
+  const factor=Math.max(w/src.naturalWidth,h/src.naturalHeight);
+  const originX=(w-src.naturalWidth*factor)*.68;
+  const originY=(h-src.naturalHeight*factor)*.5;
+  for(const p of indicators){
+   p.el.style.left=Math.round(originX+p.x*factor)+'px';
+   p.el.style.top=Math.round(originY+p.y*factor)+'px';
    p.el.style.visibility='visible';
-  });
- }
- image.addEventListener('load',reposition);
- image.src='assets/desktop/hero-desktop.webp';
- window.addEventListener('resize',reposition,{passive:true});
- if(typeof ResizeObserver!=='undefined')new ResizeObserver(reposition).observe(hero);
- reposition();
+  }
+ };
+ src.onload=()=>{document.body.classList.add('bap-has-desktop-hero');place()};
+ src.onerror=()=>indicators.forEach(p=>p.el.style.visibility='hidden');
+ src.src='assets/desktop/hero-desktop.webp';
+ window.addEventListener('resize',place,{passive:true});
+ if('ResizeObserver' in window)new ResizeObserver(place).observe(hero);
+ place();
 })();
