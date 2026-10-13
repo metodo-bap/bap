@@ -581,3 +581,16 @@ body.author-lightbox-open{overflow:hidden}
 #depoimentos .quote-card.quote-portrait-ready .quote-front{position:relative;z-index:1}
 #depoimentos .quote-card.quote-portrait-ready .quote-reveal{z-index:2;background:#061019f1;backdrop-filter:blur(11px)}
 @media(prefers-reduced-motion:reduce){#depoimentos .quote-card .quote-art{transition:none;transform:none!important}}
+
+/* BAP portraits 1.1: independent face-centred crops for the approved 4 testimonial cards. */
+#depoimentos .quote-card.quote-portrait-ready .quote-art{background-size:cover;background-repeat:no-repeat}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-1 .quote-art{background-position:52% 18%}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-2 .quote-art{background-position:50% 12%}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-3 .quote-art{background-position:52% 16%}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-4 .quote-art{background-position:72% 12%}
+@media(max-width:768px){
+ #depoimentos .quote-card.quote-portrait-ready.quote-card-1 .quote-art{background-position:55% 15%}
+ #depoimentos .quote-card.quote-portrait-ready.quote-card-2 .quote-art{background-position:50% 10%}
+ #depoimentos .quote-card.quote-portrait-ready.quote-card-3 .quote-art{background-position:54% 16%}
+ #depoimentos .quote-card.quote-portrait-ready.quote-card-4 .quote-art{background-position:76% 13%}
+}
