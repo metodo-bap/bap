@@ -191,3 +191,24 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   card.style.setProperty('--art-y','0px');
  });
 })();
+
+/* Author biography: restrained motion on the dual portrait only. */
+(function(){
+ const card=document.querySelector('.author-dual-frame');
+ if(!card||!window.matchMedia('(hover:hover) and (pointer:fine) and (min-width:851px) and (prefers-reduced-motion:no-preference)').matches)return;
+ let frame=0;
+ card.addEventListener('pointermove',event=>{
+  const r=card.getBoundingClientRect(),x=(event.clientX-r.left)/r.width,y=(event.clientY-r.top)/r.height;
+  if(frame)cancelAnimationFrame(frame);
+  frame=requestAnimationFrame(()=>{
+   card.style.setProperty('--author-x',((.5-x)*12).toFixed(1)+'px');
+   card.style.setProperty('--author-y',((.5-y)*8).toFixed(1)+'px');
+   card.style.setProperty('--author-lx',Math.round(x*100)+'%');
+   card.style.setProperty('--author-ly',Math.round(y*100)+'%');
+  });
+ },{passive:true});
+ card.addEventListener('pointerleave',()=>{
+  if(frame)cancelAnimationFrame(frame);
+  card.style.setProperty('--author-x','0px');card.style.setProperty('--author-y','0px');
+ });
+})();
