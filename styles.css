@@ -127,3 +127,51 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 }
 @media(max-width:360px){.purchase-dock{gap:6px;padding:8px 12px}.purchase-dock a{padding:11px 12px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){.purchase-dock{transition:none}}
+
+/* Home 4.0 cinematic sections and accessible testimonials */
+#corpo.cinematic-panel,#preparacao.cinematic-panel,.cinematic-course,.cinematic-author,#depoimentos.cinematic-panel{position:relative;isolation:isolate;overflow:hidden}
+@media(min-width:851px){
+ #corpo.cinematic-panel,.cinematic-course,.cinematic-author{max-width:none;min-height:clamp(680px,90svh,930px);display:flex;align-items:center;padding:clamp(70px,7vw,130px) max(5vw,calc((100vw - 1440px)/2 + 52px))}
+ #corpo.cinematic-panel>.split,.cinematic-course>.split,.cinematic-author>.split{width:100%;max-width:1350px;margin:auto;position:relative;z-index:1}
+ #corpo.cinematic-panel:before,.cinematic-course:before,.cinematic-author:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#060a0ef5 0%,#060a0ed1 30%,#060a0e66 70%,#060a0e52),linear-gradient(0deg,#060a0e 0%,transparent 24%,transparent 83%,#060a0e 100%),url('assets/desktop/ombros.webp') 65% center/cover no-repeat}
+ .cinematic-course:before{background-image:linear-gradient(90deg,#060a0ef5 0%,#060a0ebf 38%,#060a0e55 80%),linear-gradient(0deg,#060a0e,transparent 22%,transparent 82%,#060a0e),url('assets/desktop/curso-desktop.webp')}
+ .cinematic-author:before{background-image:linear-gradient(90deg,#060a0ef2 0%,#060a0ebf 36%,#060a0e22 80%),linear-gradient(0deg,#060a0e,transparent 20%,transparent 85%,#060a0e),url('assets/desktop/tiago-banner.webp')}
+ .cinematic-course .video,.cinematic-author .split>img{display:none}
+ #preparacao.cinematic-panel{max-width:none;padding:95px max(5vw,calc((100vw - 1440px)/2 + 52px));background:radial-gradient(ellipse at 85% 40%,#0b2931,#060a0e 65%)}
+ #preparacao .cards .card{min-height:330px;justify-content:end;position:relative;overflow:hidden;background:linear-gradient(0deg,#061018 3%,#061018b8 36%,#06101816 100%),url('assets/desktop/ombros.webp') center/cover}
+ #preparacao .cards .card:nth-child(2){background-image:linear-gradient(0deg,#061018 3%,#061018b8 36%,#06101816 100%),url('assets/desktop/coluna.webp')}
+ #preparacao .cards .card:nth-child(3){background-image:linear-gradient(0deg,#061018 3%,#061018b8 36%,#06101816 100%),url('assets/desktop/punhos.webp')}
+ #preparacao .cards .card:hover{background-size:cover;transform:translateY(-4px)}
+ #depoimentos.cinematic-panel{max-width:none;padding:100px max(5vw,calc((100vw - 1440px)/2 + 52px));background:radial-gradient(ellipse at 50% 5%,#112833,#060a0e 64%)}
+}
+.quote-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:35px 0 20px}
+.quote-card{position:relative;min-height:340px;isolation:isolate;overflow:hidden;border:1px solid #37515a;border-radius:16px;background:#10222a;cursor:pointer;transition:border-color .25s ease,transform .25s ease;outline-offset:4px}
+.quote-card:hover,.quote-card:focus-visible,.quote-card.is-open{border-color:#29dbea;transform:translateY(-3px)}
+.quote-card:focus-visible{outline:3px solid #29dbea}
+.quote-art{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 65% 30%,#2b5661,#0b151c 65%);transition:transform .45s ease,filter .45s ease}
+.quote-card:nth-child(2) .quote-art{background:radial-gradient(ellipse at 65% 30%,#512730,#0b151c 65%)}
+.quote-card:nth-child(3) .quote-art{background:radial-gradient(ellipse at 65% 30%,#184554,#0b151c 65%)}
+.quote-card:nth-child(4) .quote-art{background:radial-gradient(ellipse at 65% 30%,#43313a,#0b151c 65%)}
+.quote-number{position:absolute;top:15px;left:22px;font:900 110px/1 'Barlow Condensed',sans-serif;color:#e9ffff0d}
+.quote-icon{position:absolute;right:24px;top:-44px;color:#23d7e91c;font:900 260px/1 Georgia,serif}
+.quote-front,.quote-reveal{position:absolute;inset:0;padding:clamp(23px,3vw,42px);display:flex;flex-direction:column;justify-content:end;transition:opacity .32s ease,transform .32s ease}
+.quote-front{background:linear-gradient(0deg,#061016f5,transparent 83%)}
+.quote-front small,.quote-reveal small{font-size:10px;letter-spacing:1.7px;color:#b4c8ce}
+.quote-front h3,.quote-reveal h3{font-size:clamp(31px,3vw,44px);line-height:1;margin:12px 0 4px}
+.quote-front p,.quote-brand{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:1px}
+.quote-hint{font-size:10px;color:#fff;letter-spacing:1px;margin-top:25px}
+.quote-reveal{opacity:0;transform:translateY(18px);pointer-events:none;justify-content:center;gap:8px;background:#061016f2}
+.quote-reveal p{font-size:clamp(15px,1.25vw,19px);line-height:1.65;color:white;max-width:540px}
+.quote-card:hover .quote-reveal,.quote-card:focus-visible .quote-reveal,.quote-card.is-open .quote-reveal{opacity:1;transform:translateY(0);pointer-events:auto}
+.quote-card:hover .quote-front,.quote-card:focus-visible .quote-front,.quote-card.is-open .quote-front{opacity:0;transform:translateY(-12px)}
+.quote-card:hover .quote-art,.quote-card:focus-visible .quote-art,.quote-card.is-open .quote-art{transform:scale(1.04);filter:brightness(.4)}
+.quote-disclaimer{color:#a8b7be;font-size:12px;line-height:1.6;max-width:800px}
+@media(max-width:850px){
+ .quote-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding:4px 2px 15px}
+ .quote-card{flex:0 0 min(82vw,400px);min-height:360px;scroll-snap-align:center}
+ .quote-reveal{padding:23px}.quote-reveal p{font-size:15px}
+ #corpo.cinematic-panel,#preparacao.cinematic-panel,.cinematic-course,.cinematic-author{overflow:hidden}
+ .cinematic-course,.cinematic-author{background:linear-gradient(0deg,#060a0e 0%,#060a0eb0 65%,#060a0e77),url('assets/desktop/curso-desktop.webp') center/cover}
+ .cinematic-author{background-image:linear-gradient(0deg,#060a0e 0%,#060a0eb0 65%,#060a0e77),url('assets/desktop/tiago-banner.webp')}
+}
+@media(prefers-reduced-motion:reduce){.quote-card,.quote-art,.quote-front,.quote-reveal{transition:none}}
