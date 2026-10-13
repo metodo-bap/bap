@@ -625,3 +625,29 @@ body.author-lightbox-open{overflow:hidden}
 #perguntas summary:focus-visible,#perguntas .bap-faq-cta:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 @media(max-width:940px){#perguntas .bap-faq-inner{grid-template-columns:1fr}#perguntas .bap-faq-aside-card{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;padding:18px}#perguntas .bap-faq-benefit{padding:15px 8px;border:0;gap:10px;flex-direction:column}}
 @media(max-width:600px){#perguntas.bap-faq-redesign{padding:70px 0}#perguntas h2{font-size:clamp(50px,11vw,70px)}#perguntas .faq-list summary{padding:13px 12px;gap:11px;min-height:76px}#perguntas .faq-icon{width:42px;height:42px;flex-basis:42px}#perguntas .faq-toggle{width:32px;height:32px;flex-basis:32px}#perguntas .faq-list details>p{padding:13px 16px 19px 64px;font-size:14px}#perguntas .bap-faq-aside-card{grid-template-columns:1fr}#perguntas .bap-faq-benefit{flex-direction:row;align-items:center}}
+
+/* FAQ reference fidelity — 1648px desktop composition and functional native details */
+#perguntas.bap-faq-redesign{position:relative;isolation:isolate;overflow:hidden;min-height:900px;padding:56px 0 55px;background:radial-gradient(ellipse 47% 55% at 98% 1%,#08405385,transparent 75%),linear-gradient(120deg,#03090e 0%,#04131b 70%,#071a23 100%)}
+#perguntas.bap-faq-redesign:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.3;background-image:linear-gradient(#1a3e4c5e 1px,transparent 1px),linear-gradient(90deg,#1a3e4c5e 1px,transparent 1px);background-size:62px 62px;mask-image:linear-gradient(90deg,transparent 15%,black 70%)}
+#perguntas .bap-faq-inner{max-width:1580px;grid-template-columns:minmax(0,1010px) minmax(330px,410px);justify-content:space-between;gap:clamp(35px,4vw,70px)}
+#perguntas h2{font-size:clamp(69px,5.55vw,94px);margin:17px 0 20px;white-space:nowrap}
+#perguntas .bap-faq-intro{max-width:720px;font-size:19px;line-height:1.5;margin-bottom:23px}
+#perguntas .bap-faq-intro:before{content:'';display:block;width:55px;height:4px;background:var(--cyan);margin:0 0 14px}
+#perguntas .faq-list{gap:11px}
+#perguntas .faq-list details{border-radius:16px;background:linear-gradient(100deg,#05131af2 0%,#06202bdf 100%);border-color:#11516b;box-shadow:0 0 0 transparent}
+#perguntas .faq-list details[open]{border:2px solid #08d8ed;box-shadow:inset 0 0 30px #00d9f00b,0 0 19px #00cbe919}
+#perguntas .faq-list summary{min-height:81px;padding:13px 22px;gap:25px;font-size:19px}
+#perguntas .faq-icon{width:62px;height:62px;flex-basis:62px;border-radius:16px}
+#perguntas .faq-icon svg{display:block;width:32px;height:32px}
+#perguntas .faq-toggle{width:51px;height:51px;flex-basis:51px;font-size:34px}
+#perguntas .faq-list details>p{font-size:17px;line-height:1.6;padding:20px 29px 23px 34px;border-top:1px solid #145167;margin:0 27px}
+#perguntas .bap-faq-aside{position:relative;padding-top:36px}
+#perguntas .bap-faq-aside-card{min-height:530px;padding:23px 36px;border-color:#0087aa;border-radius:22px;background:linear-gradient(140deg,#07151ecc,#06131ca8);backdrop-filter:blur(3px)}
+#perguntas .bap-faq-benefit{gap:24px;padding:23px 0;align-items:center}
+#perguntas .bap-faq-benefit-icon{width:86px;height:86px;flex-basis:86px;border-radius:21px;font-size:43px}
+#perguntas .bap-faq-benefit strong{font-size:19px}
+#perguntas .bap-faq-benefit p{font-size:16px}
+#perguntas .bap-faq-cta{font-size:12px}
+@media(max-width:1200px){#perguntas .bap-faq-inner{grid-template-columns:minmax(0,1.7fr) minmax(285px,.8fr)}#perguntas h2{font-size:clamp(55px,6vw,78px)}#perguntas .faq-list summary{font-size:16px;gap:13px}#perguntas .bap-faq-aside-card{padding:20px}#perguntas .bap-faq-benefit-icon{width:60px;height:60px;flex-basis:60px}}
+@media(max-width:940px){#perguntas.bap-faq-redesign{min-height:0;padding:80px 0}#perguntas .bap-faq-inner{grid-template-columns:1fr}#perguntas h2{white-space:normal}#perguntas .bap-faq-aside{padding-top:0}#perguntas .bap-faq-aside-card{min-height:0}#perguntas .bap-faq-benefit{align-items:flex-start}}
+@media(max-width:600px){#perguntas h2{font-size:clamp(49px,10.5vw,68px)}#perguntas .bap-faq-intro{font-size:16px}#perguntas .faq-icon{width:42px;height:42px;flex-basis:42px;border-radius:11px}#perguntas .faq-icon svg{width:25px;height:25px}#perguntas .faq-toggle{width:32px;height:32px;flex-basis:32px;font-size:26px}#perguntas .faq-list summary{font-size:14px;gap:10px}#perguntas .faq-list details>p{font-size:14px;margin:0 12px;padding:15px 2px 17px}}
