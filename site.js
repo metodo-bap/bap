@@ -30,3 +30,17 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
 (function(){const img=new Image();img.onload=()=>document.body.classList.add('bap-has-tiago-banner');img.src='assets/desktop/tiago-banner.webp'})();
 
 (function(){const dock=document.querySelector('.purchase-dock');const hero=document.querySelector('.hero');if(!dock||!hero)return;const update=()=>{const visible=window.innerWidth<=850&&hero.getBoundingClientRect().bottom<120;dock.classList.toggle('visible',visible)};window.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update()})();
+
+/* Accessible disclosure interaction for testimonials: click, tap, Enter, Space and Escape */
+(function(){
+ const cards=[...document.querySelectorAll('.quote-card')];
+ const set=(card,on)=>{card.classList.toggle('is-open',on);card.setAttribute('aria-expanded',String(on))};
+ cards.forEach(card=>{
+   card.addEventListener('click',()=>{const open=card.classList.contains('is-open');cards.forEach(c=>set(c,false));set(card,!open)});
+   card.addEventListener('keydown',e=>{
+     if(e.key==='Enter'||e.key===' '){e.preventDefault();card.click()}
+     if(e.key==='Escape'){set(card,false);card.blur()}
+   });
+   card.addEventListener('blur',()=>{if(!card.matches(':hover'))set(card,false)});
+ });
+})();
