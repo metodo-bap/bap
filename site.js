@@ -26,3 +26,5 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   document.querySelectorAll('.bodywrap [data-area]').forEach(b=>b.addEventListener('click',()=>showArea(b.dataset.area)));
   showArea(document.querySelector('.bodywrap .point.active')?.dataset.area||'Ombros');
 })();
+
+(function(){const img=new Image();img.onload=()=>document.body.classList.add('bap-has-tiago-banner');img.src='assets/desktop/tiago-banner.webp'})();
