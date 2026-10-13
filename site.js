@@ -166,3 +166,31 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   image.src='assets/videos/'+urls[i]+'.webp';
  });
 })();
+
+/* Pointer-responsive motion for the approved dual Tiago artwork.
+   Only move the full artwork a few pixels: preserve both faces and aspect ratio. */
+(function(){
+ const section=document.querySelector('.cinematic-author.tiago-motion');
+ if(!section||!window.matchMedia('(hover:hover) and (pointer:fine) and (min-width:851px) and (prefers-reduced-motion:no-preference)').matches)return;
+ let frame=0;
+ section.addEventListener('pointermove',event=>{
+  const r=section.getBoundingClientRect();
+  if(!r.width||!r.height)return;
+  const x=Math.max(-1,Math.min(1,((event.clientX-r.left)/r.width-.5)*2));
+  const y=Math.max(-1,Math.min(1,((event.clientY-r.top)/r.height-.5)*2));
+  if(frame)cancelAnimationFrame(frame);
+  frame=requestAnimationFrame(()=>{
+   section.style.setProperty('--tiago-x',(-x*12).toFixed(1)+'px');
+   section.style.setProperty('--tiago-y',(-y*8).toFixed(1)+'px');
+   section.style.setProperty('--tiago-light-x',((x+1)*30+20).toFixed(1)+'%');
+   section.style.setProperty('--tiago-light-y',((y+1)*25+25).toFixed(1)+'%');
+   section.classList.add('is-hovered');
+  });
+ },{passive:true});
+ section.addEventListener('pointerleave',()=>{
+  if(frame)cancelAnimationFrame(frame);
+  section.classList.remove('is-hovered');
+  section.style.setProperty('--tiago-x','0px');
+  section.style.setProperty('--tiago-y','0px');
+ });
+})();
