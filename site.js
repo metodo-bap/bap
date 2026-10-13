@@ -52,8 +52,8 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  const hero=document.getElementById('inicio');
  if(!hero)return;
  const indicators=[
-  {el:hero.querySelector('.hero-pain-point.shoulder'),x:1328,y:173},
-  {el:hero.querySelector('.hero-pain-point.elbow'),x:1338,y:609},
+  {el:hero.querySelector('.hero-pain-point.shoulder'),x:1353,y:177},
+  {el:hero.querySelector('.hero-pain-point.elbow'),x:1363,y:614},
   {el:hero.querySelector('.hero-pain-point.wrist'),x:906,y:699}
  ];
  if(indicators.some(p=>!p.el))return;
