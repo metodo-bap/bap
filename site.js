@@ -251,3 +251,10 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   }
  });
 })();
+
+/* Shared footer: keep copyright year current and scroll to page start. */
+document.querySelectorAll('.bap-footer-year').forEach(el=>el.textContent=String(new Date().getFullYear()));
+document.querySelectorAll('[data-footer-top]').forEach(el=>el.addEventListener('click',event=>{
+ event.preventDefault();
+ window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
+}));
