@@ -67,3 +67,15 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 @media(min-width:1600px){
  .hero:before{background-size:auto 150%}
 }
+
+/* BAP approved high-definition desktop assets. Activated after verified loading. */
+@media(min-width:851px){
+ body.bap-has-desktop-hero .hero:before{
+  background:linear-gradient(90deg,#060a0e 0%,#060a0ee9 22%,#060a0e96 45%,#060a0e11 85%),linear-gradient(0deg,#060a0e 0%,transparent 22%),url('assets/desktop/hero-desktop.webp') 68% center/cover no-repeat;
+ }
+ .bap-area-preview{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:9px;margin:12px 0 0;border:1px solid #26434a}
+ .bap-area-preview[hidden]{display:none}
+ body.bap-has-desktop-course .video{background-image:linear-gradient(#06101718,#06101779),url('assets/desktop/curso-desktop.webp')}
+ .bap-area-preview-loading{font-size:11px;color:var(--cyan)}
+}
+@media(max-width:850px){.bap-area-preview{display:none}}
