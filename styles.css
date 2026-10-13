@@ -567,3 +567,17 @@ body.author-lightbox-open{overflow:hidden}
 @media(max-width:980px){.bap-footer-top{grid-template-columns:1.3fr 1fr 1fr;gap:35px}.bap-footer-cta{grid-column:1/-1;max-width:320px}.bap-footer-bottom{flex-wrap:wrap}}
 @media(max-width:620px){.bap-footer .bap-footer-inner{padding-top:50px;padding-bottom:100px}.bap-footer-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px;padding-bottom:35px}.bap-footer-brand{grid-column:1/-1}.bap-footer-cta{grid-column:1/-1}.bap-footer-heading{margin:0 0 15px}.bap-footer-bottom{display:grid;gap:10px;padding-top:20px}.bap-footer-brand>p{margin-top:20px}.bap-footer-button{max-width:315px}}
 @media(prefers-reduced-motion:reduce){.bap-footer-button,.bap-footer-menu a{transition:none}}
+
+/* Real-portrait layout for four BAP musician testimonials; originals retained as fallback. */
+#depoimentos .quote-card{position:relative;isolation:isolate;overflow:hidden}
+#depoimentos .quote-card .quote-art{position:absolute;inset:0;z-index:-1;background-size:cover;background-position:50% 35%;transition:transform .5s ease,filter .5s ease}
+#depoimentos .quote-card .quote-art:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#060b10 0%,#060b10c7 38%,#060b1030 82%)}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-1 .quote-art{background-image:url('assets/depoimentos/sergio-melo.webp')}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-2 .quote-art{background-image:url('assets/depoimentos/augusto-silva.webp')}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-3 .quote-art{background-image:url('assets/depoimentos/lufeh.webp')}
+#depoimentos .quote-card.quote-portrait-ready.quote-card-4 .quote-art{background-image:url('assets/depoimentos/mauricio-mendes.webp')}
+#depoimentos .quote-card.quote-portrait-ready .quote-number,#depoimentos .quote-card.quote-portrait-ready .quote-icon{opacity:.2}
+#depoimentos .quote-card.quote-portrait-ready:hover .quote-art,#depoimentos .quote-card.quote-portrait-ready:focus-visible .quote-art{transform:scale(1.04)}
+#depoimentos .quote-card.quote-portrait-ready .quote-front{position:relative;z-index:1}
+#depoimentos .quote-card.quote-portrait-ready .quote-reveal{z-index:2;background:#061019f1;backdrop-filter:blur(11px)}
+@media(prefers-reduced-motion:reduce){#depoimentos .quote-card .quote-art{transition:none;transform:none!important}}
