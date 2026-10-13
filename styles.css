@@ -514,3 +514,12 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 .author-drum-spec span{color:#b9cbd2;font-size:14px;line-height:1.5}
 @media(max-width:850px){.author-equipment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.author-equipment-grid>.author-equipment-drum{grid-column:span 2}}
 @media(max-width:520px){.author-equipment-grid{grid-template-columns:1fr}.author-equipment-grid>.author-equipment-drum{grid-column:span 1}}
+
+/* Complete historic gallery — consistent smaller cards with original compositions */
+.author-archive .author-archive-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:auto;gap:12px}
+.author-archive .author-archive-photo,.author-archive .author-archive-photo:first-child,.author-archive .author-archive-photo:nth-child(2),.author-archive .author-archive-photo:nth-child(3),.author-archive .author-archive-photo:nth-child(4),.author-archive .author-archive-photo:nth-child(5){grid-column:auto;grid-row:auto;aspect-ratio:4/3;min-height:0}
+.author-archive .author-archive-photo img{width:100%;height:100%;object-fit:cover}
+.author-archive .author-archive-photo span{font-size:10px;letter-spacing:1px;padding:24px 12px 10px}
+@media(max-width:1100px){.author-archive .author-archive-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){.author-archive .author-archive-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}}
+@media(max-width:500px){.author-archive .author-archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.author-archive .author-archive-photo span{padding:18px 9px 8px}}
