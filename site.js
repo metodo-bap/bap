@@ -154,3 +154,15 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  })});
  select(0);
 })();
+
+/* Progressive image activation. Keep approved existing visual until each WebP exists. */
+(function(){
+ const urls=['aquecimento','postura','coluna','alongamento','polegar','ergonomia'];
+ const cards=document.querySelectorAll('.bap-video-grid .bap-video-card');
+ cards.forEach((card,i)=>{
+  if(!urls[i])return;
+  const image=new Image();
+  image.onload=()=>card.classList.add('bap-video-image-ready');
+  image.src='assets/videos/'+urls[i]+'.webp';
+ });
+})();
