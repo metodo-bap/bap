@@ -223,3 +223,41 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
  .hero-pain-point.wrist{animation-delay:.55s}
  .hero-pain-point.wrist:before,.hero-pain-point.wrist:after{animation-delay:.55s}
 }
+
+/* BAP Home 4.1 — full-bleed second fold aligned with the approved hero */
+.body-experience{position:relative;isolation:isolate;overflow:hidden;min-height:clamp(680px,90svh,960px);display:flex;align-items:center;padding:80px 0;background:#060a0e;border-bottom:1px solid var(--line)}
+.body-experience-image{position:absolute;inset:0;z-index:-2;background-image:url('assets/desktop/ombros.webp');background-position:73% center;background-size:cover;background-repeat:no-repeat;transition:opacity .32s ease;transform:translateZ(0)}
+.body-experience:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#060a0efd 0%,#060a0ef2 22%,#060a0edc 37%,#060a0e7b 57%,#060a0e13 90%),linear-gradient(0deg,#060a0ef5 0%,transparent 22%,transparent 80%,#060a0e7b 100%)}
+.body-experience.area-costas .body-experience-image{background-image:url('assets/desktop/coluna.webp')}
+.body-experience.area-punhos .body-experience-image{background-image:url('assets/desktop/punhos.webp')}
+.body-experience-content{width:100%;max-width:1440px;position:relative}
+.body-copy{max-width:650px}
+.body-experience h2{font-size:clamp(62px,6.6vw,104px);line-height:.92;letter-spacing:-.02em;margin:28px 0 20px}
+.body-experience .intro{font-size:clamp(16px,1.22vw,20px);line-height:1.55;max-width:560px}
+.body-region-control{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.region-tab{border:1px solid #44616d;background:#07131bdc;min-height:48px;padding:11px 17px;border-radius:28px;font-size:12px;font-weight:800;letter-spacing:.35px;transition:border-color .2s,background .2s,color .2s}
+.region-tab span{color:var(--red);margin-right:9px}
+.region-tab:hover,.region-tab:focus-visible{border-color:var(--cyan)}
+.region-tab:focus-visible,.region-navigation button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.region-tab.active{background:var(--cyan);color:#041016;border-color:var(--cyan)}
+.region-tab.active span{color:#052e37}
+.region-description{max-width:570px;min-height:160px;margin:17px 0 24px;padding:19px 22px;border:1px solid #345661;background:#071820e8;backdrop-filter:blur(12px);border-radius:13px}
+.region-description strong{font-size:18px;color:var(--cyan)}
+.region-description p{color:#d2dce0;font-size:14px;margin:7px 0 15px;line-height:1.5}
+.region-navigation{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #2d464e;padding-top:13px}
+.region-navigation button{background:transparent;border:0;color:#ecf5f8;font-size:11px;font-weight:800;letter-spacing:.5px;padding:5px 0}
+.region-navigation button:hover{color:var(--cyan)}
+.region-navigation span{font-size:11px;letter-spacing:2px;color:#a3c3cc}
+.body-experience .btn{min-width:285px}
+@media(min-width:851px){#corpo.body-experience{max-width:none;padding:90px 0;display:flex;background:#060a0e}#corpo.body-experience:before{display:block}#corpo.body-experience .body-copy{max-width:650px}}
+@media(max-width:850px){
+ #corpo.body-experience{min-height:760px;display:flex;align-items:flex-end;padding:275px 0 60px}
+ .body-experience-image{background-size:auto 63%;background-position:68% 0;background-color:#060a0e}
+ .body-experience:before{background:linear-gradient(180deg,#060a0e1c 0%,#060a0e4d 28%,#060a0eee 49%,#060a0e 100%),linear-gradient(90deg,#060a0e55,transparent)}
+ .body-experience h2{font-size:clamp(48px,11vw,67px);margin-top:15px}
+ .body-region-control{gap:8px;margin-top:22px}
+ .region-tab{font-size:11px;padding:10px 13px;min-height:44px}
+ .region-description{padding:16px 17px;min-height:150px;margin:13px 0 18px}
+ .body-experience .btn{min-width:0}
+}
+@media(prefers-reduced-motion:reduce){.body-experience-image,.region-tab{transition:none}}
