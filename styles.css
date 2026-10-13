@@ -79,3 +79,6 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
  .bap-area-preview-loading{font-size:11px;color:var(--cyan)}
 }
 @media(max-width:850px){.bap-area-preview{display:none}}
+
+/* Institutional dual-role banner: desktop only */
+@media(min-width:851px){body.bap-has-tiago-banner .section:has(a[href="sobre-o-autor.html"]) .split{grid-template-columns:1fr;gap:22px}body.bap-has-tiago-banner .section:has(a[href="sobre-o-autor.html"]) .split>img{display:none}body.bap-has-tiago-banner .section:has(a[href="sobre-o-autor.html"]) .split:after{content:'';display:block;width:100%;aspect-ratio:2.7/1;background:url('assets/desktop/tiago-banner.webp') center/cover no-repeat;border-radius:12px;border:1px solid var(--line)}}
