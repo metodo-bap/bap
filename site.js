@@ -80,3 +80,41 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  if('ResizeObserver' in window)new ResizeObserver(place).observe(hero);
  place();
 })();
+
+/* Home second fold — accessible interactive cinematic region navigation */
+(function(){
+ const section=document.getElementById('corpo');
+ if(!section||!section.classList.contains('body-experience'))return;
+ const tabs=[...section.querySelectorAll('.region-tab')];
+ const names=['ombros','costas','punhos'];
+ const descriptions={
+  ombros:'Observe a participação dos ombros e dos braços nos movimentos repetitivos ao tocar.',
+  costas:'Conheça a relação entre postura, permanência no instrumento e conforto durante a prática.',
+  punhos:'Explore a importância dos punhos e antebraços nos gestos técnicos e na repetição dos movimentos.'
+ };
+ const title=section.querySelector('#areatitle');
+ const description=section.querySelector('#areadesc');
+ const count=section.querySelector('#region-count');
+ let active=0;
+ function select(index,focus=false){
+  active=(index+names.length)%names.length;
+  const selected=names[active];
+  section.classList.remove(...names.map(n=>'area-'+n));
+  section.classList.add('area-'+selected);
+  tabs.forEach((tab,i)=>{tab.classList.toggle('active',i===active);tab.setAttribute('aria-pressed',String(i===active))});
+  if(title)title.textContent=selected==='costas'?'COLUNA':selected.toUpperCase();
+  if(description)description.textContent=descriptions[selected];
+  if(count)count.textContent=String(active+1).padStart(2,'0')+' / 03';
+  if(focus)tabs[active].focus();
+ }
+ tabs.forEach((tab,i)=>{
+  tab.addEventListener('click',()=>select(i));
+  tab.addEventListener('keydown',event=>{
+   if(event.key==='ArrowRight'||event.key==='ArrowDown'){event.preventDefault();select(i+1,true)}
+   if(event.key==='ArrowLeft'||event.key==='ArrowUp'){event.preventDefault();select(i-1,true)}
+  });
+ });
+ section.querySelector('#region-prev')?.addEventListener('click',()=>select(active-1));
+ section.querySelector('#region-next')?.addEventListener('click',()=>select(active+1));
+ select(0);
+})();
