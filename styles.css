@@ -447,3 +447,11 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 @media(max-width:900px){.author-brand-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.author-brand-gallery{gap:9px}.author-brand{min-height:151px;padding:16px 9px}.author-brand img{height:54px;width:90px}.author-brand>span:not(.author-brand-external){font-size:10px}}
 @media(prefers-reduced-motion:reduce){.author-brand{transition:none}}
+
+/* Verified user-provided brand logos — original silhouettes vectorized in white */
+.author-brand-gallery.author-brand-official{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1030px;gap:17px}
+.author-brand-gallery.author-brand-official .official-logo{min-height:174px;gap:0;padding:24px 27px}
+.author-brand-gallery.author-brand-official .official-logo img{width:100%;height:95px;max-height:none;max-width:245px;object-fit:contain;display:block;filter:none}
+.author-brand-gallery.author-brand-official .official-logo:nth-child(2) img{max-width:250px;height:110px}
+.author-brand-gallery.author-brand-official .official-logo:nth-child(3) img{max-width:260px;height:88px}
+@media(max-width:760px){.author-brand-gallery.author-brand-official{grid-template-columns:1fr;max-width:420px}.author-brand-gallery.author-brand-official .official-logo{min-height:136px}.author-brand-gallery.author-brand-official .official-logo img{height:80px}}
