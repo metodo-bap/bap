@@ -330,3 +330,12 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 @media(max-width:1000px){.bap-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.bap-video-heading{display:block}.bap-video-heading .btn{margin-top:15px}.bap-video-grid{grid-template-columns:1fr}.bap-video-card{min-height:350px}.bap-video-heading h2{font-size:clamp(50px,12vw,68px)}}
 @media(prefers-reduced-motion:reduce){.bap-video-card,.bap-video-art{transition:none}}
+
+/* Six individual BAP video illustrations; enabled only after successful asset load. */
+.bap-video-gallery .bap-video-card.bap-video-image-ready .bap-video-art{background-position:center center;background-size:cover}
+.bap-video-card:nth-child(1).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/aquecimento.webp')}
+.bap-video-card:nth-child(2).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/postura.webp')}
+.bap-video-card:nth-child(3).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/coluna.webp')}
+.bap-video-card:nth-child(4).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/alongamento.webp')}
+.bap-video-card:nth-child(5).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/polegar.webp')}
+.bap-video-card:nth-child(6).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/ergonomia.webp')}
