@@ -433,3 +433,17 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
  .author-music{background:linear-gradient(90deg,#060a0ef4,#060a0ed9),url('assets/desktop/curso-desktop.webp') center/cover}
 }
 @media(prefers-reduced-motion:reduce){.author-dual-frame img{transition:none;transform:none!important}.author-dual-light{display:none}}
+
+/* Artist-history brand strip: official-site identity icons and direct links */
+.author-brand-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;max-width:1050px;margin:35px 0 20px}
+.author-brand{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:170px;padding:19px 14px;background:linear-gradient(160deg,#0c1c25ee,#081017ed);border:1px solid #365460;border-radius:15px;color:#eaf6f8;text-align:center;transition:transform .22s ease,border-color .22s ease,background .22s ease}
+.author-brand:hover,.author-brand:focus-visible{transform:translateY(-4px);border-color:var(--cyan);background:#102834}
+.author-brand:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.author-brand img{height:68px;width:100px;object-fit:contain;image-rendering:auto;filter:drop-shadow(0 4px 12px #0005)}
+.author-brand>span:not(.author-brand-external){font-size:12px;letter-spacing:.4px;font-weight:800;line-height:1.45}
+.author-brand-external{position:absolute;top:10px;right:13px;color:var(--cyan);font-size:16px}
+.author-brand-publication-mark{font-family:'Barlow Condensed',Impact,sans-serif!important;font-size:47px!important;color:#fff;letter-spacing:-1px!important;line-height:1}
+.author-brand-publication small{display:block;color:#9ebac4;font-size:9px;font-weight:500;letter-spacing:.4px;margin-top:3px}
+@media(max-width:900px){.author-brand-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.author-brand-gallery{gap:9px}.author-brand{min-height:151px;padding:16px 9px}.author-brand img{height:54px;width:90px}.author-brand>span:not(.author-brand-external){font-size:10px}}
+@media(prefers-reduced-motion:reduce){.author-brand{transition:none}}
