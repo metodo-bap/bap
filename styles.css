@@ -339,3 +339,21 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 .bap-video-card:nth-child(4).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/alongamento.webp')}
 .bap-video-card:nth-child(5).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/polegar.webp')}
 .bap-video-card:nth-child(6).bap-video-image-ready .bap-video-art{background-image:linear-gradient(0deg,#061018fa 0%,#061018a8 45%,#0610181a 100%),url('assets/videos/ergonomia.webp')}
+
+/* Tiago: one approved image containing both identities, with subtle pointer parallax */
+.cinematic-author.tiago-motion{position:relative;isolation:isolate;overflow:hidden;background:#060a0e!important;--tiago-x:0px;--tiago-y:0px;--tiago-light-x:70%;--tiago-light-y:46%;min-height:clamp(660px,80svh,860px)}
+.cinematic-author.tiago-motion:before{display:none!important}
+.cinematic-author.tiago-motion>.tiago-motion-art{position:absolute;inset:-24px;z-index:-2;background:url('assets/desktop/tiago-banner.webp') 65% center/cover no-repeat;transform:translate3d(var(--tiago-x),var(--tiago-y),0) scale(1.015);transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .6s ease;will-change:transform;pointer-events:none}
+.cinematic-author.tiago-motion>.tiago-motion-shade{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#060a0efa 0%,#060a0ef0 22%,#060a0eaa 38%,#060a0e24 73%),linear-gradient(0deg,#060a0ee0 0%,transparent 27%,transparent 83%,#060a0e88 100%)}
+.cinematic-author.tiago-motion>.tiago-motion-shade:after{content:'';position:absolute;inset:0;opacity:0;transition:opacity .55s ease;background:radial-gradient(ellipse 34% 55% at var(--tiago-light-x) var(--tiago-light-y),#29dbea21,transparent 80%);mix-blend-mode:screen}
+.cinematic-author.tiago-motion.is-hovered>.tiago-motion-art{filter:brightness(1.075) saturate(1.08)}
+.cinematic-author.tiago-motion.is-hovered>.tiago-motion-shade:after{opacity:1}
+.cinematic-author.tiago-motion>.split{position:relative;z-index:1;width:100%;max-width:1350px;margin:auto}
+.cinematic-author.tiago-motion>.split>div:first-child{max-width:625px}
+@media(max-width:850px){
+ .cinematic-author.tiago-motion{min-height:780px;padding-top:350px;padding-bottom:65px;display:flex;align-items:flex-end}
+ .cinematic-author.tiago-motion>.tiago-motion-art{inset:0;background-size:auto 62%;background-position:68% top;transform:none!important;filter:none!important;will-change:auto}
+ .cinematic-author.tiago-motion>.tiago-motion-shade{background:linear-gradient(180deg,#060a0e11 0%,#060a0e33 25%,#060a0ef5 51%,#060a0e 100%)}
+ .cinematic-author.tiago-motion>.tiago-motion-shade:after{display:none}
+}
+@media(prefers-reduced-motion:reduce){.cinematic-author.tiago-motion>.tiago-motion-art,.cinematic-author.tiago-motion>.tiago-motion-shade:after{transform:none!important;transition:none!important;filter:none!important}}
