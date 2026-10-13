@@ -215,3 +215,11 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
 @keyframes bap-ring{0%{opacity:0;transform:scale(.65)}35%{opacity:.85}90%,100%{opacity:0;transform:scale(1.5)}}
 @media(max-width:850px){.hero-pain-points{display:none}}
 @media(prefers-reduced-motion:reduce){.hero-pain-point,.hero-pain-point:before,.hero-pain-point:after{animation:none!important;opacity:.8!important}}
+
+/* Three calibrated hotspots: hide old percentage fallback and synchronize visibility to image placement. */
+@media(min-width:851px){
+ .hero-pain-point{visibility:hidden}
+ .hero-pain-point.shoulder,.hero-pain-point.elbow{left:auto;top:auto}
+ .hero-pain-point.wrist{animation-delay:.55s}
+ .hero-pain-point.wrist:before,.hero-pain-point.wrist:after{animation-delay:.55s}
+}
