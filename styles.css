@@ -594,3 +594,7 @@ body.author-lightbox-open{overflow:hidden}
  #depoimentos .quote-card.quote-portrait-ready.quote-card-3 .quote-art{background-position:54% 16%}
  #depoimentos .quote-card.quote-portrait-ready.quote-card-4 .quote-art{background-position:76% 13%}
 }
+
+/* Lufeh: face-focused crop in the approved replacement image. */
+#depoimentos .quote-card.quote-portrait-ready.quote-card-3 .quote-art{background-position:66% 38%}
+@media(max-width:768px){#depoimentos .quote-card.quote-portrait-ready.quote-card-3 .quote-art{background-position:69% 38%}}
