@@ -167,30 +167,27 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  });
 })();
 
-/* Pointer-responsive motion for the approved dual Tiago artwork.
-   Only move the full artwork a few pixels: preserve both faces and aspect ratio. */
+/* Hover parallax restricted to Tiago's approved banner, never the section background. */
 (function(){
- const section=document.querySelector('.cinematic-author.tiago-motion');
- if(!section||!window.matchMedia('(hover:hover) and (pointer:fine) and (min-width:851px) and (prefers-reduced-motion:no-preference)').matches)return;
+ const card=document.querySelector('#sobre-tiago .tiago-feature-card');
+ if(!card||!window.matchMedia('(hover:hover) and (pointer:fine) and (min-width:851px) and (prefers-reduced-motion:no-preference)').matches)return;
  let frame=0;
- section.addEventListener('pointermove',event=>{
-  const r=section.getBoundingClientRect();
-  if(!r.width||!r.height)return;
-  const x=Math.max(-1,Math.min(1,((event.clientX-r.left)/r.width-.5)*2));
-  const y=Math.max(-1,Math.min(1,((event.clientY-r.top)/r.height-.5)*2));
+ card.addEventListener('pointermove',event=>{
+  const rect=card.getBoundingClientRect();
+  if(!rect.width||!rect.height)return;
+  const x=Math.max(0,Math.min(1,(event.clientX-rect.left)/rect.width));
+  const y=Math.max(0,Math.min(1,(event.clientY-rect.top)/rect.height));
   if(frame)cancelAnimationFrame(frame);
   frame=requestAnimationFrame(()=>{
-   section.style.setProperty('--tiago-x',(-x*12).toFixed(1)+'px');
-   section.style.setProperty('--tiago-y',(-y*8).toFixed(1)+'px');
-   section.style.setProperty('--tiago-light-x',((x+1)*30+20).toFixed(1)+'%');
-   section.style.setProperty('--tiago-light-y',((y+1)*25+25).toFixed(1)+'%');
-   section.classList.add('is-hovered');
+   card.style.setProperty('--art-x',((.5-x)*14).toFixed(1)+'px');
+   card.style.setProperty('--art-y',((.5-y)*9).toFixed(1)+'px');
+   card.style.setProperty('--light-x',(x*100).toFixed(1)+'%');
+   card.style.setProperty('--light-y',(y*100).toFixed(1)+'%');
   });
  },{passive:true});
- section.addEventListener('pointerleave',()=>{
+ card.addEventListener('pointerleave',()=>{
   if(frame)cancelAnimationFrame(frame);
-  section.classList.remove('is-hovered');
-  section.style.setProperty('--tiago-x','0px');
-  section.style.setProperty('--tiago-y','0px');
+  card.style.setProperty('--art-x','0px');
+  card.style.setProperty('--art-y','0px');
  });
 })();
