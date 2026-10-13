@@ -660,3 +660,28 @@ body.author-lightbox-open{overflow:hidden}
 #perguntas .bap-faq-main{position:relative;z-index:1}
 @media(max-width:940px){#perguntas.bap-faq-redesign:after{width:min(76vw,600px);height:340px;opacity:.3}#perguntas .bap-faq-aside{z-index:2}}
 @media(max-width:600px){#perguntas.bap-faq-redesign:after{opacity:.12;height:260px;width:100%;right:-20%}}
+
+/* FAQ final: layered stage, editorial spacing and robust responsive behaviour. */
+#perguntas.bap-faq-redesign{position:relative;isolation:isolate;min-height:850px;padding:70px 0 80px;background:radial-gradient(ellipse 60% 70% at 95% 10%,#0b3544a3,transparent 75%),linear-gradient(115deg,#04090e 15%,#04131c 75%,#071e2a);overflow:hidden}
+#perguntas.bap-faq-redesign:after{display:none!important}
+#perguntas .bap-faq-scene{position:absolute;z-index:0;inset:auto 0 0 auto;width:min(51vw,820px);height:min(37vw,530px);background:url('assets/faq-bap-stilllife.svg') center bottom/contain no-repeat;pointer-events:none;opacity:.92;filter:drop-shadow(0 0 34px #00d5e01c)}
+#perguntas .bap-faq-inner{position:relative;z-index:1;grid-template-columns:minmax(0,990px) minmax(310px,390px);align-items:start;gap:clamp(40px,4.5vw,72px);max-width:1580px}
+#perguntas .bap-faq-main{min-width:0}
+#perguntas h2{white-space:normal;letter-spacing:-.022em;font-size:clamp(62px,5.75vw,94px);line-height:.94;max-width:100%;margin:23px 0 22px}
+#perguntas .bap-faq-intro{max-width:725px;margin-bottom:28px}
+#perguntas .faq-list{gap:12px}
+#perguntas .faq-list details{background:linear-gradient(100deg,#061620f4,#081f2af0);border:1px solid #15506a;border-radius:16px}
+#perguntas .faq-list details[open]{border:1px solid #19def0;box-shadow:0 0 0 1px #19def044,0 0 32px #14dbe219}
+#perguntas .faq-list summary{padding:12px 24px;min-height:81px;gap:23px}
+#perguntas .faq-list details>p{border-top:1px solid #1c5362;padding:19px 0 22px;margin:0 29px 0 103px;font-size:16px}
+#perguntas .bap-faq-aside{padding-top:34px}
+#perguntas .bap-faq-aside-card{min-height:0;padding:21px 30px;border:1px solid #0a8bae;background:linear-gradient(150deg,#071720e9,#05131bbf);box-shadow:0 20px 65px #0009}
+#perguntas .bap-faq-benefit{padding:23px 0;gap:21px}
+#perguntas .bap-faq-benefit-icon{background:#052b3b;border-color:#16677e;font-size:36px;width:68px;height:68px;flex-basis:68px}
+#perguntas .bap-faq-benefit strong{font-size:18px}
+#perguntas .bap-faq-benefit p{font-size:14px}
+#perguntas .bap-faq-cta{display:inline-flex;align-items:center;justify-content:center;min-height:43px;border:1px solid #117d97;border-radius:26px;padding:0 24px;margin-top:20px;background:#061b25e9}
+#perguntas .bap-faq-cta:hover{border-color:var(--cyan);background:#0c3442}
+@media(max-width:1100px){#perguntas .bap-faq-inner{grid-template-columns:minmax(0,1.7fr) minmax(280px,.85fr);gap:26px}#perguntas .faq-list summary{gap:15px;font-size:16px}#perguntas .faq-icon{height:50px;width:50px;flex-basis:50px}#perguntas .faq-icon svg{height:27px;width:27px}#perguntas .bap-faq-aside-card{padding:18px}#perguntas .faq-list details>p{margin-left:80px}}
+@media(max-width:940px){#perguntas.bap-faq-redesign{min-height:0;padding:76px 0}#perguntas .bap-faq-inner{grid-template-columns:1fr}#perguntas .bap-faq-aside{padding:0}#perguntas .bap-faq-scene{opacity:.15;width:80vw;height:390px}#perguntas .bap-faq-aside-card{display:grid;grid-template-columns:repeat(3,1fr)}#perguntas .bap-faq-benefit{flex-direction:column;align-items:start;border:0}}
+@media(max-width:620px){#perguntas.bap-faq-redesign{padding:62px 0}#perguntas h2{font-size:clamp(49px,11vw,68px)}#perguntas .faq-list summary{min-height:70px;padding:12px;font-size:14px;gap:10px}#perguntas .faq-icon{width:41px;height:41px;flex-basis:41px}#perguntas .faq-toggle{height:33px;width:33px;flex-basis:33px}#perguntas .faq-list details>p{margin:0 15px;padding:14px 0 18px;font-size:14px}#perguntas .bap-faq-aside-card{grid-template-columns:1fr}#perguntas .bap-faq-benefit{flex-direction:row;align-items:center;border-bottom:1px solid #23444f}#perguntas .bap-faq-benefit-icon{height:50px;width:50px;flex-basis:50px}#perguntas .bap-faq-scene{opacity:.09;width:100%;right:-22%;height:250px}}
