@@ -212,3 +212,42 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   card.style.setProperty('--author-x','0px');card.style.setProperty('--author-y','0px');
  });
 })();
+
+/* Author archive lightbox: click a photo, close via X, backdrop or Escape. */
+(function(){
+ const gallery=document.querySelector('.author-archive-grid');
+ const modal=document.getElementById('author-lightbox');
+ if(!gallery||!modal)return;
+ const full=modal.querySelector('#author-lightbox-image');
+ const caption=modal.querySelector('#author-lightbox-caption');
+ const closeButton=modal.querySelector('.author-lightbox-close');
+ let previousFocus=null;
+ function close(){
+  if(modal.hidden)return;
+  modal.hidden=true;modal.setAttribute('aria-hidden','true');
+  document.body.classList.remove('author-lightbox-open');
+  full.removeAttribute('src');
+  if(previousFocus?.isConnected)previousFocus.focus();
+ }
+ gallery.querySelectorAll('.author-archive-photo').forEach((card,index)=>{
+  card.addEventListener('click',e=>{
+   e.preventDefault();
+   previousFocus=card;
+   full.src=card.href;
+   full.alt=card.querySelector('img')?.alt||'Fotografia do acervo de Tiago Guimarães';
+   caption.textContent='ACERVO HISTÓRICO / '+String(index+1).padStart(2,'0');
+   modal.hidden=false;modal.setAttribute('aria-hidden','false');
+   document.body.classList.add('author-lightbox-open');
+   closeButton.focus();
+  });
+ });
+ modal.querySelectorAll('[data-lightbox-close]').forEach(el=>el.addEventListener('click',close));
+ document.addEventListener('keydown',event=>{
+  if(modal.hidden)return;
+  if(event.key==='Escape'){event.preventDefault();close()}
+  if(event.key==='Tab'){
+   // Only one focusable control in the viewer.
+   event.preventDefault();closeButton.focus();
+  }
+ });
+})();
