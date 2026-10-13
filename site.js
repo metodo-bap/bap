@@ -118,3 +118,39 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  section.querySelector('#region-next')?.addEventListener('click',()=>select(active+1));
  select(0);
 })();
+
+/* Editorial curriculum explorer: updates image and practical description */
+(function(){
+ const root=document.getElementById('preparacao');
+ if(!root?.classList.contains('learning-lab'))return;
+ const items={
+ aquecimento:{title:'AQUECIMENTO',text:'Conheça fundamentos para preparar o corpo antes dos estudos, ensaios e apresentações.',image:'assets/desktop/ombros.webp'},
+ postura:{title:'POSTURA E ERGONOMIA',text:'Explore a organização do instrumento e as relações entre posicionamento, movimento e conforto.',image:'assets/desktop/coluna.webp'},
+ alongamento:{title:'ALONGAMENTO',text:'Entenda princípios de alongamento aplicados à rotina de quem toca bateria.',image:'assets/desktop/punhos.webp'},
+ tendinite:{title:'TENDINITE E SOBRECARGAS',text:'Aprenda a reconhecer a importância dos movimentos repetitivos e das sobrecargas na prática musical.',image:'assets/desktop/ombros.webp'},
+ energia:{title:'ECONOMIA DE ENERGIA',text:'Descubra como a consciência dos movimentos pode favorecer uma execução mais eficiente.',image:'assets/desktop/curso-desktop.webp'},
+ relaxamento:{title:'FLEXIBILIDADE E RELAXAMENTO',text:'Conheça fundamentos de mobilidade, flexibilidade e recuperação entre sessões de prática.',image:'assets/desktop/coluna.webp'}
+ };
+ const buttons=[...root.querySelectorAll('.learning-topic')];
+ const visual=root.querySelector('.learning-photo');
+ const visualTitle=root.querySelector('#learning-photo-title');
+ const label=root.querySelector('#learning-title');
+ const desc=root.querySelector('#learning-desc');
+ const count=root.querySelector('#learning-index');
+ let current=0;
+ function select(index,focus=false){
+  current=(index+buttons.length)%buttons.length;
+  const tab=buttons[current],item=items[tab.dataset.topic];
+  buttons.forEach((b,i)=>{b.classList.toggle('active',i===current);b.setAttribute('aria-pressed',String(i===current))});
+  visual.style.backgroundImage="linear-gradient(0deg,#051018ed,#06101800 48%,#06101836),url('"+item.image+"')";
+  visual.setAttribute('aria-label','Ilustração do programa: '+item.title.toLowerCase());
+  visualTitle.textContent=item.title;label.textContent=item.title;desc.textContent=item.text;
+  count.textContent=String(current+1).padStart(2,'0')+' / 06';
+  if(focus)tab.focus();
+ }
+ buttons.forEach((b,i)=>{b.addEventListener('click',()=>select(i));b.addEventListener('keydown',e=>{
+  if(e.key==='ArrowDown'||e.key==='ArrowRight'){e.preventDefault();select(i+1,true)}
+  if(e.key==='ArrowUp'||e.key==='ArrowLeft'){e.preventDefault();select(i-1,true)}
+ })});
+ select(0);
+})();
