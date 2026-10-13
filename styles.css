@@ -357,3 +357,19 @@ html{scroll-padding-top:84px}body{overflow-x:hidden}a:focus-visible,button:focus
  .cinematic-author.tiago-motion>.tiago-motion-shade:after{display:none}
 }
 @media(prefers-reduced-motion:reduce){.cinematic-author.tiago-motion>.tiago-motion-art,.cinematic-author.tiago-motion>.tiago-motion-shade:after{transform:none!important;transition:none!important;filter:none!important}}
+
+/* TIAGO 5.0 — single approved two-person composition with interactive art only */
+#sobre-tiago.tiago-feature{position:relative;display:block;max-width:none;min-height:0;margin:0;padding:clamp(80px,7vw,118px) 0;background:radial-gradient(ellipse 42% 60% at 87% 40%,#102b33 0%,transparent 77%),radial-gradient(ellipse 35% 38% at 8% 80%,#2a1119 0%,transparent 75%),linear-gradient(180deg,#060a0e 0%,#081118 50%,#060a0e 100%);overflow:hidden;border-bottom:1px solid #1b323c}
+#sobre-tiago.tiago-feature:before,#sobre-tiago.tiago-feature:after{display:none!important}
+#sobre-tiago .tiago-feature-inner{max-width:1440px;margin:auto}
+#sobre-tiago .tiago-feature-copy{max-width:750px;margin:0 0 37px}
+#sobre-tiago h2{font-size:clamp(62px,6.8vw,100px);line-height:.94;letter-spacing:-.018em;margin:25px 0 23px}
+#sobre-tiago .tiago-feature-role{color:var(--cyan);font-weight:600}
+#sobre-tiago .tiago-feature-copy>.intro{max-width:700px}
+#sobre-tiago .tiago-feature-copy>.btn{margin-top:14px}
+#sobre-tiago .tiago-feature-card{--art-x:0px;--art-y:0px;--light-x:50%;--light-y:50%;position:relative;width:100%;aspect-ratio:1983/793;border:1px solid #34505b;border-radius:18px;overflow:hidden;background:#08121a;box-shadow:0 25px 80px #0007;isolation:isolate}
+#sobre-tiago .tiago-feature-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transform:translate3d(var(--art-x),var(--art-y),0) scale(1.015);transition:transform .48s cubic-bezier(.2,.7,.2,1),filter .48s ease;will-change:transform}
+#sobre-tiago .tiago-feature-glow{position:absolute;inset:0;pointer-events:none;opacity:0;background:radial-gradient(ellipse 30% 55% at var(--light-x) var(--light-y),#29dbea21,transparent 75%);transition:opacity .4s ease}
+@media(hover:hover) and (pointer:fine){#sobre-tiago .tiago-feature-card:hover .tiago-feature-image{filter:brightness(1.045) saturate(1.04)}#sobre-tiago .tiago-feature-card:hover .tiago-feature-glow{opacity:1}}
+@media(max-width:850px){#sobre-tiago.tiago-feature{padding:64px 0 75px}#sobre-tiago h2{font-size:clamp(49px,11vw,72px)}#sobre-tiago .tiago-feature-copy{margin-bottom:27px}#sobre-tiago .tiago-feature-card{border-radius:12px;aspect-ratio:1983/1050}#sobre-tiago .tiago-feature-image{object-fit:cover;object-position:center;transform:none!important;filter:none!important;will-change:auto}#sobre-tiago .tiago-feature-glow{display:none}}
+@media(prefers-reduced-motion:reduce){#sobre-tiago .tiago-feature-image{transform:none!important;filter:none!important;transition:none!important}#sobre-tiago .tiago-feature-glow{display:none}}
