@@ -1225,3 +1225,10 @@ body.author-lightbox-open{overflow:hidden}
 .book-v2 .book-end-approved .book-end-samples{left:80.3%!important;top:79.95%!important;width:16.12%!important;height:8.5%!important}
 .book-v2 .book-end-approved .book-end-link:hover{background:transparent!important;box-shadow:none!important}
 .book-v2 .book-end-approved .book-end-link{border-radius:5px}
+
+/* Pixel-accurate image hotspots are handled by the artwork click listener.
+   Keep accessible links for keyboard navigation only. */
+.book-v2 .book-end-keyboard-links{position:absolute;left:0;top:0;z-index:5;width:0;height:0;overflow:visible}
+.book-v2 .book-end-keyboard-links a{position:absolute;left:-9999px;top:auto;white-space:nowrap}
+.book-v2 .book-end-keyboard-links a:focus-visible{left:15px;top:15px;background:#062934;color:#fff;outline:3px solid #27d9e8;padding:12px 18px;border-radius:4px}
+.book-v2 .book-end-approved .book-end-link{display:none!important}
