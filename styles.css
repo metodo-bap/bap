@@ -1315,3 +1315,10 @@ html[data-theme="light"] .bap-whatsapp-float{filter:drop-shadow(0 5px 12px #1536
 html[data-theme="light"] :is(.hero,.cinematic-course,.cinematic-author,.cinematic-offer,.method-materials-cinematic,.book-end-approved){color:#fff}
 html[data-theme="light"] .hero :is(h1,h2,p,.intro),html[data-theme="light"] .cinematic-course :is(h1,h2,h3,p){color:#fff}
 @media(max-width:650px){.bap-theme-toggle{bottom:95px;right:12px;padding:9px 11px}.bap-theme-text{font-size:10px}}
+
+/* Theme containment: the book's immersive reader remains dark in either theme. */
+html[data-theme="light"] .book-page-lightbox .bap-reader-header{background:#07151e!important;color:#f8fdff!important;border-bottom:1px solid #245669!important}
+html[data-theme="light"] .book-page-lightbox .bap-reader-header :is(strong,span){color:inherit}
+html[data-theme="light"] .book-page-lightbox .bap-reader-kicker{color:#26d6e6!important}
+html[data-theme="light"] .book-page-lightbox .bap-reader-close{color:#fff!important}
+html[data-theme="light"] .book-page-lightbox .bap-reader-footer{color:#91aeb9!important}
