@@ -1076,3 +1076,21 @@ body.author-lightbox-open{overflow:hidden}
 .book-v2 .book-audience-approved.has-audience-art .book-audience-original{display:none}
 .book-v2 .book-audience-approved .book-audience-original{padding:35px 0}
 @media(max-width:760px){.book-v2 .book-audience-approved-visual{overflow-x:auto;scrollbar-width:thin;scroll-snap-type:x proximity}.book-v2 .book-audience-approved-visual img{width:1100px;max-width:none;height:auto;aspect-ratio:3/1}}
+
+/* Livro BAP — responsive editorial five-card audience layout */
+.book-v2 .book-audience-approved .book-audience-original{padding:33px 0 38px;background:linear-gradient(180deg,#051722,#020b13)}
+.book-v2 .book-audience-heading{display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;margin:0 0 17px}
+.book-v2 .book-audience-heading h2{font-size:clamp(45px,4.2vw,70px);white-space:nowrap;margin:0}
+.book-v2 .book-audience-heading h2 em{color:#25d7e9}
+.book-v2 .book-audience-heading p{font-size:16px;margin:0;color:#e1e9ec}
+.book-v2 .book-audience-approved .book-audience-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:0}
+.book-v2 .book-audience-approved .book-audience-card{background:#06131a;padding:0;display:flex;flex-direction:column;min-height:320px;border:1px solid #13cde4;border-radius:12px;overflow:hidden;isolation:isolate;box-shadow:0 0 13px #00bade20}
+.book-v2 .book-audience-card:before,.book-v2 .book-audience-card:after{display:none}
+.book-v2 .book-audience-card-photo{position:relative;flex:0 0 55%;min-height:155px;width:100%;background:linear-gradient(0deg,#06131a3d,transparent 44%),var(--audience-bg) center/cover no-repeat}
+.book-v2 .book-audience-card-body{flex:1;display:grid;grid-template-columns:46px minmax(0,1fr);gap:10px;align-content:center;align-items:start;padding:15px 12px;background:linear-gradient(180deg,#03141c,#020d13)}
+.book-v2 .book-audience-card-body svg{width:42px;height:42px;color:#25dbe9;flex-shrink:0;filter:drop-shadow(0 0 5px #13d3e72b)}
+.book-v2 .book-audience-approved .book-audience-card-body h3{font-size:clamp(20px,1.75vw,27px);margin:0 0 9px;color:#fff;line-height:1.04;text-wrap:balance}
+.book-v2 .book-audience-approved .book-audience-card-body p{font-size:13px;line-height:1.45;color:#d4dfe3;margin:0;text-shadow:none}
+@media(max-width:1020px){.book-v2 .book-audience-approved .book-audience-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:680px){.book-v2 .book-audience-approved .book-audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.book-v2 .book-audience-card-body{grid-template-columns:1fr}.book-v2 .book-audience-card-body svg{width:34px;height:34px}.book-v2 .book-audience-approved .book-audience-card{min-height:340px}}
+@media(max-width:430px){.book-v2 .book-audience-approved .book-audience-grid{grid-template-columns:1fr}.book-v2 .book-audience-approved .book-audience-card{min-height:0}.book-v2 .book-audience-card-photo{height:185px;flex:auto}.book-v2 .book-audience-card-body{grid-template-columns:45px 1fr;min-height:120px}}
