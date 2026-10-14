@@ -1196,3 +1196,17 @@ body.author-lightbox-open{overflow:hidden}
 @media(max-width:1200px){.book-v2 .book-author-ref-grid{grid-template-columns:43% 40% 17%;min-height:380px}.book-v2 .book-author-ref-image{height:380px!important}.book-v2 .book-author-ref h2{font-size:clamp(40px,4vw,61px)}.book-v2 .book-author-ref-brands{min-height:260px}.book-v2 .book-closing-ref h2{font-size:clamp(43px,4.1vw,60px)}.book-v2 .book-closing-ref-action{padding-right:16px}}
 @media(max-width:850px){.book-v2 .book-author-ref-grid{grid-template-columns:45% 55%;min-height:0}.book-v2 .book-author-ref-image{height:340px!important}.book-v2 .book-author-ref-copy{padding:18px}.book-v2 .book-author-ref h2{font-size:40px;white-space:normal}.book-v2 .book-author-ref h3{font-size:22px}.book-v2 .book-author-ref-brands{grid-column:1/-1;flex-direction:row;width:95%;min-height:100px;margin:12px auto;gap:15px}.book-v2 .book-author-ref-brands>div{flex-direction:row;width:60%;gap:15px}.book-v2 .book-author-ref-brands img{height:60px}.book-v2 .book-author-ref-brands .brand-red-rule{margin:0}.book-v2 .book-closing-ref-grid{grid-template-columns:30% 70%}.book-v2 .book-closing-ref-cover{height:260px!important}.book-v2 .book-closing-product{height:220px!important}.book-v2 .book-closing-ref-action{grid-column:1/-1;padding:15px 25px}.book-v2 .book-closing-ref-grid>small{grid-column:1/-1;margin:0;padding:12px}}
 @media(max-width:520px){.book-v2 .book-author-ref-grid{grid-template-columns:1fr}.book-v2 .book-author-ref-image{height:320px!important}.book-v2 .book-author-ref-copy{padding:20px}.book-v2 .book-author-ref-brands{grid-column:auto}.book-v2 .book-closing-ref-grid{grid-template-columns:32% 68%}.book-v2 .book-closing-ref h2{font-size:clamp(32px,8vw,47px);white-space:normal}.book-v2 .book-closing-ref-cover{height:205px!important}.book-v2 .book-closing-product{height:170px!important}.book-v2 .book-closing-ref-action>div{flex-direction:column}.book-v2 .book-closing-ref-action .btn,.book-v2 .book-closing-ref-action .book-outline{min-height:53px}}
+
+/* Approved single-image final art. Keep links operable and the original sections as fallback. */
+.book-v2 .book-end-approved{position:relative;width:100%;max-width:2000px;margin-inline:auto;background:#02121b}
+.book-v2 .book-end-approved>img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
+.book-v2 .book-end-approved .book-end-link{display:none;position:absolute;z-index:2;border-radius:7px;outline-offset:3px}
+.book-v2 .book-end-approved.is-ready .book-end-link{display:block}
+.book-v2 .book-end-approved .book-end-link:focus-visible{outline:3px solid #fff}
+.book-v2 .book-end-approved .book-end-link:hover{background:#35ecff18;box-shadow:0 0 12px #1ad5e9}
+.book-v2 .book-end-approved .book-end-author{left:50%;top:63%;width:19%;height:5%}
+.book-v2 .book-end-approved .book-end-buy{left:61%;top:79%;width:19%;height:8.8%}
+.book-v2 .book-end-approved .book-end-samples{left:81%;top:79%;width:17%;height:8.8%}
+.book-v2 .book-end-approved.is-ready + .book-end-fallback{display:none}
+.book-v2 .book-end-approved:not(.is-ready){display:none}
+@media(max-width:700px){.book-v2 .book-end-approved.is-ready{overflow-x:auto;scrollbar-width:thin}.book-v2 .book-end-approved>img{min-width:850px}.book-v2 .book-end-approved.is-ready .book-end-link{display:none}}
