@@ -1058,3 +1058,13 @@ body.author-lightbox-open{overflow:hidden}
 .book-v2 .book-topic-list>div span{font-size:clamp(13px,1.05vw,16px);font-weight:600;color:#e6f0f4;text-transform:none;line-height:1.3}
 @media(max-width:1050px){.book-v2 .book-overview-grid{grid-template-columns:1fr .9fr}.book-v2 .book-topic-list{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}.book-v2 .book-topic-list h3{grid-column:1/-1}.book-v2 .book-overview-book img{max-height:430px}}
 @media(max-width:680px){.book-v2 .book-overview-grid{grid-template-columns:1fr;gap:20px}.book-v2 .book-overview-copy h2{white-space:normal}.book-v2 .book-overview-backcover{max-width:450px;width:100%;margin:auto}.book-v2 .book-topic-list{grid-column:auto;grid-template-columns:1fr;gap:2px}.book-v2 .book-topic-list h3{grid-column:auto}.book-v2 .book-topic-list>div{min-height:47px}}
+
+/* Livro BAP approved 16:9 second-fold visual; no duplicated overlay content */
+.book-v2 .book-overview.book-overview-approved{padding:0!important;margin:0;background:#030f19;border-block:1px solid #0a7088;overflow:hidden}
+.book-v2 .book-overview-art{width:100%;max-width:1800px;margin-inline:auto;position:relative}
+.book-v2 .book-overview-art img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain;object-position:center}
+.book-v2 .book-overview-art-fallback{max-width:1480px;display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-block:55px}
+.book-v2 .book-overview-art-fallback h2{font-size:clamp(45px,4.5vw,75px)}
+.book-v2 .book-overview-art-fallback img{width:100%;max-height:450px;object-fit:contain;grid-row:span 2}
+.book-v2 .book-overview-approved:has(.book-art-ready) .book-overview-art-fallback{display:none}
+@media(max-width:720px){.book-v2 .book-overview-art{overflow:auto;scrollbar-width:thin}.book-v2 .book-overview-art img{width:max(100%,850px);max-width:none;height:auto;aspect-ratio:auto}.book-v2 .book-overview-art-fallback{grid-template-columns:1fr;padding-block:35px}.book-v2 .book-overview-art-fallback img{grid-row:auto;max-height:360px}}
