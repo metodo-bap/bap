@@ -1143,3 +1143,23 @@ body.author-lightbox-open{overflow:hidden}
 .book-v2 .book-closing-ref-action .btn{color:white!important;font-size:13px}
 .book-v2 .book-closing-ref-action .book-outline{font-size:12px}
 @media(max-width:660px){.book-v2 .book-author-ref-image{height:260px}.book-v2 .book-author-ref-grid{min-height:0}.book-v2 .book-closing-ref-cover{height:170px}}
+
+/* BAP reference finishing: dark musician portrait and 3D closing book */
+.book-v2 .book-author-ref{background:linear-gradient(90deg,#07141a,#020e14);border-bottom:2px solid #12a6c4}
+.book-v2 .book-author-ref-grid{grid-template-columns:1.12fr 1.28fr .72fr;gap:clamp(15px,2.5vw,38px);min-height:280px}
+.book-v2 .book-author-ref-image{height:280px;align-self:end;overflow:hidden;position:relative;background:#04111b}
+.book-v2 .book-author-ref-image:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 68%,#031018);pointer-events:none}
+.book-v2 .book-author-ref-image img{position:absolute!important;inset:0!important;transform:none!important;max-width:none!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:0% 50%!important;filter:none!important}
+.book-v2 .book-author-ref h2{margin-bottom:8px}
+.book-v2 .book-author-ref-copy p{font-size:14px;line-height:1.6}
+.book-v2 .book-closing-ref{background:linear-gradient(110deg,#061b27,#020d15);border-top:1px solid #19cde6}
+.book-v2 .book-closing-ref-grid{grid-template-columns:200px 1.2fr 1.34fr;gap:clamp(16px,2.5vw,35px);align-items:center}
+.book-v2 .book-closing-ref-cover{height:205px;display:grid;align-items:center;justify-content:center}
+.book-v2 .book-closing-product{position:relative;height:190px;width:max-content;max-width:100%;filter:drop-shadow(7px 12px 10px #000a);transform:perspective(650px) rotateY(-9deg)}
+.book-v2 .book-closing-product:before{content:'';position:absolute;z-index:-1;top:2%;right:-10px;width:14px;height:96%;background:repeating-linear-gradient(90deg,#ccc 0 1px,#fff 1px 3px);transform:skewY(6deg)}
+.book-v2 .book-closing-product img{height:100%;width:auto;max-width:100%;object-fit:contain;display:block}
+.book-v2 .book-closing-ref-action>div a{gap:11px;min-height:51px;display:flex;align-items:center;justify-content:center}
+.book-v2 .book-closing-ref-action>div a span:first-child{font-size:18px}
+.book-v2 .book-closing-ref-action>div a span:last-child{font-size:19px}
+@media(max-width:1000px){.book-v2 .book-author-ref-grid{grid-template-columns:1fr 1.1fr}.book-v2 .book-closing-ref-grid{grid-template-columns:140px 1fr}.book-v2 .book-author-ref-image{height:250px}}
+@media(max-width:660px){.book-v2 .book-author-ref-grid{grid-template-columns:1fr}.book-v2 .book-author-ref-image{height:260px}.book-v2 .book-closing-ref-grid{grid-template-columns:95px 1fr}.book-v2 .book-closing-ref-cover{height:140px}.book-v2 .book-closing-product{height:135px}}
