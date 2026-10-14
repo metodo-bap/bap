@@ -1265,3 +1265,53 @@ dialog.book-page-lightbox::backdrop{background:#000e;backdrop-filter:blur(12px)}
 .book-page-lightbox .bap-reader-arrow:disabled{opacity:.22;cursor:default}
 .book-page-lightbox .bap-reader-footer{display:flex;justify-content:space-between;align-items:center;padding:0 clamp(18px,3vw,55px);font:500 11px system-ui;letter-spacing:.4px;color:#91aeb9;border-top:1px solid #1c3946}
 @media(max-width:650px){.book-page-lightbox .bap-reader{grid-template-rows:66px minmax(0,1fr) 36px}.book-page-lightbox .bap-reader-stage{grid-template-columns:35px minmax(0,1fr) 35px;gap:3px;padding:5px}.book-page-lightbox .bap-reader-arrow{width:32px;height:32px;font-size:26px}.book-page-lightbox .bap-reader-header{padding:7px 12px}.book-page-lightbox .bap-reader-close{padding:8px 10px}.book-page-lightbox .bap-reader-close span,.book-page-lightbox .bap-reader-tip{display:none}.book-page-lightbox .bap-reader-controls{gap:9px}.book-page-lightbox .bap-reader-footer{padding:0 12px}}
+
+
+/* ============================================================
+   BAP 2026 — global appearance system
+   Dark: original approved Performance Lab.
+   Light: premium white editorial UI, brand colors retained.
+   ============================================================ */
+:root{color-scheme:dark}
+html[data-theme="light"]{color-scheme:light;--bg:#f7fafb;--line:#cadbe3;--muted:#516473;--cyan:#008fa9;--red:#e92139}
+.bap-theme-toggle{position:fixed;right:18px;bottom:105px;z-index:105;display:flex;gap:8px;align-items:center;justify-content:center;padding:10px 13px;border:1px solid #2e6274;border-radius:30px;background:#071b26ed;color:#e9fcff;box-shadow:0 8px 25px #0006;cursor:pointer;font:800 11px Inter,Arial,sans-serif;letter-spacing:.6px;transition:background .2s,color .2s,transform .2s}
+.bap-theme-toggle:hover{transform:translateY(-2px);border-color:#1ed5e8}
+.bap-theme-toggle:focus-visible{outline:3px solid #26dcea;outline-offset:3px}
+.bap-theme-icon{font-size:18px;line-height:1}
+html[data-theme="light"] .bap-theme-toggle{background:#fff;color:#163442;border-color:#b8d6e0;box-shadow:0 7px 22px #1840562b}
+html[data-theme="light"] body{background:#f7fafb!important;color:#172b35!important}
+html[data-theme="light"] header{background:#ffffffed!important;color:#152630!important;border-bottom:1px solid #d3e0e5}
+html[data-theme="light"] .logo small{color:#172932}
+html[data-theme="light"] .nav a,html[data-theme="light"] .drawer a{color:#203643}
+html[data-theme="light"] .nav a:hover,html[data-theme="light"] .nav a[aria-current],html[data-theme="light"] .drawer a:hover{color:#008ea5}
+html[data-theme="light"] .drawer{background:#fff!important;border-color:#c7dbe2;box-shadow:0 10px 25px #15354529}
+html[data-theme="light"] .bap-header-socials a{border-color:#b1cbd5!important;color:#315363!important}
+html[data-theme="light"] footer{background:#eff5f8!important;color:#213746!important;border-color:#ccdde6!important}
+html[data-theme="light"] footer a{color:#294351}
+html[data-theme="light"] footer a:hover{color:#008fa9}
+html[data-theme="light"] :is(.section,.pagehero,.method-opening,.method-pain,.method-second-video,.method-definition,.method-audience,.method-foundations,.method-author,.method-materials,.method-last,.author-story,.author-hero,.author-section,.book-overview,.book-audience,.book-samples,.book-value,.book-author,.book-closing){color:#19313d}
+html[data-theme="light"] :is(.section,.method-pain,.method-second-video,.method-definition,.method-audience,.method-foundations,.method-author,.method-last,.book-overview,.book-audience,.book-samples){background:#fff!important;color:#19313d!important;border-color:#d1e2e9!important}
+html[data-theme="light"] :is(.pagehero,.author-story,.method-opening){background:linear-gradient(115deg,#f4fbfd,#ffffff 70%)!important;color:#132c38!important}
+html[data-theme="light"] :is(.section,.pagehero,.method-pain,.method-definition,.method-audience,.method-foundations,.book-overview,.book-audience,.book-samples) :is(h1,h2,h3,h4,p,li,summary){color:inherit}
+html[data-theme="light"] :is(.section,.pagehero,.method-pain,.method-definition,.method-audience,.method-foundations,.book-overview,.book-audience,.book-samples) :is(.intro,.lead,.muted,small){color:#516776}
+html[data-theme="light"] :is(.card,.faq details,.faq-list details,.offer-box,.method-card,.book-audience-card,.book-chapter-poster,.book-benefit,.book-item,.product-card){background:#f2f8fa!important;color:#173441!important;border-color:#c7dde6!important;box-shadow:0 8px 25px #1238470b}
+html[data-theme="light"] :is(.card,.faq details,.faq-list details,.method-card,.product-card) :is(h2,h3,h4,summary,p){color:#1b3543!important}
+html[data-theme="light"] :is(.card,.faq details,.method-card,.product-card) p{color:#516777!important}
+html[data-theme="light"] :is(.quote-card,.quote-front,.quote-reveal){border-color:#94bbcb}
+html[data-theme="light"] :is(.cinematic-course,.cinematic-author,.cinematic-videos,.cinematic-offer,#corpo.cinematic-panel,#preparacao.cinematic-panel,#depoimentos.cinematic-panel){background-color:#eef6f9!important}
+html[data-theme="light"] .cinematic-videos .cards .card{background:#f3f9fb!important}
+html[data-theme="light"] :is(.method-materials-cinematic,.book-hero,.book-overview-approved,.book-audience-approved,.book-value-ref,.book-author-ref,.book-closing-ref){background-color:#eaf4f8!important}
+html[data-theme="light"] .book-v2 :is(.book-hero,.book-overview,.book-audience,.book-samples,.book-value-ref){color:#153441}
+html[data-theme="light"] .book-v2 :is(.book-hero,.book-overview,.book-audience,.book-samples) :is(h1,h2,h3,p){color:inherit}
+html[data-theme="light"] .book-v2 .book-samples{background:#fff!important}
+html[data-theme="light"] .book-v2 .book-end-approved{background:#f5f8fa!important}
+html[data-theme="light"] .book-v2 .book-end-approved>img{display:block}
+html[data-theme="light"] .book-v2 .book-end-fallback{background:#f5f8fa}
+html[data-theme="light"] :is(input,textarea,select){background:#fff;color:#19323c;border-color:#aac9d5}
+html[data-theme="light"] :is(.btn,.button){border-color:#a0cdd8}
+html[data-theme="light"] :is(.eyebrow,.kicker){color:#008da5}
+html[data-theme="light"] .bap-whatsapp-float{filter:drop-shadow(0 5px 12px #15363d37)}
+/* Preserve approved dark photography and high-contrast legibility inside image-led hero panels. */
+html[data-theme="light"] :is(.hero,.cinematic-course,.cinematic-author,.cinematic-offer,.method-materials-cinematic,.book-end-approved){color:#fff}
+html[data-theme="light"] .hero :is(h1,h2,p,.intro),html[data-theme="light"] .cinematic-course :is(h1,h2,h3,p){color:#fff}
+@media(max-width:650px){.bap-theme-toggle{bottom:95px;right:12px;padding:9px 11px}.bap-theme-text{font-size:10px}}
