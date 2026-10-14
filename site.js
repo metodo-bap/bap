@@ -270,3 +270,25 @@ document.querySelectorAll('[data-footer-top]').forEach(el=>el.addEventListener('
   img.src='assets/depoimentos/'+names[i]+'.webp';
  });
 })();
+
+
+/* Shared BAP appearance setting, persisted across all pages */
+(function(){
+ const btn=document.getElementById('bap-theme-toggle');if(!btn)return;
+ const apply=(theme)=>{
+  document.documentElement.dataset.theme=theme;
+  btn.setAttribute('aria-pressed',String(theme==='light'));
+  btn.setAttribute('aria-label',theme==='light'?'Ativar modo escuro':'Ativar modo claro');
+  btn.setAttribute('title',theme==='light'?'Mudar para Dark Mode':'Mudar para Light Mode');
+  const icon=btn.querySelector('.bap-theme-icon'),name=btn.querySelector('.bap-theme-text');
+  if(icon)icon.textContent=theme==='light'?'☾':'☀';
+  if(name)name.textContent=theme==='light'?'ESCURO':'CLARO';
+  const meta=document.querySelector('meta[name="theme-color"]');
+  if(meta)meta.content=theme==='light'?'#f6f9fb':'#060a0e';
+ };
+ apply(document.documentElement.dataset.theme==='light'?'light':'dark');
+ btn.addEventListener('click',()=>{
+  const next=document.documentElement.dataset.theme==='light'?'dark':'light';
+  apply(next);try{localStorage.setItem('bap-theme',next)}catch(e){}
+ });
+})();
