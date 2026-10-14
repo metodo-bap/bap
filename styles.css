@@ -1133,3 +1133,13 @@ body.author-lightbox-open{overflow:hidden}
 @media(max-width:660px){.book-v2 .book-value-ref .book-value-grid{grid-template-columns:1fr}.book-v2 .book-value-ref .book-value-grid article{min-height:0}.book-v2 .book-author-ref-grid{grid-template-columns:1fr}.book-v2 .book-author-ref-image{height:300px}.book-v2 .book-author-ref-copy{padding-bottom:15px}.book-v2 .book-closing-ref-grid{grid-template-columns:95px 1fr;gap:14px}.book-v2 .book-closing-ref-cover{height:145px}.book-v2 .book-closing-ref h2{font-size:38px}.book-v2 .book-closing-ref-action>div{flex-direction:column}.book-v2 .book-closing-ref-grid>small{grid-column:1/-1}}
 
 .book-v2 .book-ref-icon svg{width:43px;height:43px;display:block;color:#20d9e7}.book-v2 .book-author-ref-brands img{filter:brightness(0) invert(1);height:57px;object-fit:contain;display:block}.book-v2 .book-author-ref-image img{object-position:76% 18%}.book-v2 .book-closing-ref-action>div>a{flex:1;justify-content:center}
+
+/* Final book fold: crop the existing back-cover to Tiago's portrait, hiding printed page text */
+.book-v2 .book-author-ref-image{height:315px;overflow:hidden;position:relative;background:radial-gradient(circle at 65% 35%,#123e4c,#04121b 80%)}
+.book-v2 .book-author-ref-image img{position:absolute;max-width:none!important;width:185%!important;height:165%!important;inset:0 auto auto 0;object-fit:cover!important;object-position:100% 1%!important;transform:translate(-44%,-1%);filter:saturate(.9) contrast(1.04);border:none;border-radius:0}
+.book-v2 .book-author-ref-grid{min-height:315px}
+.book-v2 .book-closing-ref-cover{height:205px;overflow:visible;align-self:center}
+.book-v2 .book-closing-ref-cover img{height:100%;width:100%;object-fit:contain;filter:drop-shadow(10px 14px 12px #000b)}
+.book-v2 .book-closing-ref-action .btn{color:white!important;font-size:13px}
+.book-v2 .book-closing-ref-action .book-outline{font-size:12px}
+@media(max-width:660px){.book-v2 .book-author-ref-image{height:260px}.book-v2 .book-author-ref-grid{min-height:0}.book-v2 .book-closing-ref-cover{height:170px}}
