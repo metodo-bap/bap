@@ -965,3 +965,25 @@ body.author-lightbox-open{overflow:hidden}
 @media(max-width:900px){.book-audience-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.book-chapter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.book-hero-grid{grid-template-columns:1fr 1fr}.book-overview-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.book-hero-grid,.book-overview-grid,.book-author-grid{grid-template-columns:1fr}.book-v2 h1{font-size:clamp(49px,10vw,72px)}.book-v2 h2{font-size:clamp(41px,9vw,57px)}.book-hero-media{margin-top:20px;min-height:0}.book-hero-media>img{width:69%}.book-audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.book-chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.book-topic-list{grid-template-columns:1fr}.book-samples-head{align-items:flex-start}.book-hero-metrics{max-width:none}.book-v2 .book-chapter-image .book-chapter-poster{height:240px}}
 @media(max-width:420px){.book-audience-grid{grid-template-columns:1fr}.book-v2 .book-chapter-image .book-chapter-poster{height:210px}}
+
+/* Livro BAP reference fidelity correction: official cover, back cover and audience imagery */
+.book-v2 .book-hero-media>img{width:69%;max-height:610px;object-fit:contain;filter:drop-shadow(15px 13px 18px #0009);border:0}
+.book-v2 .book-overview-grid{grid-template-columns:.72fr .82fr .9fr;gap:23px}
+.book-v2 .book-overview-backcover{min-width:0;display:grid;place-items:center;align-self:stretch}
+.book-v2 .book-overview-backcover img{display:block;width:100%;height:auto;max-height:510px;object-fit:contain;filter:drop-shadow(7px 13px 17px #0009)}
+.book-v2 .book-topic-list{display:flex;flex-direction:column;gap:0;align-self:center}
+.book-v2 .book-topic-list>div{background:transparent;border:0;border-bottom:1px solid #185063;border-radius:0;padding:12px 5px;font-size:11px;line-height:1.4}
+.book-v2 .book-audience-grid article{position:relative;isolation:isolate;min-height:205px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:#04151e}
+.book-v2 .book-audience-grid article:before{position:absolute;z-index:-2;inset:0;content:'';background-image:var(--audience-bg);background-size:cover;background-position:center;opacity:.9;transition:transform .5s}
+.book-v2 .book-audience-grid article:after{position:absolute;z-index:-1;inset:0;content:'';background:linear-gradient(0deg,#020b10 3%,#020b109e 42%,transparent 95%)}
+.book-v2 .book-audience-grid article:hover:before{transform:scale(1.06)}
+.book-v2 .book-audience-grid h3{margin-top:10px;color:white;text-shadow:0 2px 8px #000}
+.book-v2 .book-audience-grid article p{color:#c7d7de;text-shadow:0 1px 4px #000}
+.book-v2 .book-audience-grid article span{margin-bottom:auto;display:inline-flex;align-items:center;justify-content:center;border:1px solid #1fe0eb;background:#051c27d9;color:#27dae9;border-radius:7px;width:38px;height:38px}
+.book-v2 .book-extra-sample{display:none}
+.book-v2 .book-samples.show-all-samples .book-extra-sample{display:block}
+.book-v2 .book-show-all{display:block;margin:16px auto 0;padding:12px 24px;border:1px solid #15c8dd;background:#061a25;color:#2ad5e3;border-radius:5px;font-size:12px;font-weight:900;cursor:pointer}
+.book-v2 .book-show-all:hover{background:#113544}
+@media(max-width:1150px){.book-v2 .book-overview-grid{grid-template-columns:1fr 1fr}.book-v2 .book-overview-backcover img{max-height:380px}.book-v2 .book-topic-list{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}}
+@media(max-width:680px){.book-v2 .book-overview-grid{grid-template-columns:1fr}.book-v2 .book-overview-backcover{grid-column:auto}.book-v2 .book-overview-backcover img{max-height:440px}.book-v2 .book-topic-list{grid-column:auto;grid-template-columns:1fr 1fr}.book-v2 .book-audience-grid article{min-height:205px}}
+@media(max-width:430px){.book-v2 .book-topic-list{grid-template-columns:1fr}}
