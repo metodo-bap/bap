@@ -1208,5 +1208,13 @@ body.author-lightbox-open{overflow:hidden}
 .book-v2 .book-end-approved .book-end-buy{left:61%;top:79%;width:19%;height:8.8%}
 .book-v2 .book-end-approved .book-end-samples{left:81%;top:79%;width:17%;height:8.8%}
 .book-v2 .book-end-approved.is-ready + .book-end-fallback{display:none}
-.book-v2 .book-end-approved:not(.is-ready){display:none}
+.book-v2 .book-end-approved:not(.is-ready){display:block}
 @media(max-width:700px){.book-v2 .book-end-approved.is-ready{overflow-x:auto;scrollbar-width:thin}.book-v2 .book-end-approved>img{min-width:850px}.book-v2 .book-end-approved.is-ready .book-end-link{display:none}}
+
+/* Responsive reliable artwork: prevent lazy-loading deadlock; links remain clickable */
+.book-v2 .book-end-approved{display:block!important}
+.book-v2 .book-end-approved.is-ready + .book-end-fallback{display:none!important}
+.book-v2 .book-end-approved .book-end-author{left:50%;top:58%;width:20%;height:6%}
+.book-v2 .book-end-approved .book-end-buy{left:61%;top:78%;width:20%;height:10%}
+.book-v2 .book-end-approved .book-end-samples{left:81%;top:78%;width:18%;height:10%}
+@media(max-width:700px){.book-v2 .book-end-approved{overflow-x:auto}.book-v2 .book-end-approved>img{width:100%;min-width:0;height:auto}.book-v2 .book-end-approved.is-ready .book-end-link{display:block}}
