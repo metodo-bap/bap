@@ -1068,3 +1068,11 @@ body.author-lightbox-open{overflow:hidden}
 .book-v2 .book-overview-art-fallback img{width:100%;max-height:450px;object-fit:contain;grid-row:span 2}
 .book-v2 .book-overview-approved:has(.book-art-ready) .book-overview-art-fallback{display:none}
 @media(max-width:720px){.book-v2 .book-overview-art{overflow:auto;scrollbar-width:thin}.book-v2 .book-overview-art img{width:max(100%,850px);max-width:none;height:auto;aspect-ratio:auto}.book-v2 .book-overview-art-fallback{grid-template-columns:1fr;padding-block:35px}.book-v2 .book-overview-art-fallback img{grid-row:auto;max-height:360px}}
+
+/* Livro — reference-approved Ideal Para visual with original five-card fallback */
+.book-v2 .book-audience-approved{padding:0!important;background:#020d14;border-bottom:1px solid #0a8ba4}
+.book-v2 .book-audience-approved-visual{width:100%;max-width:2172px;margin:0 auto}
+.book-v2 .book-audience-approved-visual img{display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:3/1}
+.book-v2 .book-audience-approved.has-audience-art .book-audience-original{display:none}
+.book-v2 .book-audience-approved .book-audience-original{padding:35px 0}
+@media(max-width:760px){.book-v2 .book-audience-approved-visual{overflow-x:auto;scrollbar-width:thin;scroll-snap-type:x proximity}.book-v2 .book-audience-approved-visual img{width:1100px;max-width:none;height:auto;aspect-ratio:3/1}}
