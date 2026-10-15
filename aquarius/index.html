@@ -25,6 +25,15 @@ html{scroll-padding-top:86px}body{background:#fff}a,button{-webkit-tap-highlight
 .hero h1{font-size:clamp(70px,9.3vw,154px)}
 @media(max-width:1000px){.identity{width:200px;min-width:160px}.identity img{width:190px!important;height:70px!important}.top{padding-left:5%;padding-right:5%}.hero-photo img{transform:scale(.95)!important;object-position:55% 47%!important}}
 @media(max-width:700px){.identity{width:160px;min-width:130px}.identity img{width:150px!important;height:60px!important}.top{height:80px}.hero-photo img{transform:scale(1.05)!important;object-position:60% 44%!important}.hero:after{background:linear-gradient(0deg,#092f8be8,#073b8f89 70%,#052f7a65)}.hero-content{padding-top:110px;padding-bottom:72px}.hero h1{font-size:clamp(57px,14vw,90px)}}
+
+/* Correção final do hero: sem letterboxing e logomarca realmente transparente */
+.hero{background:#064dde!important}
+.hero-photo{position:absolute!important;inset:0!important;overflow:hidden!important;transform:none!important}
+.hero-photo img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% 43%!important;transform:none!important;filter:saturate(1.07) brightness(.97)!important}
+.identity img{width:300px!important;height:88px!important;border:0!important;border-radius:0!important;background:transparent!important;object-fit:contain!important;object-position:left center!important;filter:none!important;mix-blend-mode:normal!important}
+.top.scrolled .identity img{height:70px!important}
+@media(max-width:1000px){.identity img{width:205px!important;height:68px!important}.hero-photo img{object-position:58% 42%!important}}
+@media(max-width:700px){.identity img{width:172px!important;height:59px!important}.hero-photo img{object-position:63% 44%!important}}
 </style><meta property="og:title" content="Aquarius Center — Movimento é vida"><meta property="og:description" content="Conheça nossa estrutura e modalidades em Recife."><meta property="og:type" content="website"><meta name="theme-color" content="#064dde"></head><body><header class="top" id="top"><a href="#inicio" class="identity" aria-label="Aquarius Center — início"><img src="logo-aquarius.jpg" alt="Aquarius Center"></a><nav class="links" id="links"><a href="#conceito">Sobre nós</a><a href="#modalidades">Serviços</a><a href="#estrutura">Estrutura</a><a href="#galeria">Galeria</a><a href="#contato" class="pill">Fale com a gente <span aria-hidden="true">→</span></a></nav><button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">☰</button></header>
 <section class="hero" id="inicio"><div class="hero-photo" data-speed=".18"><img src="https://static.wixstatic.com/media/d82d32_e1437383189447e0a6e94c950920e2c2~mv2.jpg" alt="Fotografia real da Aquarius Center"></div><div class="wrap hero-content"><h1>Movimento<br><em>é vida.</em></h1><div class="hero-detail"><span class="hero-rule" aria-hidden="true"></span><p>Um espaço de cuidado, acolhimento e<br class="desktop-only"> movimento para todas as idades, em Recife.</p><a href="#conceito" class="hero-cta">Conheça a Aquarius <span aria-hidden="true">→</span></a></div><a href="#conceito" class="hero-scroll"><span class="scroll-mouse" aria-hidden="true"></span><span>Descubra nosso universo</span></a></div></section>
 <div class="ribbon"><div class="ribbon-inner"><span>FISIOTERAPIA <b>✳</b> HIDROTERAPIA <b>✳</b> NATAÇÃO <b>✳</b> PILATES <b>✳</b> HIDROGINÁSTICA <b>✳</b> AQUARIUS CENTER <b>✳</b></span><span>FISIOTERAPIA <b>✳</b> HIDROTERAPIA <b>✳</b> NATAÇÃO <b>✳</b> PILATES <b>✳</b> HIDROGINÁSTICA <b>✳</b> AQUARIUS CENTER <b>✳</b></span></div></div>
@@ -35,4 +44,35 @@ html{scroll-padding-top:86px}body{background:#fff}a,button{-webkit-tap-highlight
 <section class="contact" id="contato"><div class="wrap"><div class="contact-grid"><div class="reveal"><div class="micro">05 / Vamos conversar?</div><h2>Seu próximo<br><em>movimento</em><br>começa aqui.</h2><p>Venha conhecer o espaço e descobrir as modalidades e atividades da Aquarius Center.</p><a class="outline" href="https://www.aquariuscenter.com.br/" target="_blank" rel="noopener">Fale com a Aquarius ↗</a></div><div class="contact-aside reveal"><div><small>Localização</small><strong>Estância · Recife, PE</strong></div><div><small>Endereço e contatos</small><strong>Consulte os canais oficiais da Aquarius Center</strong></div><div><small>Mapa</small><a href="https://www.google.com/maps/search/?api=1&query=Aquarius+Center+Est%C3%A2ncia+Recife" target="_blank" rel="noopener">Abrir localização ↗</a></div></div></div><div class="footer"><span>© 2026 AQUARIUS CENTER. ESTUDO VISUAL — NÃO PUBLICADO.</span><span>CONCEITO DE WEBSITE ONE PAGE / PARALLAX</span></div></div></section><div class="modal" id="modal" role="dialog" aria-label="Ampliar fotografia" aria-modal="true"><button class="close" id="close" aria-label="Fechar imagem">×</button><img id="modal-img" alt="Fotografia ampliada Aquarius Center"></div>
 <script>
 const base='https://static.wixstatic.com/media/';const services=[['Fisioterapia','d82d32_81c94095a34f458cbcff011e010a73fe~mv2.jpg'],['Hidroterapia','d82d32_084e234ffc5a46099ff7c1aca158ee57~mv2.jpg'],['Natação infantil','d82d32_ebc15b2b1a94482eb451718b8105875a~mv2.png'],['Natação para bebês','d82d32_d4e313c18d0f419283b3c74f35b5997e~mv2.jpg'],['Pilates','d82d32_83b570bacea74506ba6e00e3b120ebe3~mv2.png'],['Musculação controlada','d82d32_45589ce4697c47a48d6b5f6908a74f43~mv2.jpg'],['Hidroginástica','d82d32_c87b0a0eb9544fc9bfc3852258d20b31~mv2.jpg'],['Acupuntura','980b70_a76ecf45b1a748e28fdaa95f9409aab2~mv2.jpg'],['Jiu-jitsu infantil','d82d32_f50fd54fbf424d6baaf81ceff06d238d~mv2.jpg']];const gallery=['d82d32_a4750d5a6dfc4de38d7682dd8d5716c0~mv2.png','d82d32_55dd152069c54e1fa96b46c0ba0e2630f003.jpg','d82d32_56360d25edd84ef690b56d3119491aa1~mv2.png','d82d32_2a236a197ec54fb4abf52f0aa036ce02~mv2.jpg','d82d32_0a617c218d414890b55f473b45ee0dee~mv2.jpg','d82d32_aeafa31b80344c3a86643f109ca1fdc4~mv2.jpg','d82d32_617854dd01be4e2f9897a7c53388ae90~mv2.jpg','d82d32_38a73e5447a24048b3fc906346a1718c~mv2.jpg','d82d32_d6c9697e11d84d34bc75f99616befe63~mv2.jpg','d82d32_967388f5cd06420bad908d96771b5870~mv2.png','d82d32_a03072e315544b40b087863959157a1e~mv2.jpg','d82d32_6c13249b71a9466abcdb425bdea8d2cb~mv2.jpg'];document.getElementById('service-list').innerHTML=services.map((s,i)=>`<div class="service-row reveal"><span class="service-n">${String(i+1).padStart(2,'0')}</span><h3>${s[0]}</h3><div class="service-thumb"><img loading="lazy" src="${base+s[1]}" alt="${s[0]} na Aquarius Center"></div><span class="arrow">↗</span></div>`).join('');document.getElementById('gallery-grid').innerHTML=gallery.map((s,i)=>`<button class="gallery-item reveal" data-index="${i}" aria-label="Ampliar imagem ${i+1}"><img loading="lazy" src="${base+s}" alt="Imagem ${i+1} do acervo Aquarius"></button>`).join('');const modal=document.getElementById('modal');const closeModal=()=>{modal.classList.remove('open');document.body.style.overflow=''};document.getElementById('gallery-grid').addEventListener('click',e=>{let x=e.target.closest('.gallery-item');if(!x)return;document.getElementById('modal-img').src=base+gallery[+x.dataset.index];modal.classList.add('open');document.body.style.overflow='hidden'});document.getElementById('close').onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal()};document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});let nav=document.getElementById('top'),burger=document.getElementById('burger'),links=document.getElementById('links');burger.onclick=()=>{let v=links.classList.toggle('open');burger.setAttribute('aria-expanded',v);burger.textContent=v?'×':'☰'};links.querySelectorAll('a').forEach(a=>a.onclick=()=>{links.classList.remove('open');burger.textContent='☰'});const io=new IntersectionObserver(a=>a.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target)}}),{threshold:.06});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));let reduced=matchMedia('(prefers-reduced-motion: reduce)').matches,scheduled=false;function scroll(){nav.classList.toggle('scrolled',scrollY>40);if(!reduced)document.querySelectorAll('[data-speed]').forEach(x=>{const box=x.parentElement.getBoundingClientRect();if(box.bottom>0&&box.top<innerHeight)x.style.transform=`translate3d(0,${((innerHeight/2-(box.top+box.height/2))*Number(x.dataset.speed)).toFixed(1)}px,0)`});scheduled=false}window.addEventListener('scroll',()=>{if(!scheduled){requestAnimationFrame(scroll);scheduled=true}},{passive:true});scroll();
-</script><script>document.querySelectorAll('img').forEach(img=>{img.addEventListener('error',()=>{img.classList.add('image-unavailable');img.setAttribute('title','Fotografia original temporariamente indisponível')})});</script></body></html>
+</script><script>document.querySelectorAll('img').forEach(img=>{img.addEventListener('error',()=>{img.classList.add('image-unavailable');img.setAttribute('title','Fotografia original temporariamente indisponível')})});</script>
+<script>
+/* Remove o azul do JPEG oficial sem recriar ou alterar o desenho da marca. */
+(function(){
+ const logo=document.querySelector('.identity img');
+ if(!logo)return;
+ function convert(){
+  if(!logo.naturalWidth||logo.dataset.transparent==='1')return;
+  const sw=logo.naturalWidth,sh=logo.naturalHeight,c=document.createElement('canvas');
+  c.width=sw;c.height=sh;
+  const ctx=c.getContext('2d',{willReadFrequently:true});if(!ctx)return;
+  try{
+   ctx.drawImage(logo,0,0);
+   const frame=ctx.getImageData(0,0,sw,sh),d=frame.data;
+   let l=sw,t=sh,r=0,b=0;
+   for(let y=0;y<sh;y++)for(let x=0;x<sw;x++){
+    const i=(y*sw+x)*4,low=Math.min(d[i],d[i+1],d[i+2]);
+    const alpha=Math.max(0,Math.min(255,Math.round((low-105)*2.2)));
+    d[i]=255;d[i+1]=255;d[i+2]=255;d[i+3]=alpha;
+    if(alpha>32){l=Math.min(l,x);t=Math.min(t,y);r=Math.max(r,x);b=Math.max(b,y)}
+   }
+   if(r<=l||b<=t)return;
+   ctx.putImageData(frame,0,0);
+   const pad=12, sx=Math.max(0,l-pad),sy=Math.max(0,t-pad),ew=Math.min(sw-1,r+pad),eh=Math.min(sh-1,b+pad);
+   const out=document.createElement('canvas');out.width=ew-sx+1;out.height=eh-sy+1;
+   out.getContext('2d').drawImage(c,sx,sy,out.width,out.height,0,0,out.width,out.height);
+   logo.dataset.transparent='1';logo.src=out.toDataURL('image/png');
+  }catch(e){/* mantém logo original se canvas não estiver disponível */}
+ }
+ if(logo.complete)convert();else logo.addEventListener('load',convert,{once:true});
+})();
+</script></body></html>
