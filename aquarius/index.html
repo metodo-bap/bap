@@ -623,6 +623,30 @@ section#conceito.about-live .about-live-copy>.about-live-prime strong{font-size:
 .ribbon .ribbon-inner{gap:0!important;column-gap:0!important;display:flex!important;width:max-content!important;animation:slide 32s linear infinite!important;will-change:transform}
 .ribbon .ribbon-inner>span{display:block!important;flex:0 0 auto!important;white-space:nowrap!important;padding-right:1.25em!important;box-sizing:border-box!important}
 @media(prefers-reduced-motion:reduce){.ribbon .ribbon-inner{animation:none!important}}
+
+/* Galeria Aquarius — fotografia de fundo com 80% de transparência, linguagem da seção 02 */
+section#galeria.aqua-gallery{position:relative!important;isolation:isolate!important;background:#f9fcff!important}
+section#galeria.aqua-gallery::before{
+content:""!important;position:absolute!important;inset:0 0 auto 0!important;
+display:block!important;z-index:0!important;width:100%!important;height:min(760px,90%)!important;
+background-image:url("assets/galeria/03.jpg")!important;
+background-repeat:no-repeat!important;background-position:right 32% top 15%!important;
+background-size:cover!important;opacity:.2!important;
+filter:saturate(.82) brightness(1.12)!important;
+pointer-events:none!important
+}
+section#galeria.aqua-gallery::after{
+content:"";position:absolute;inset:0 0 auto 0;z-index:0;
+height:min(800px,95%);pointer-events:none;
+background:linear-gradient(90deg,#f9fcff 0%,rgba(249,252,255,.95) 29%,rgba(249,252,255,.36) 63%,rgba(249,252,255,.04) 100%),
+linear-gradient(0deg,#f9fcff 0%,transparent 45%);
+}
+section#galeria.aqua-gallery>.wrap{position:relative!important;z-index:2!important}
+section#galeria.aqua-gallery .aqua-gallery-topwave{z-index:1!important}
+@media(max-width:900px){
+section#galeria.aqua-gallery::before{height:520px!important;background-position:66% top!important}
+section#galeria.aqua-gallery::after{height:550px;background:linear-gradient(90deg,rgba(249,252,255,.95),rgba(249,252,255,.60)),linear-gradient(0deg,#f9fcff,transparent 70%)}
+}
 </style><meta property="og:title" content="Aquarius Center — Movimento é vida"><meta property="og:description" content="Conheça nossa estrutura e modalidades em Recife."><meta property="og:type" content="website"><meta name="theme-color" content="#064dde"><style id="a3-detail-style">
 .a3-card{cursor:pointer}.a3-card:focus-visible{outline:3px solid #09bff1;outline-offset:4px}.a3-card-body>a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;text-decoration:none}
 .a3-detail-overlay[hidden]{display:none!important}.a3-detail-overlay{position:fixed;inset:0;z-index:99999;background:rgba(1,20,53,.76);backdrop-filter:blur(9px);display:grid;place-items:center;padding:22px;overflow:auto}
