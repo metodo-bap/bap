@@ -662,6 +662,18 @@ section#galeria.aqua-gallery::after{height:550px;background:linear-gradient(90de
 .about-live-benefits .benefit-symbol,.structure-highlights .structure-symbol{transition:background-color .35s,border-color .35s,box-shadow .35s,transform .35s!important}
 .about-live-benefits .benefit-symbol svg,.structure-highlights .structure-symbol svg{transition:transform .4s cubic-bezier(.2,.8,.2,1),filter .4s;transform-origin:center}
 @media(prefers-reduced-motion:reduce){.about-live-benefits article,.structure-highlights .structure-highlight,.about-live-benefits .benefit-symbol,.structure-highlights .structure-symbol,.about-live-benefits svg,.structure-highlights svg{transition:none!important;transform:none!important;animation:none!important}}
+
+/* Contraste do menu sobre a foto: degradê integral, sem bloco sólido */
+header.top:not(.scrolled){
+ background:linear-gradient(180deg,rgba(2,22,66,.83) 0%,rgba(4,35,88,.65) 49%,rgba(6,44,103,.25) 78%,rgba(6,44,103,0) 100%)!important;
+ box-shadow:none!important;
+}
+header.top:not(.scrolled) .links>a:not(.pill),header.top:not(.scrolled) .nav-socials a{
+ text-shadow:0 1px 8px rgba(0,18,55,.48);
+}
+@media(max-width:780px){
+header.top:not(.scrolled){background:linear-gradient(180deg,rgba(2,22,66,.91),rgba(4,35,88,.75) 64%,rgba(6,44,103,0))!important}
+}
 </style><meta property="og:title" content="Aquarius Center — Movimento é vida"><meta property="og:description" content="Conheça nossa estrutura e modalidades em Recife."><meta property="og:type" content="website"><meta name="theme-color" content="#064dde"><style id="a3-detail-style">
 .a3-card{cursor:pointer}.a3-card:focus-visible{outline:3px solid #09bff1;outline-offset:4px}.a3-card-body>a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;text-decoration:none}
 .a3-detail-overlay[hidden]{display:none!important}.a3-detail-overlay{position:fixed;inset:0;z-index:99999;background:rgba(1,20,53,.76);backdrop-filter:blur(9px);display:grid;place-items:center;padding:22px;overflow:auto}
