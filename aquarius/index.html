@@ -443,6 +443,19 @@ section#modalidades.a3-services::before{opacity:.2!important;pointer-events:none
 /* Galeria Aquarius: retratos com rosto visível, ampliação sem recortes */
 .aqua-gallery-grid .aqua-gallery-tile img{object-fit:cover;object-position:center 35%}
 #modal-img{max-width:95vw;max-height:90vh;width:auto;height:auto;object-fit:contain}
+
+/* Enquadramento editorial responsivo da galeria: rostos sempre dentro dos cards */
+section#galeria.aqua-gallery .aqua-gallery-tile{background:#dbeaf2!important;overflow:hidden}
+section#galeria.aqua-gallery .aqua-gallery-tile img{object-fit:contain!important;object-position:center center!important;transform:none!important}
+section#galeria.aqua-gallery .aqua-gallery-tile:hover img{transform:scale(1.015)!important}
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="0"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="6"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="8"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="9"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="11"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="14"] img{object-fit:cover!important;object-position:center 20%!important}
+/* Fotos verticais e grupos: exibir sem cortar rostos */
+#modal-img{object-fit:contain!important;object-position:center!important}
 </style><meta property="og:title" content="Aquarius Center — Movimento é vida"><meta property="og:description" content="Conheça nossa estrutura e modalidades em Recife."><meta property="og:type" content="website"><meta name="theme-color" content="#064dde"></head><body><header class="top" id="top"><a href="#inicio" class="identity" aria-label="Aquarius Center — início"><img src="assets/logo-oficial-branca.svg" alt="Aquarius Center — logomarca oficial"></a><nav class="links" id="links"><a href="#conceito">Sobre nós</a><a href="#modalidades">Serviços</a><a href="#estrutura">Estrutura</a><a href="#galeria">Galeria</a><a href="#contato" class="pill">Fale com a gente <span aria-hidden="true">→</span></a></nav><button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">☰</button></header>
 <section class="hero" id="inicio"><div class="hero-photo" data-speed=".18"><img src="assets/hero-aquarius-tres-mulheres.png" alt="Três mulheres em atividade aquática — imagem de composição aprovada" onerror="this.onerror=null;this.src=\'https://static.wixstatic.com/media/d82d32_e1437383189447e0a6e94c950920e2c2~mv2.jpg\'"></div><div class="wrap hero-content"><h1>Movimento<br><em>é vida.</em></h1><div class="hero-detail"><span class="hero-rule" aria-hidden="true"></span><p>Um espaço de cuidado, acolhimento e<br class="desktop-only"> movimento para todas as idades, em Recife.</p><a href="#conceito" class="hero-cta">Conheça a Aquarius <span aria-hidden="true">→</span></a></div><a href="#conceito" class="hero-scroll"><span class="scroll-mouse" aria-hidden="true"></span><span>Descubra nosso universo</span></a></div></section>
 <div class="ribbon"><div class="ribbon-inner"><span>FISIOTERAPIA <b>✳</b> HIDROTERAPIA <b>✳</b> NATAÇÃO <b>✳</b> PILATES <b>✳</b> HIDROGINÁSTICA <b>✳</b> AQUARIUS CENTER <b>✳</b></span><span>FISIOTERAPIA <b>✳</b> HIDROTERAPIA <b>✳</b> NATAÇÃO <b>✳</b> PILATES <b>✳</b> HIDROGINÁSTICA <b>✳</b> AQUARIUS CENTER <b>✳</b></span></div></div>
