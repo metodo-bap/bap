@@ -647,6 +647,21 @@ section#galeria.aqua-gallery .aqua-gallery-topwave{z-index:1!important}
 section#galeria.aqua-gallery::before{height:520px!important;background-position:66% top!important}
 section#galeria.aqua-gallery::after{height:550px;background:linear-gradient(90deg,rgba(249,252,255,.95),rgba(249,252,255,.60)),linear-gradient(0deg,#f9fcff,transparent 70%)}
 }
+
+/* Microinteracoes elegantes, mantendo os icones e cards originais */
+@media (hover:hover) and (pointer:fine){
+.about-live-benefits article,.structure-highlights .structure-highlight{transition:transform .34s cubic-bezier(.2,.7,.2,1),background-color .34s,border-color .34s,box-shadow .34s,filter .34s;will-change:transform}
+.about-live-benefits article:hover{transform:translateY(-5px)}
+.about-live-benefits article:hover .benefit-symbol{background:rgba(5,184,255,.23)!important;border-color:#5ee5ff!important;box-shadow:0 0 0 5px rgba(40,199,255,.11),0 12px 25px rgba(0,20,80,.15)}
+.about-live-benefits article:hover .benefit-symbol svg{transform:scale(1.11) rotate(-4deg);filter:drop-shadow(0 0 7px rgba(113,238,255,.45))}
+.structure-highlights .structure-highlight:hover{transform:translateY(-6px);background:rgba(12,65,118,.78)!important;border-color:#6edcff!important;box-shadow:0 15px 33px rgba(0,21,75,.20),inset 0 0 18px rgba(103,220,255,.09)}
+.structure-highlights .structure-highlight:hover .structure-symbol{background:rgba(2,96,170,.62)!important;border-color:#7ce8ff!important;box-shadow:0 0 0 5px rgba(0,200,255,.11),0 0 21px rgba(0,181,250,.25)}
+.structure-highlights .structure-highlight:hover .structure-symbol svg{transform:scale(1.13) rotate(-4deg);filter:drop-shadow(0 0 8px rgba(136,238,255,.42))}
+.structure-highlights .structure-highlight:hover strong,.about-live-benefits article:hover h3{filter:brightness(1.1)}
+}
+.about-live-benefits .benefit-symbol,.structure-highlights .structure-symbol{transition:background-color .35s,border-color .35s,box-shadow .35s,transform .35s!important}
+.about-live-benefits .benefit-symbol svg,.structure-highlights .structure-symbol svg{transition:transform .4s cubic-bezier(.2,.8,.2,1),filter .4s;transform-origin:center}
+@media(prefers-reduced-motion:reduce){.about-live-benefits article,.structure-highlights .structure-highlight,.about-live-benefits .benefit-symbol,.structure-highlights .structure-symbol,.about-live-benefits svg,.structure-highlights svg{transition:none!important;transform:none!important;animation:none!important}}
 </style><meta property="og:title" content="Aquarius Center — Movimento é vida"><meta property="og:description" content="Conheça nossa estrutura e modalidades em Recife."><meta property="og:type" content="website"><meta name="theme-color" content="#064dde"><style id="a3-detail-style">
 .a3-card{cursor:pointer}.a3-card:focus-visible{outline:3px solid #09bff1;outline-offset:4px}.a3-card-body>a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;text-decoration:none}
 .a3-detail-overlay[hidden]{display:none!important}.a3-detail-overlay{position:fixed;inset:0;z-index:99999;background:rgba(1,20,53,.76);backdrop-filter:blur(9px);display:grid;place-items:center;padding:22px;overflow:auto}
