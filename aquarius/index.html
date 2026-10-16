@@ -476,6 +476,23 @@ section#galeria.aqua-gallery .aqua-gallery-tile.is-landscape{grid-column:span 2!
 section#galeria.aqua-gallery .aqua-gallery-tile.is-landscape img{object-fit:contain!important;object-position:center center!important}
 @media(max-width:900px){section#galeria.aqua-gallery .aqua-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:440px){section#galeria.aqua-gallery .aqua-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* Galeria compacta uniforme: 2 x 2 por página, sem espaços irregulares */
+section#galeria.aqua-gallery .aqua-gallery-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,auto)!important;grid-auto-flow:row!important;gap:12px!important;max-width:1050px!important;margin-inline:auto!important;align-items:stretch!important}
+section#galeria.aqua-gallery .aqua-gallery-tile,
+section#galeria.aqua-gallery .aqua-gallery-tile:nth-child(n),
+section#galeria.aqua-gallery .aqua-gallery-tile.is-landscape{grid-column:auto!important;grid-row:auto!important;aspect-ratio:16 / 10!important;width:100%!important;height:auto!important;min-height:0!important;background:#0a2e58!important;overflow:hidden!important}
+section#galeria.aqua-gallery .aqua-gallery-tile img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index] img,
+section#galeria.aqua-gallery .aqua-gallery-tile.is-landscape img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 28%!important;transform:none!important}
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="0"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="1"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="3"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="5"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="8"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="11"] img,
+section#galeria.aqua-gallery .aqua-gallery-tile[data-index="14"] img{object-position:center 20%!important}
+@media(max-width:600px){section#galeria.aqua-gallery .aqua-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}}
 </style><meta property="og:title" content="Aquarius Center — Movimento é vida"><meta property="og:description" content="Conheça nossa estrutura e modalidades em Recife."><meta property="og:type" content="website"><meta name="theme-color" content="#064dde"></head><body><header class="top" id="top"><a href="#inicio" class="identity" aria-label="Aquarius Center — início"><img src="assets/logo-oficial-branca.svg" alt="Aquarius Center — logomarca oficial"></a><nav class="links" id="links"><a href="#conceito">Sobre nós</a><a href="#modalidades">Serviços</a><a href="#estrutura">Estrutura</a><a href="#galeria">Galeria</a><a href="#contato" class="pill">Fale com a gente <span aria-hidden="true">→</span></a></nav><button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">☰</button></header>
 <section class="hero" id="inicio"><div class="hero-photo" data-speed=".18"><img src="assets/hero-aquarius-tres-mulheres.png" alt="Três mulheres em atividade aquática — imagem de composição aprovada" onerror="this.onerror=null;this.src=\'https://static.wixstatic.com/media/d82d32_e1437383189447e0a6e94c950920e2c2~mv2.jpg\'"></div><div class="wrap hero-content"><h1>Movimento<br><em>é vida.</em></h1><div class="hero-detail"><span class="hero-rule" aria-hidden="true"></span><p>Um espaço de cuidado, acolhimento e<br class="desktop-only"> movimento para todas as idades, em Recife.</p><a href="#conceito" class="hero-cta">Conheça a Aquarius <span aria-hidden="true">→</span></a></div><a href="#conceito" class="hero-scroll"><span class="scroll-mouse" aria-hidden="true"></span><span>Descubra nosso universo</span></a></div></section>
 <div class="ribbon"><div class="ribbon-inner"><span>FISIOTERAPIA <b>✳</b> HIDROTERAPIA <b>✳</b> NATAÇÃO <b>✳</b> PILATES <b>✳</b> HIDROGINÁSTICA <b>✳</b> AQUARIUS CENTER <b>✳</b></span><span>FISIOTERAPIA <b>✳</b> HIDROTERAPIA <b>✳</b> NATAÇÃO <b>✳</b> PILATES <b>✳</b> HIDROGINÁSTICA <b>✳</b> AQUARIUS CENTER <b>✳</b></span></div></div>
