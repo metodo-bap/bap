@@ -526,6 +526,15 @@ transition:background .25s,border-color .25s,transform .25s,box-shadow .25s;curs
 #a3-show-all:hover,.a3-detail-cta:hover{background:linear-gradient(145deg,rgba(187,244,253,.95),rgba(237,251,255,.77));border-color:rgba(31,122,171,.42)}
 @media(max-width:600px){:root{--aq-cta-height:54px;--aq-cta-font:14px;--aq-cta-pad-x:22px;--aq-cta-gap:16px}.hero-cta,.structure-button,#a3-show-all,.a3-detail-cta,section#contato .contact-main-cta,section#contato .outline{padding:14px var(--aq-cta-pad-x)}.hero-cta span,.structure-button span,#a3-show-all span,section#contato .contact-main-cta span{font-size:21px}}
 @media(prefers-reduced-motion:reduce){.hero-cta,.structure-button,#a3-show-all,.a3-detail-cta,section#contato .contact-main-cta,section#contato .outline{transition:none}}
+
+/* 01 — benefícios: hierarquia compacta e respiro entre três colunas */
+section#conceito .about-live-benefits{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:clamp(24px,3.2vw,54px)!important;max-width:810px!important;margin-top:36px!important}
+section#conceito .about-live-benefits article{min-width:0;max-width:235px}
+section#conceito .benefit-symbol{width:66px!important;height:66px!important;font-size:36px!important;margin-bottom:14px!important}
+section#conceito .about-live-benefits h3{font-size:clamp(18px,1.45vw,24px)!important;line-height:1.15!important;margin:0 0 8px!important}
+section#conceito .about-live-benefits p{font-size:clamp(13px,1vw,16px)!important;line-height:1.42!important;max-width:215px!important;letter-spacing:0!important}
+@media(max-width:700px){section#conceito .about-live-benefits{gap:16px!important;margin-top:30px!important}section#conceito .benefit-symbol{width:52px!important;height:52px!important;font-size:29px!important}section#conceito .about-live-benefits h3{font-size:16px!important}section#conceito .about-live-benefits p{font-size:12px!important;line-height:1.4!important}}
+@media(max-width:410px){section#conceito .about-live-benefits{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:9px!important}section#conceito .about-live-benefits h3{font-size:14px!important}section#conceito .about-live-benefits p{font-size:11px!important}}
 </style><meta property="og:title" content="Aquarius Center — Movimento é vida"><meta property="og:description" content="Conheça nossa estrutura e modalidades em Recife."><meta property="og:type" content="website"><meta name="theme-color" content="#064dde"><style id="a3-detail-style">
 .a3-card{cursor:pointer}.a3-card:focus-visible{outline:3px solid #09bff1;outline-offset:4px}.a3-card-body>a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;text-decoration:none}
 .a3-detail-overlay[hidden]{display:none!important}.a3-detail-overlay{position:fixed;inset:0;z-index:99999;background:rgba(1,20,53,.76);backdrop-filter:blur(9px);display:grid;place-items:center;padding:22px;overflow:auto}
@@ -542,9 +551,9 @@ transition:background .25s,border-color .25s,transform .25s,box-shadow .25s;curs
 <h2 id="about-heading"><span>Mais vida em cada</span><em>movimento.</em></h2>
 <p>Há muitas formas de cuidar de si. Na Aquarius Center, atividades aquáticas, movimento e acompanhamento profissional se encontram em um espaço real, acolhedor e conectado às pessoas de Recife.</p>
 <div class="about-live-benefits">
-<article><div class="benefit-symbol" aria-hidden="true">♡</div><h3>Saúde</h3><p>Atividades que fortalecem o corpo e a mente.</p></article>
-<article><div class="benefit-symbol" aria-hidden="true">♧</div><h3>Convivência</h3><p>Novas amizades e um ambiente acolhedor.</p></article>
-<article><div class="benefit-symbol" aria-hidden="true">≋</div><h3>Bem-estar</h3><p>Mais disposição para viver o que você ama.</p></article>
+<article><div class="benefit-symbol" aria-hidden="true">♡</div><h3>Saúde</h3><p>Fortaleça corpo e mente.</p></article>
+<article><div class="benefit-symbol" aria-hidden="true">♧</div><h3>Convivência</h3><p>Conexões e novas amizades.</p></article>
+<article><div class="benefit-symbol" aria-hidden="true">≋</div><h3>Bem-estar</h3><p>Mais energia no dia a dia.</p></article>
 </div></div>
 <div class="about-live-photo" role="img" aria-label="Composição visual do Aquarius Prime 50+ com casal em atividade aquática"><div class="about-live-prime"><strong>AQUARIUS <em>PRIME 50+</em></strong><span>MOVIMENTO · SAÚDE · CONVIVÊNCIA</span></div></div>
 <div class="about-live-wave" aria-hidden="true"></div>
