@@ -1397,3 +1397,11 @@ html[data-theme="light"] .author-method .author-method-links .btn.secondary{back
 html[data-theme="light"] .author-method .author-method-links .btn:hover{background:#a90019!important;color:#fff!important}
 html[data-theme="light"] .author-method .author-method-links .btn.secondary:hover{background:#fff1f3!important;color:#9c0015!important}
 @media(max-width:720px){html[data-theme="light"] .author-method h2{font-size:clamp(51px,11vw,78px)}html[data-theme="light"] .author-method .author-method-links .btn{width:100%}}
+
+/* BAP visual 2026: preloaded photo integration */
+html[data-theme="light"] .hero.bap-visual-home::before{background-image:linear-gradient(90deg,#ffffff 0%,#ffffffed 28%,#ffffff00 69%),var(--bap-new-art)!important;background-size:cover!important;background-position:center!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-image{background-image:var(--bap-new-art)!important;background-size:cover!important;background-position:center!important}
+html[data-theme="light"] #preparacao.bap-visual-preparacao .learning-photo{background-image:var(--bap-new-art)!important;background-size:cover!important;background-position:center!important}
+html[data-theme="light"] .cinematic-course.bap-visual-curso::before{background-image:linear-gradient(90deg,#fff 0%,#ffffff80 30%,transparent 70%),var(--bap-new-art)!important;background-size:cover!important;background-position:center!important}
+html[data-theme="light"] .bap-video-gallery.bap-visual-videos .bap-video-card:first-child .bap-video-art{background-image:linear-gradient(0deg,#0a1a2cc7,transparent 72%),var(--bap-new-art)!important;background-size:cover!important}
+html[data-theme="light"] .cinematic-author.bap-visual-autor::before{background-image:var(--bap-new-art)!important;background-size:cover!important;background-position:center!important}
