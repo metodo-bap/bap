@@ -282,7 +282,7 @@ document.querySelectorAll('[data-footer-top]').forEach(el=>el.addEventListener('
 /* BAP visual 2026 — progressive asset replacement */
 (function(){
  const assets=[
-  ['body','bap-visual-home','futuristic_drummer_biomechanics_analysis.png'],
+  ['.hero','bap-visual-home','futuristic_drummer_biomechanics_analysis.png'],
   ['#corpo','bap-visual-corpo','drummer_s_shoulder_pain_analysis.png'],
   ['#preparacao','bap-visual-preparacao','biomechanical_drummer_spine_analysis.png'],
   ['.cinematic-course','bap-visual-curso','neon_studio_drumming_close_up.png'],
