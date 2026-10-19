@@ -278,3 +278,22 @@ document.querySelectorAll('[data-footer-top]').forEach(el=>el.addEventListener('
  const meta=document.querySelector('meta[name="theme-color"]');
  if(meta)meta.content='#f6f9fb';
 })();
+
+/* BAP visual 2026 — progressive asset replacement */
+(function(){
+ const assets=[
+  ['body','bap-visual-home','futuristic_drummer_biomechanics_analysis.png'],
+  ['#corpo','bap-visual-corpo','drummer_s_shoulder_pain_analysis.png'],
+  ['#preparacao','bap-visual-preparacao','biomechanical_drummer_spine_analysis.png'],
+  ['.cinematic-course','bap-visual-curso','neon_studio_drumming_close_up.png'],
+  ['.bap-video-gallery','bap-visual-videos','cyan_tech_drummer_dashboard.png'],
+  ['.cinematic-author','bap-visual-autor','drummer_doctor_dual_identity.png']
+ ];
+ assets.forEach(([selector,className,file])=>{
+  const node=document.querySelector(selector);if(!node)return;
+  const url='assets/novo-visual/'+file;
+  const probe=new Image();
+  probe.onload=()=>{node.style.setProperty('--bap-new-art','url("'+url+'")');node.classList.add(className)};
+  probe.src=url;
+ });
+})();
