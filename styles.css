@@ -1322,3 +1322,21 @@ html[data-theme="light"] .book-page-lightbox .bap-reader-header :is(strong,span)
 html[data-theme="light"] .book-page-lightbox .bap-reader-kicker{color:#26d6e6!important}
 html[data-theme="light"] .book-page-lightbox .bap-reader-close{color:#fff!important}
 html[data-theme="light"] .book-page-lightbox .bap-reader-footer{color:#91aeb9!important}
+
+/* BAP white-first final direction — no appearance switch, editorial light surfaces */
+:root{color-scheme:light}
+html[data-theme="light"] body{background:#fff!important}
+html[data-theme="light"] .bap-theme-toggle{display:none!important}
+html[data-theme="light"] :is(main,main>section){border-color:#dceaf0}
+html[data-theme="light"] :is(.book-v2 .book-hero,.book-v2 .book-overview-approved,.book-v2 .book-audience-approved,.book-v2 .book-value-ref,.book-v2 .book-author-ref,.book-v2 .book-closing-ref){background-color:#f8fbfd!important}
+html[data-theme="light"] :is(.book-v2 .book-author-ref,.book-v2 .book-closing-ref){background:#f7fbfd!important}
+html[data-theme="light"] .book-v2 .book-author-ref-brands{background:#fff!important;box-shadow:0 6px 30px #1744570d}
+html[data-theme="light"] .book-v2 .book-author-ref-brands img{filter:none!important}
+html[data-theme="light"] .book-v2 .book-closing-ref-action p{color:#24404c!important}
+html[data-theme="light"] :is(.book-v2 .book-closing-ref h2,.book-v2 .book-author-ref h2,.book-v2 .book-author-ref h3){color:#0b2030}
+html[data-theme="light"] :is(.book-v2 .book-author-ref-copy p,.book-v2 .book-closing-ref-grid>small){color:#3f5865!important}
+html[data-theme="light"] .book-v2 .book-end-approved{background:#fff!important}
+html[data-theme="light"] .book-v2 .book-end-fallback{background:#fff!important}
+html[data-theme="light"] :is(.book-v2 .book-chapter-poster,.book-v2 .book-chapter-image){background:#fff!important}
+html[data-theme="light"] :is(.book-v2 .book-chapter-image figcaption,.book-v2 .book-audience-card p){color:#294654!important}
+@media(prefers-reduced-motion:reduce){html[data-theme="light"] *,html[data-theme="light"] *::before,html[data-theme="light"] *::after{scroll-behavior:auto}}
