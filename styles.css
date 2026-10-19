@@ -1340,3 +1340,27 @@ html[data-theme="light"] .book-v2 .book-end-fallback{background:#fff!important}
 html[data-theme="light"] :is(.book-v2 .book-chapter-poster,.book-v2 .book-chapter-image){background:#fff!important}
 html[data-theme="light"] :is(.book-v2 .book-chapter-image figcaption,.book-v2 .book-audience-card p){color:#294654!important}
 @media(prefers-reduced-motion:reduce){html[data-theme="light"] *,html[data-theme="light"] *::before,html[data-theme="light"] *::after{scroll-behavior:auto}}
+
+
+/* Livro BAP · referência editorial outubro 2026 · galeria 4 x 2 */
+html[data-theme="light"] .book-v2 .book-samples-reference{background:#fff!important;color:#061524!important;padding:clamp(55px,6vw,105px) 0}
+.book-v2 .book-samples-reference .shell{max-width:1680px}
+.book-v2 .book-samples-reference .book-samples-head{display:flex;justify-content:space-between;align-items:center;gap:28px;margin-bottom:24px}
+.book-v2 .book-samples-reference .book-samples-head h2{font-size:clamp(52px,5.8vw,100px);line-height:1.03;margin:10px 0 16px;letter-spacing:-.025em;color:#051522}
+.book-v2 .book-samples-reference .book-samples-head h2 em{color:#f10e2c;font-style:normal}
+.book-v2 .book-samples-reference .book-samples-head p{max-width:900px;font-size:clamp(15px,1.4vw,21px);line-height:1.55;color:#2a4255}
+.book-v2 .book-samples-reference .book-samples-head>.book-outline{min-width:265px;text-align:center;justify-content:center;border:1.5px solid #07c7e9;color:#08bde2;background:#fff;border-radius:7px}
+.book-v2 .book-samples-reference .book-chapter-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:34px 18px;margin-top:25px}
+.book-v2 .book-samples-reference .book-chapter{margin:0;min-width:0}
+.book-v2 .book-samples-reference .book-chapter-image .book-chapter-poster{display:block;width:100%;height:auto;aspect-ratio:1.41;padding:5px;border:1.5px solid #02cce9;border-radius:7px;background:#fff;box-shadow:0 9px 21px #12485b14;cursor:zoom-in;overflow:hidden}
+.book-v2 .book-samples-reference .book-chapter-poster img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .25s ease}
+.book-v2 .book-samples-reference .book-chapter-poster:hover img{transform:scale(1.035)}
+.book-v2 .book-samples-reference .book-chapter-caption{display:flex;align-items:flex-start;gap:12px;margin-top:10px!important;text-transform:none;color:#071725!important}
+.book-v2 .book-samples-reference .book-chapter-caption>strong{font:800 clamp(25px,2.5vw,42px)/1 'Barlow Condensed',sans-serif;color:#fa122a}
+.book-v2 .book-samples-reference .book-chapter-caption span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.book-v2 .book-samples-reference .book-chapter-caption b{font:800 clamp(15px,1.5vw,24px)/1.12 'Barlow Condensed',sans-serif;color:#081825}
+.book-v2 .book-samples-reference .book-chapter-caption small{font:400 clamp(12px,.9vw,15px)/1.4 Inter,sans-serif;color:#536779}
+.book-v2 .book-samples-reference .book-chapter-poster:focus-visible{outline:3px solid #ed1029;outline-offset:3px}
+@media(max-width:950px){.book-v2 .book-samples-reference .book-chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.book-v2 .book-samples-reference .book-samples-head{align-items:flex-start;flex-direction:column}.book-v2 .book-samples-reference .book-samples-head>.book-outline{min-width:0}}
+@media(max-width:600px){.book-v2 .book-samples-reference{padding:50px 0!important}.book-v2 .book-samples-reference .book-chapter-grid{gap:25px 12px}.book-v2 .book-samples-reference .book-chapter-caption{gap:6px}.book-v2 .book-samples-reference .book-chapter-caption b{font-size:16px}.book-v2 .book-samples-reference .book-chapter-caption small{font-size:11px}.book-v2 .book-samples-reference .book-chapter-image .book-chapter-poster{aspect-ratio:1.13}.book-v2 .book-overview-approved .book-overview-art{overflow:hidden!important}.book-v2 .book-overview-approved .book-overview-art img{display:block;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;aspect-ratio:auto!important}.book-v2 .book-audience-approved .book-audience-approved-visual img{display:block;max-width:100%;height:auto}.book-v2 .book-end-approved>img{display:block;max-width:100%;height:auto}}
+@media(prefers-reduced-motion:reduce){.book-v2 .book-samples-reference .book-chapter-poster img{transition:none}}
