@@ -1383,3 +1383,17 @@ html[data-theme="light"] .bap-book-approved{background:#fff!important;padding:0!
 .bap-book-image-dialog img{display:block;width:auto;height:auto;max-width:none;max-height:none}
 .bap-book-dialog-close{position:sticky;top:8px;left:calc(100% - 110px);z-index:3;border:0;background:#fff;color:#071923;padding:12px;border-radius:8px;font-weight:800}
 @media(max-width:740px){.bap-book-approved .bap-book-reference{overflow-x:auto;scrollbar-width:thin}.bap-book-approved .bap-book-reference>img{width:1100px;max-width:none}.bap-book-approved .bap-book-hotspot{display:none}.bap-book-approved .bap-book-zoom{position:sticky;float:right;margin-top:-44px;margin-right:8px;top:auto;right:auto}.bap-book-image-dialog img{width:1100px}}
+
+
+/* BAP Sobre o Autor — conhecimento que vira performance, red-first approved */
+html[data-theme="light"] .author-method{background:#fff!important;color:#7b0011!important}
+html[data-theme="light"] .author-method .author-method-grid{align-items:center;gap:clamp(32px,5vw,90px)}
+html[data-theme="light"] .author-method h2{color:#7b0011!important;font-size:clamp(54px,6.4vw,118px);line-height:.96;letter-spacing:-.025em}
+html[data-theme="light"] .author-method h2 em{color:#df0922!important;font-style:normal}
+html[data-theme="light"] .author-method :is(p,.intro){color:#80131f!important;line-height:1.6}
+html[data-theme="light"] .author-method .author-method-links{display:flex;flex-wrap:wrap;gap:16px}
+html[data-theme="light"] .author-method .author-method-links .btn{display:inline-flex;align-items:center;justify-content:center;gap:20px;background:#d40722!important;border:1px solid #d40722!important;color:#fff!important;border-radius:100px;font-weight:800;min-height:54px;padding:12px 26px}
+html[data-theme="light"] .author-method .author-method-links .btn.secondary{background:#fff!important;color:#b9001c!important;border:1.5px solid #d40722!important}
+html[data-theme="light"] .author-method .author-method-links .btn:hover{background:#a90019!important;color:#fff!important}
+html[data-theme="light"] .author-method .author-method-links .btn.secondary:hover{background:#fff1f3!important;color:#9c0015!important}
+@media(max-width:720px){html[data-theme="light"] .author-method h2{font-size:clamp(51px,11vw,78px)}html[data-theme="light"] .author-method .author-method-links .btn{width:100%}}
