@@ -1364,3 +1364,22 @@ html[data-theme="light"] .book-v2 .book-samples-reference{background:#fff!import
 @media(max-width:950px){.book-v2 .book-samples-reference .book-chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.book-v2 .book-samples-reference .book-samples-head{align-items:flex-start;flex-direction:column}.book-v2 .book-samples-reference .book-samples-head>.book-outline{min-width:0}}
 @media(max-width:600px){.book-v2 .book-samples-reference{padding:50px 0!important}.book-v2 .book-samples-reference .book-chapter-grid{gap:25px 12px}.book-v2 .book-samples-reference .book-chapter-caption{gap:6px}.book-v2 .book-samples-reference .book-chapter-caption b{font-size:16px}.book-v2 .book-samples-reference .book-chapter-caption small{font-size:11px}.book-v2 .book-samples-reference .book-chapter-image .book-chapter-poster{aspect-ratio:1.13}.book-v2 .book-overview-approved .book-overview-art{overflow:hidden!important}.book-v2 .book-overview-approved .book-overview-art img{display:block;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;aspect-ratio:auto!important}.book-v2 .book-audience-approved .book-audience-approved-visual img{display:block;max-width:100%;height:auto}.book-v2 .book-end-approved>img{display:block;max-width:100%;height:auto}}
 @media(prefers-reduced-motion:reduce){.book-v2 .book-samples-reference .book-chapter-poster img{transition:none}}
+
+
+/* Official five uploaded BAP Livro compositions — exact supplied images */
+html[data-theme="light"] .bap-book-approved{background:#fff!important;padding:0!important}
+.bap-book-approved .bap-book-reference{position:relative;margin:0;padding:0!important;border:0!important;background:#fff!important;overflow:hidden}
+.bap-book-approved .bap-book-reference>img{display:block;width:100%;height:auto;max-width:none}
+.bap-book-approved .bap-book-hotspot{position:absolute;display:block;z-index:2;border-radius:8px}
+.bap-book-approved .bap-book-hotspot:focus-visible{outline:4px solid #00c4e2;outline-offset:2px}
+.bap-book-approved .bap-book-hero .buy{left:3.5%;top:62%;width:31%;height:8%}
+.bap-book-approved .bap-book-hero .samples{left:3.5%;top:70.5%;width:31%;height:8%}
+.bap-book-approved .bap-book-final .author{left:46%;top:62%;width:20%;height:7%}
+.bap-book-approved .bap-book-final .buy{left:63.5%;top:85%;width:17%;height:9%}
+.bap-book-approved .bap-book-final .samples{left:80.5%;top:85%;width:17%;height:9%}
+.bap-book-approved .bap-book-zoom{position:absolute;right:14px;top:14px;z-index:4;border:1px solid #a4e5ef;background:#fffffff2;color:#092331;border-radius:8px;padding:8px 11px;font:700 12px Inter,Arial,sans-serif;box-shadow:0 5px 17px #002a3c20}
+.bap-book-image-dialog{border:0;max-width:96vw;max-height:94vh;padding:0;background:transparent;overflow:auto}
+.bap-book-image-dialog::backdrop{background:#000d}
+.bap-book-image-dialog img{display:block;width:auto;height:auto;max-width:none;max-height:none}
+.bap-book-dialog-close{position:sticky;top:8px;left:calc(100% - 110px);z-index:3;border:0;background:#fff;color:#071923;padding:12px;border-radius:8px;font-weight:800}
+@media(max-width:740px){.bap-book-approved .bap-book-reference{overflow-x:auto;scrollbar-width:thin}.bap-book-approved .bap-book-reference>img{width:1100px;max-width:none}.bap-book-approved .bap-book-hotspot{display:none}.bap-book-approved .bap-book-zoom{position:sticky;float:right;margin-top:-44px;margin-right:8px;top:auto;right:auto}.bap-book-image-dialog img{width:1100px}}
