@@ -1554,3 +1554,23 @@ html[data-theme="light"] #preparacao .learning-kicker{position:relative!importan
 html[data-theme="light"] #preparacao .learning-kicker::after{content:"";position:absolute;left:0;right:0;bottom:-27px;height:1px;background:#c5cfd4;pointer-events:none}
 html[data-theme="light"] #preparacao .learning-topics{margin-top:0!important}
 @media(max-width:740px){html[data-theme="light"] #preparacao .learning-kicker{margin-bottom:42px!important}html[data-theme="light"] #preparacao .learning-kicker::after{bottom:-21px}}
+
+
+/* Alto contraste: títulos de cards que ficam sobre fundos fotográficos escuros */
+html[data-theme="light"] .method-foundations-grid article h3,
+html[data-theme="light"] .method-foundations-grid article :is(h2,h4),
+html[data-theme="light"] .bap-video-card .bap-video-copy strong,
+html[data-theme="light"] .bap-video-card .bap-video-copy :is(h2,h3),
+html[data-theme="light"] .quote-card :is(h2,h3,strong),
+html[data-theme="light"] .cinematic-panel :is(h2,h3),
+html[data-theme="light"] .method-audience-grid article h3 {
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  text-shadow:0 2px 9px rgba(0,0,0,.4)!important;
+}
+html[data-theme="light"] .method-foundations-grid article p,
+html[data-theme="light"] .bap-video-card .bap-video-desc,
+html[data-theme="light"] .quote-card p {
+  color:#e8edf0!important;
+}
+html[data-theme="light"] .method-foundations-grid article {background-color:#081922!important}
