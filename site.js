@@ -287,7 +287,7 @@ document.querySelectorAll('[data-footer-top]').forEach(el=>el.addEventListener('
   ['#preparacao','bap-visual-preparacao','biomechanical_drummer_spine_analysis.png'],
   ['.cinematic-course','bap-visual-curso','neon_studio_drumming_close_up.png'],
   ['.bap-video-gallery','bap-visual-videos','cyan_tech_drummer_dashboard.png'],
-  ['.cinematic-author','bap-visual-autor','drummer_doctor_dual_identity.png']
+  ['.author-dual','bap-visual-autor','drummer_doctor_dual_identity.png']
  ];
  assets.forEach(([selector,className,file])=>{
   const node=document.querySelector(selector);if(!node)return;
