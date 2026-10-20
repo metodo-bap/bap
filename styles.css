@@ -1856,3 +1856,14 @@ html[data-theme="light"] #outras-solucoes .bap-solution-details p{color:#3b4a56!
 html[data-theme="light"] #outras-solucoes .bap-solution-link{border:1px solid #d60734!important;border-radius:11px!important;color:#b7062b!important;-webkit-text-fill-color:#b7062b!important;background:#fff!important}
 html[data-theme="light"] #outras-solucoes .bap-solution-link:hover{background:#d60734!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
 @media(max-width:740px){html[data-theme="light"] #outras-solucoes .bap-solution-details{padding:15px 19px 22px!important}}
+
+
+/* Layout 09 — padronização dimensional da referência 1122 × 1402 (0,8003) */
+html[data-theme="light"] #outras-solucoes .bap-solutions-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:clamp(14px,1.7vw,28px)!important;align-items:stretch!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-card{width:100%!important;aspect-ratio:1122 / 1402!important;height:auto!important;min-height:0!important;display:flex!important;flex-direction:column!important;border-radius:19px!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-visual{flex:0 0 auto!important;width:100%!important;aspect-ratio:1.06/1!important;min-height:0!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-details{flex:1 1 auto!important;min-height:0!important;display:flex!important;flex-direction:column!important;justify-content:flex-start!important;padding:16px clamp(16px,2vw,28px) 24px!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-details p{margin-bottom:18px!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-link{margin-top:auto!important}
+@media(max-width:850px){html[data-theme="light"] #outras-solucoes .bap-solutions-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}html[data-theme="light"] #outras-solucoes .bap-solution-card{aspect-ratio:auto!important;min-height:0!important}html[data-theme="light"] #outras-solucoes .bap-solution-visual{aspect-ratio:1.06/1!important}}
+@media(max-width:560px){html[data-theme="light"] #outras-solucoes .bap-solutions-grid{grid-template-columns:1fr!important;gap:18px!important}html[data-theme="light"] #outras-solucoes .bap-solution-card{aspect-ratio:1122/1402!important;max-width:440px!important;margin-inline:auto!important}}
