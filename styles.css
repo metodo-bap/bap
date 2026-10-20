@@ -1647,3 +1647,27 @@ html[data-theme="light"] .bap-video-gallery .btn.secondary:hover{background:#fff
 #videos .bap-video-card.bap-video-new :is(.bap-video-play,.bap-video-copy){display:none!important}
 #videos .bap-video-card.bap-video-new::before,#videos .bap-video-card.bap-video-new::after{content:none!important;display:none!important}
 #videos .bap-video-card.bap-video-new{border-color:#e7d5db!important}
+
+
+/* BAP video cards: full artwork in its original aspect ratio, no crop */
+#videos .bap-video-grid .bap-video-card.bap-video-new{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:1536 / 1024!important;
+  overflow:hidden!important;
+  border-radius:18px!important;
+}
+#videos .bap-video-grid .bap-video-card.bap-video-new .bap-video-full-art{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+@media(max-width:740px){
+ #videos .bap-video-grid .bap-video-card.bap-video-new{aspect-ratio:1536 / 1024!important;min-height:0!important}
+}
