@@ -1483,3 +1483,22 @@ html[data-theme="light"] section#corpo.body-experience .body-copy>a.btn{backgrou
 @media(max-width:850px){
  html[data-theme="light"] section#corpo.body-experience .body-experience-image{background-image:linear-gradient(180deg,#ffffffee 0%,#ffffffe0 55%,#ffffffb0 100%),var(--bap-region-art)!important;background-position:60% center!important}
 }
+
+
+/* BAP terceira dobra — painel branco aprovado, componentes reais e interativos */
+html[data-theme="light"] #preparacao.learning-lab{background:#fff!important;color:#681321!important}
+html[data-theme="light"] #preparacao .learning-stage{background:#fff!important;border:1px solid #c9d3d8!important;overflow:hidden;border-radius:20px!important;box-shadow:0 15px 45px #5c132010!important}
+html[data-theme="light"] #preparacao .learning-content{background:#fff!important;color:#263b47!important;border:0!important;padding:clamp(24px,3vw,48px)!important;box-shadow:none!important}
+html[data-theme="light"] #preparacao .learning-kicker{color:#aa0925!important;border-color:#e0e6e9!important}
+html[data-theme="light"] #preparacao .learning-kicker span{color:#263b47!important}
+html[data-theme="light"] #preparacao .learning-topic{background:#fff!important;color:#344450!important;border:0!important;border-bottom:1px solid #dce3e7!important;border-radius:0!important;text-align:left}
+html[data-theme="light"] #preparacao .learning-topic span,html[data-theme="light"] #preparacao .learning-topic em{color:#dc102b!important}
+html[data-theme="light"] #preparacao .learning-topic.active{background:#fff0f2!important;color:#a8001e!important;border:1px solid #fc8e9d!important;border-radius:10px!important;font-weight:800!important}
+html[data-theme="light"] #preparacao .learning-topic:focus-visible{outline:3px solid #d10d2a!important;outline-offset:2px}
+html[data-theme="light"] #preparacao .learning-description{background:#fff!important;border-color:#e0e6e9!important}
+html[data-theme="light"] #preparacao .learning-description strong{color:#a00722!important}
+html[data-theme="light"] #preparacao .learning-description p{color:#40515d!important}
+html[data-theme="light"] #preparacao .learning-actions .btn{background:#d20728!important;border-color:#d20728!important;color:#fff!important}
+html[data-theme="light"] #preparacao .learning-actions .learning-buy{background:#fff!important;border:1.5px solid #d20728!important;color:#b30725!important}
+html[data-theme="light"] #preparacao .learning-photo{background-color:#fff!important}
+@media(max-width:850px){html[data-theme="light"] #preparacao .learning-stage{display:flex;flex-direction:column}html[data-theme="light"] #preparacao .learning-photo{min-height:300px}html[data-theme="light"] #preparacao .learning-content{width:100%!important}html[data-theme="light"] #preparacao .learning-actions{display:flex;flex-wrap:wrap;gap:12px}}
