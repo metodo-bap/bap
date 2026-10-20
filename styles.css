@@ -1703,3 +1703,14 @@ html[data-theme="light"] .bap-video-gallery .btn.secondary:hover{background:#fff
   outline:3px solid #d0072c!important;
   outline-offset:3px!important;
 }
+
+
+/* Sobre Tiago: paleta branca, vinho e vermelho; remover azul/ciano */
+html[data-theme="light"] #sobre-tiago{background:#fff!important}
+html[data-theme="light"] #sobre-tiago .eyebrow{color:#a40c29!important;-webkit-text-fill-color:#a40c29!important}
+html[data-theme="light"] #sobre-tiago .eyebrow b{color:#e00632!important;-webkit-text-fill-color:#e00632!important}
+html[data-theme="light"] #sobre-tiago .tiago-feature-copy h2{color:#641326!important;-webkit-text-fill-color:#641326!important;text-shadow:none!important}
+html[data-theme="light"] #sobre-tiago .tiago-feature-role{color:#b0082b!important;-webkit-text-fill-color:#b0082b!important;font-weight:700!important}
+html[data-theme="light"] #sobre-tiago .tiago-feature-copy .intro:not(.tiago-feature-role){color:#384752!important;-webkit-text-fill-color:#384752!important}
+html[data-theme="light"] #sobre-tiago .tiago-feature-copy .btn{background:#d30730!important;border-color:#d30730!important;color:white!important;-webkit-text-fill-color:white!important}
+html[data-theme="light"] #sobre-tiago .tiago-feature-copy .btn:hover{background:#aa0626!important;border-color:#aa0626!important}
