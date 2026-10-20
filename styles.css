@@ -1799,3 +1799,27 @@ html[data-theme="light"] #perguntas .bfaq-aside-feature{display:flex!important;g
 html[data-theme="light"] #perguntas .bfaq-aside-feature p,html[data-theme="light"] #perguntas .bfaq-aside-note{color:#505b66!important;-webkit-text-fill-color:#505b66!important}
 html[data-theme="light"] #perguntas .bfaq-buy{background:#d5002c!important;border-color:#d5002c!important;color:white!important;-webkit-text-fill-color:white!important}
 @media(max-width:720px){html[data-theme="light"] #perguntas .bfaq-item summary{gap:10px!important;padding:17px 14px!important}html[data-theme="light"] #perguntas .bfaq-icon{width:36px!important;height:36px!important;min-width:36px!important}html[data-theme="light"] #perguntas .bfaq-icon svg{width:20px!important;height:20px!important}}
+
+
+/* FAQ v3: refined spacing, hierarchy and interaction */
+html[data-theme="light"] #perguntas .bfaq-layout{grid-template-columns:minmax(0,1.85fr) minmax(300px,.82fr)!important;gap:clamp(24px,3.5vw,54px)!important}
+html[data-theme="light"] #perguntas .bfaq-questions{gap:12px!important}
+html[data-theme="light"] #perguntas .bfaq-item{border-radius:20px!important;box-shadow:0 3px 13px rgba(69,30,40,.035)!important;transition:border-color .2s,box-shadow .2s,transform .2s!important}
+html[data-theme="light"] #perguntas .bfaq-item:hover{border-color:#eab1be!important;box-shadow:0 8px 24px rgba(107,19,38,.07)!important}
+html[data-theme="light"] #perguntas .bfaq-item[open]{background:#fffafb!important;border-color:#dd123a!important;box-shadow:0 12px 32px rgba(124,18,40,.075)!important}
+html[data-theme="light"] #perguntas .bfaq-item summary{min-height:86px!important;padding:18px 25px!important;gap:16px!important}
+html[data-theme="light"] #perguntas .bfaq-icon{width:42px!important;height:42px!important;min-width:42px!important;background:#ffeff1!important;color:#82112c!important}
+html[data-theme="light"] #perguntas .bfaq-question{font-size:clamp(17px,1.25vw,21px)!important;line-height:1.3!important;letter-spacing:-.018em!important}
+html[data-theme="light"] #perguntas .bfaq-trigger{margin-left:auto!important;min-width:40px!important;width:40px!important;height:40px!important;border-radius:50%!important;color:#8f1730!important;border-color:#d6b2ba!important}
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger{color:#fff!important}
+html[data-theme="light"] #perguntas .bfaq-answer{margin:0 25px 0 83px!important;padding:18px 0 23px!important;border-top:1px solid #ead9dd!important}
+html[data-theme="light"] #perguntas .bfaq-answer p{font-size:clamp(15px,1.05vw,17px)!important;line-height:1.65!important;margin:0!important}
+html[data-theme="light"] #perguntas .bfaq-aside{border-radius:22px!important;padding:34px 30px!important;background:#fffafb!important;box-shadow:0 14px 42px rgba(90,20,36,.055)!important}
+html[data-theme="light"] #perguntas .bfaq-aside:before{background:#db0732!important;width:64px!important}
+html[data-theme="light"] #perguntas .bfaq-aside-index{font-size:12px!important;letter-spacing:.1em!important}
+html[data-theme="light"] #perguntas .bfaq-aside-feature{padding:24px 0!important;align-items:flex-start!important}
+html[data-theme="light"] #perguntas .bfaq-aside-feature strong{font-size:15px!important}
+html[data-theme="light"] #perguntas .bfaq-aside-feature p{font-size:14px!important;line-height:1.55!important}
+html[data-theme="light"] #perguntas .bfaq-buy{border-radius:12px!important;min-height:54px!important;font-weight:800!important}
+@media(max-width:850px){html[data-theme="light"] #perguntas .bfaq-layout{grid-template-columns:1fr!important}html[data-theme="light"] #perguntas .bfaq-aside{padding:26px!important}}
+@media(max-width:600px){html[data-theme="light"] #perguntas .bfaq-item summary{min-height:72px!important;padding:14px!important;gap:10px!important}html[data-theme="light"] #perguntas .bfaq-answer{margin:0 17px!important;padding:15px 0 20px!important}html[data-theme="light"] #perguntas .bfaq-trigger{width:34px!important;height:34px!important;min-width:34px!important}html[data-theme="light"] #perguntas .bfaq-question{font-size:16px!important}}
