@@ -329,7 +329,11 @@ document.addEventListener('DOMContentLoaded',()=>{
   const url='assets/videos/'+files[index];
   const image=new Image();
   image.onload=()=>{
-   card.style.setProperty('--bap-video-card-art','url("'+url+'")');
+   if(card.querySelector('.bap-video-full-art'))return;
+   image.className='bap-video-full-art';
+   image.alt='';image.setAttribute('aria-hidden','true');
+   image.loading='eager';image.decoding='async';
+   card.insertBefore(image,card.firstChild);
    card.classList.add('bap-video-new');
   };
   image.src=url;
