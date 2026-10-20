@@ -90,7 +90,7 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  const regionImages={
   ombros:'assets/novo-visual/drummer_s_shoulder_pain_analysis.png',
   costas:'assets/novo-visual/biomechanical_drummer_spine_analysis.png',
-  punhos:'assets/desktop/punhos.webp'
+  punhos:'assets/novo-visual/punhos-fundo-branco.webp'
  };
  const regionVisual=section.querySelector('.body-experience-image');
  const cachedImages={};
