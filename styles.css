@@ -1671,3 +1671,35 @@ html[data-theme="light"] .bap-video-gallery .btn.secondary:hover{background:#fff
 @media(max-width:740px){
  #videos .bap-video-grid .bap-video-card.bap-video-new{aspect-ratio:1536 / 1024!important;min-height:0!important}
 }
+
+
+/* Galeria de vídeos: somente as artes, sem moldura externa nem margem interna */
+#videos .bap-video-grid .bap-video-card.bap-video-new{
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  background:transparent!important;
+  padding:0!important;
+  margin:0!important;
+  border-radius:18px!important;
+  aspect-ratio:1536 / 1024!important;
+  min-height:0!important;
+  height:auto!important;
+}
+#videos .bap-video-grid .bap-video-card.bap-video-new .bap-video-full-art{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  border-radius:18px!important;
+  box-shadow:none!important;
+}
+#videos .bap-video-grid .bap-video-card.bap-video-new:hover{
+  border:0!important;
+  box-shadow:none!important;
+}
+#videos .bap-video-grid .bap-video-card.bap-video-new:focus-visible{
+  outline:3px solid #d0072c!important;
+  outline-offset:3px!important;
+}
