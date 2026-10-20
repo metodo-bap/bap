@@ -1624,3 +1624,17 @@ html[data-theme="light"] .cinematic-course .btn{display:inline-flex!important;al
 html[data-theme="light"] .cinematic-course .btn:hover{background:#a90525!important;border-color:#a90525!important;transform:translateY(-2px)}
 html[data-theme="light"] .cinematic-course .btn:focus-visible{outline:3px solid #a90525;outline-offset:4px}
 @media(max-width:740px){html[data-theme="light"] .cinematic-course h2{font-size:clamp(46px,11vw,74px)!important}html[data-theme="light"] .cinematic-course .btn{width:100%!important}}
+
+
+/* Galeria de vídeos BAP — artes aprovadas de Tiago, sem azul. Só ativar após carregamento real do arquivo. */
+.bap-video-gallery .bap-video-card.bap-video-new{background:#fff!important;border:1px solid #e8d9dd!important;box-shadow:0 12px 32px #48132613!important;overflow:hidden!important}
+.bap-video-gallery .bap-video-card.bap-video-new .bap-video-art{background-image:var(--bap-video-card-art)!important;background-position:center!important;background-repeat:no-repeat!important;background-size:cover!important;filter:none!important;opacity:1!important}
+.bap-video-gallery .bap-video-card.bap-video-new::before,.bap-video-gallery .bap-video-card.bap-video-new::after{display:none!important}
+.bap-video-gallery .bap-video-card.bap-video-new :is(.bap-video-copy,.bap-video-play){opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.bap-video-gallery .bap-video-card.bap-video-new:focus-visible{outline:3px solid #dc002d;outline-offset:4px}
+.bap-video-gallery .bap-video-card.bap-video-new:hover{transform:translateY(-4px)!important}
+html[data-theme="light"] .bap-video-gallery h2{color:#26313b!important}
+html[data-theme="light"] .bap-video-gallery h2 em{color:#cf062b!important}
+html[data-theme="light"] .bap-video-gallery .intro{color:#34434c!important}
+html[data-theme="light"] .bap-video-gallery .btn.secondary{border-color:#be092c!important;color:#a80725!important;background:#fff!important}
+html[data-theme="light"] .bap-video-gallery .btn.secondary:hover{background:#fff0f3!important}
