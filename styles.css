@@ -1823,3 +1823,16 @@ html[data-theme="light"] #perguntas .bfaq-aside-feature p{font-size:14px!importa
 html[data-theme="light"] #perguntas .bfaq-buy{border-radius:12px!important;min-height:54px!important;font-weight:800!important}
 @media(max-width:850px){html[data-theme="light"] #perguntas .bfaq-layout{grid-template-columns:1fr!important}html[data-theme="light"] #perguntas .bfaq-aside{padding:26px!important}}
 @media(max-width:600px){html[data-theme="light"] #perguntas .bfaq-item summary{min-height:72px!important;padding:14px!important;gap:10px!important}html[data-theme="light"] #perguntas .bfaq-answer{margin:0 17px!important;padding:15px 0 20px!important}html[data-theme="light"] #perguntas .bfaq-trigger{width:34px!important;height:34px!important;min-width:34px!important}html[data-theme="light"] #perguntas .bfaq-question{font-size:16px!important}}
+
+
+/* FAQ: sinais + e − brancos no controle ativo */
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger,
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger::before,
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger::after{
+ color:#fff!important;
+ -webkit-text-fill-color:#fff!important;
+ border-color:#fff!important;
+}
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger{border-color:#d5002c!important}
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger::before,
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger::after{background:#fff!important}
