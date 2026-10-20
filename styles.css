@@ -1942,3 +1942,25 @@ html[data-theme="light"] .bap-method-v2 .method-pain-medianote i{color:#ff3557!i
 html[data-theme="light"] .bap-method-v2 .method-materials-actions{background:#fff!important}
 html[data-theme="light"] .bap-method-v2 .method-materials-actions p{color:#41505b!important;-webkit-text-fill-color:#41505b!important}
 html[data-theme="light"] .bap-method-v2 .method-last small{color:#5c6872!important;-webkit-text-fill-color:#5c6872!important}
+
+
+/* PÁGINA CURSO — identidade branca, vinho e vermelho, sem azul */
+html[data-theme="light"] .bap-course-page{--course-ink:#202932;--course-wine:#681426;--course-red:#dc002d;--course-copy:#41505b;background:#fff!important;color:#202932!important}
+html[data-theme="light"] .bap-course-page :is(.pagehero,.section){background:#fff!important}
+html[data-theme="light"] .bap-course-page :is(h1,h2,h3){color:#681426!important;-webkit-text-fill-color:#681426!important;text-shadow:none!important}
+html[data-theme="light"] .bap-course-page :is(h1,h2,h3) em{color:#dc002d!important;-webkit-text-fill-color:#dc002d!important;font-style:normal!important}
+html[data-theme="light"] .bap-course-page .eyebrow{color:#85182f!important;-webkit-text-fill-color:#85182f!important}
+html[data-theme="light"] .bap-course-page .eyebrow b{color:#dc002d!important;-webkit-text-fill-color:#dc002d!important}
+html[data-theme="light"] .bap-course-page :is(.intro,.legal,.ticker){color:#41505b!important;-webkit-text-fill-color:#41505b!important;line-height:1.6!important}
+html[data-theme="light"] .bap-course-page .card{background:#fff!important;border:1px solid #e7d1d6!important;color:#25333d!important;box-shadow:0 9px 27px #5e142512!important;border-radius:18px!important}
+html[data-theme="light"] .bap-course-page .card .num{color:#dc002d!important;-webkit-text-fill-color:#dc002d!important}
+html[data-theme="light"] .bap-course-page .card h3{color:#681426!important;-webkit-text-fill-color:#681426!important}
+html[data-theme="light"] .bap-course-page .card p{color:#41505b!important;-webkit-text-fill-color:#41505b!important}
+html[data-theme="light"] .bap-course-page .btn:not(.secondary){background:#dc002d!important;border-color:#dc002d!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-radius:40px!important}
+html[data-theme="light"] .bap-course-page .btn:not(.secondary) span{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] .bap-course-page .btn.secondary{background:#fff!important;border:1.5px solid #dc002d!important;color:#a70927!important;-webkit-text-fill-color:#a70927!important;border-radius:40px!important}
+html[data-theme="light"] .bap-course-page .btn.secondary span{color:#a70927!important;-webkit-text-fill-color:#a70927!important}
+html[data-theme="light"] .bap-course-page .btn:hover{filter:brightness(.9)!important}
+html[data-theme="light"] .bap-course-page :is(.video,.play){border-color:#dc002d!important}
+html[data-theme="light"] .bap-course-page .video .play{background:#dc002d!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+@media(max-width:720px){html[data-theme="light"] .bap-course-page .actions .btn{width:100%!important;justify-content:center!important}}
