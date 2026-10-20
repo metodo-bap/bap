@@ -1455,3 +1455,31 @@ html[data-theme="light"] #corpo.bap-visual-corpo .body-region-panel button{color
 html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-image{background-image:linear-gradient(180deg,#ffffffea 0%,#fffffff0 55%,#ffffff9e 100%),var(--bap-new-art)!important;background-position:58% center!important}
 html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-content{padding-top:54px;padding-bottom:54px}
 }
+
+
+/* BAP interactive anatomy: three independent region illustrations */
+html[data-theme="light"] section#corpo.body-experience{--bap-region-art:url("assets/novo-visual/drummer_s_shoulder_pain_analysis.png");background:#fff!important}
+html[data-theme="light"] section#corpo.body-experience.bap-visual-corpo .body-experience-image,
+html[data-theme="light"] section#corpo.body-experience .body-experience-image{
+ background-image:linear-gradient(90deg,#fff 0%,#fff 24%,#fffffffa 37%,#ffffffaa 53%,#ffffff00 75%),var(--bap-region-art)!important;
+ background-size:cover!important;background-position: center center!important;
+ background-repeat:no-repeat!important;opacity:1!important;filter:none!important;
+ transition:background-image .18s ease!important
+}
+html[data-theme="light"] section#corpo.body-experience .region-description{
+ background:rgba(255,255,255,.94)!important;
+ border:1px solid #ecc8cf!important;border-radius:18px!important;
+ box-shadow:0 16px 44px rgba(91,5,24,.12)!important;
+ color:#571325!important;
+}
+html[data-theme="light"] section#corpo.body-experience .region-description strong{color:#a70420!important}
+html[data-theme="light"] section#corpo.body-experience .region-description p{color:#37444b!important}
+html[data-theme="light"] section#corpo.body-experience .region-navigation{border-top:1px solid #ead0d6!important}
+html[data-theme="light"] section#corpo.body-experience .region-navigation button{color:#810e24!important}
+html[data-theme="light"] section#corpo.body-experience .region-navigation span{color:#893447!important}
+html[data-theme="light"] section#corpo.body-experience .region-tab{background:#fff!important;color:#8a1730!important;border-color:#d89da9!important}
+html[data-theme="light"] section#corpo.body-experience .region-tab.active{background:#c9082b!important;color:#fff!important;border-color:#c9082b!important}
+html[data-theme="light"] section#corpo.body-experience .body-copy>a.btn{background:#c9082b!important;color:#fff!important;border:1px solid #c9082b!important}
+@media(max-width:850px){
+ html[data-theme="light"] section#corpo.body-experience .body-experience-image{background-image:linear-gradient(180deg,#ffffffee 0%,#ffffffe0 55%,#ffffffb0 100%),var(--bap-region-art)!important;background-position:60% center!important}
+}
