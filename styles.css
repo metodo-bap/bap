@@ -1728,3 +1728,15 @@ html[data-theme="light"] #depoimentos .quote-front small,html[data-theme="light"
 html[data-theme="light"] #depoimentos .quote-front h3,html[data-theme="light"] #depoimentos .quote-reveal h3{color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 2px 12px #0008!important}
 html[data-theme="light"] #depoimentos .quote-front p,html[data-theme="light"] #depoimentos .quote-hint,html[data-theme="light"] #depoimentos .quote-reveal p,html[data-theme="light"] #depoimentos .quote-reveal small{color:#f3f3f4!important;-webkit-text-fill-color:#f3f3f4!important}
 html[data-theme="light"] #depoimentos .quote-card:focus-visible{outline:3px solid #d6052d!important;outline-offset:4px!important}
+
+
+/* Depoimentos: preservar fotografia luminosa; somente apoio sutil para leitura */
+html[data-theme="light"] #depoimentos .quote-front{
+ background:linear-gradient(180deg,rgba(5,10,16,.28) 0%,rgba(5,10,16,.08) 48%,rgba(5,10,16,.35) 100%)!important;
+}
+html[data-theme="light"] #depoimentos .quote-art{filter:none!important;opacity:1!important}
+html[data-theme="light"] #depoimentos .quote-card .quote-front h3,
+html[data-theme="light"] #depoimentos .quote-card .quote-front p,
+html[data-theme="light"] #depoimentos .quote-card .quote-front small,
+html[data-theme="light"] #depoimentos .quote-card .quote-hint{text-shadow:0 2px 8px rgba(0,0,0,.75)!important}
+html[data-theme="light"] #depoimentos .quote-reveal{background:rgba(11,17,22,.86)!important}
