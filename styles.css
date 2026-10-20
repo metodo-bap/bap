@@ -1610,3 +1610,17 @@ html[data-theme="light"] #preparacao .learning-topic:first-child{border-top:1.5p
 html[data-theme="light"] #preparacao .learning-topic:first-child.active{border-top:1.5px solid #eb1738!important}
 html[data-theme="light"] #preparacao .learning-topics::before,
 html[data-theme="light"] #preparacao .learning-topics::after{content:none!important;display:none!important}
+
+
+/* Curso online — tipografia e CTA com contraste no fundo branco */
+html[data-theme="light"] .cinematic-course{background-color:#fff!important;color:#681324!important}
+html[data-theme="light"] .cinematic-course .split{position:relative;z-index:2}
+html[data-theme="light"] .cinematic-course .split>div:first-child{position:relative;z-index:3}
+html[data-theme="light"] .cinematic-course .eyebrow{color:#087b96!important;font-weight:800!important;letter-spacing:.16em}
+html[data-theme="light"] .cinematic-course .eyebrow b{color:#df0a2b!important}
+html[data-theme="light"] .cinematic-course h2{color:#701225!important;-webkit-text-fill-color:#701225!important;text-shadow:none!important;font-weight:900}
+html[data-theme="light"] .cinematic-course .intro{color:#344957!important;-webkit-text-fill-color:#344957!important;text-shadow:none!important;line-height:1.65!important;max-width:590px}
+html[data-theme="light"] .cinematic-course .btn{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:25px!important;min-height:56px!important;padding:14px 27px!important;background:#d0072c!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #d0072c!important;border-radius:999px!important;box-shadow:0 8px 24px #99062220!important;font-weight:800!important}
+html[data-theme="light"] .cinematic-course .btn:hover{background:#a90525!important;border-color:#a90525!important;transform:translateY(-2px)}
+html[data-theme="light"] .cinematic-course .btn:focus-visible{outline:3px solid #a90525;outline-offset:4px}
+@media(max-width:740px){html[data-theme="light"] .cinematic-course h2{font-size:clamp(46px,11vw,74px)!important}html[data-theme="light"] .cinematic-course .btn{width:100%!important}}
