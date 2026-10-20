@@ -1526,3 +1526,24 @@ html[data-theme="light"] #preparacao .learning-actions .btn:hover{background:#99
 html[data-theme="light"] #preparacao .learning-topic:focus-visible,html[data-theme="light"] #preparacao .learning-actions a:focus-visible{outline:3px solid #b00624!important;outline-offset:3px}
 @media(max-width:640px){html[data-theme="light"] #preparacao .learning-content{padding:20px!important}html[data-theme="light"] #preparacao .learning-topic{grid-template-columns:30px minmax(0,1fr) 18px;gap:8px;min-height:57px;padding:10px 12px!important;font-size:14px!important}html[data-theme="light"] #preparacao .learning-actions{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html[data-theme="light"] #preparacao .learning-topic{transition:none!important}}
+
+
+/* Painel Explorar o Programa — layout aprovado, desktop/mobile */
+html[data-theme="light"] #preparacao .learning-content{background:#fff!important;border-radius:24px!important;box-shadow:0 14px 45px rgba(35,35,45,.08)!important;padding:clamp(22px,3vw,42px)!important}
+html[data-theme="light"] #preparacao .learning-kicker{font-size:13px!important;letter-spacing:.19em!important;color:#364451!important;margin-bottom:20px!important;border:0!important}
+html[data-theme="light"] #preparacao .learning-kicker span{color:#c70725!important;font-weight:800!important}
+html[data-theme="light"] #preparacao .learning-topics{gap:12px!important;display:grid!important}
+html[data-theme="light"] #preparacao .learning-topic{grid-template-columns:55px minmax(0,1fr) 42px!important;gap:14px!important;min-height:68px!important;border:1px solid #e5e8eb!important;border-radius:16px!important;padding:12px 20px!important;color:#192c38!important;background:#fff!important;box-shadow:0 3px 8px #06182705!important}
+html[data-theme="light"] #preparacao .learning-topic span{color:#64727b!important;font-size:17px!important;font-weight:700!important;border-right:1px solid #d9e0e5;padding-right:16px}
+html[data-theme="light"] #preparacao .learning-topic em{display:grid!important;place-items:center!important;justify-self:end!important;height:36px;width:36px;border-radius:50%;background:#f2f3f5!important;color:#243744!important;font-size:21px!important;font-style:normal!important}
+html[data-theme="light"] #preparacao .learning-topic.active{border:1.5px solid #eb1738!important;background:#fff5f6!important;color:#8f001e!important;box-shadow:0 4px 12px #d7092312!important}
+html[data-theme="light"] #preparacao .learning-topic.active span{color:#bd0725!important;border-right-color:#eea5b2}
+html[data-theme="light"] #preparacao .learning-topic.active em{background:#d8082a!important;color:#fff!important}
+html[data-theme="light"] #preparacao .learning-topic:hover:not(.active){background:#fff9fa!important;border-color:#e6a2af!important}
+html[data-theme="light"] #preparacao .learning-description{margin-top:26px!important;padding:28px 6px 0!important;border-top:1px solid #d5dde2!important}
+html[data-theme="light"] #preparacao .learning-description::before{content:"";display:block;width:42px;height:4px;border-radius:3px;background:#c9082b;margin-bottom:20px}
+html[data-theme="light"] #preparacao .learning-description strong{color:#96001b!important;font-size:clamp(25px,2.2vw,34px)!important}
+html[data-theme="light"] #preparacao .learning-description p{color:#344755!important;font-size:clamp(15px,1.3vw,18px)!important}
+html[data-theme="light"] #preparacao .learning-actions{grid-template-columns:1fr 1fr!important;margin-top:30px!important;gap:12px!important}
+html[data-theme="light"] #preparacao .learning-actions :is(.btn,.learning-buy){border-radius:12px!important;min-height:58px!important}
+@media(max-width:740px){html[data-theme="light"] #preparacao .learning-content{padding:20px!important}html[data-theme="light"] #preparacao .learning-topic{grid-template-columns:32px minmax(0,1fr) 35px!important;min-height:62px!important;padding:10px 12px!important;gap:8px!important}html[data-theme="light"] #preparacao .learning-topic span{padding-right:6px;font-size:14px!important}html[data-theme="light"] #preparacao .learning-topic em{height:30px;width:30px}html[data-theme="light"] #preparacao .learning-actions{grid-template-columns:1fr!important}}
