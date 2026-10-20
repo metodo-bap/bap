@@ -339,3 +339,16 @@ document.addEventListener('DOMContentLoaded',()=>{
   image.src=url;
  });
 });
+
+
+/* Detect approved portrait solution artwork, then show the artwork as a single complete linked card. */
+document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('#outras-solucoes .bap-solution-card').forEach(card=>{
+  const img=card.querySelector('.bap-solution-visual img');
+  if(!img)return;
+  const check=()=>{card.classList.toggle('bap-art-ready',img.naturalWidth>0&&img.naturalHeight/img.naturalWidth>1.18)};
+  img.addEventListener('load',check);
+  img.addEventListener('error',()=>card.classList.remove('bap-art-ready'));
+  if(img.complete)check();
+ });
+});
