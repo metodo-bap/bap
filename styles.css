@@ -1431,3 +1431,27 @@ html[data-theme="light"] #preparacao.bap-visual-preparacao .learning-photo{backg
 html[data-theme="light"] .cinematic-course.bap-visual-curso::before{background-position:65% center!important}
 }
 @media(prefers-reduced-motion:reduce){.hero.bap-visual-home *{animation:none!important}}
+
+
+/* BAP segunda dobra: fundo branco, legibilidade e controles — 2026-10-20 */
+html[data-theme="light"] #corpo.body-experience.bap-visual-corpo{background:#fff!important;color:#26343b!important;isolation:isolate}
+html[data-theme="light"] #corpo.bap-visual-corpo::before,
+html[data-theme="light"] #corpo.bap-visual-corpo::after{background:transparent!important;opacity:0!important;pointer-events:none}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-image{position:absolute;inset:0;background-image:linear-gradient(90deg,#fff 0%,#fffffff5 31%,#ffffffad 47%,#ffffff00 73%),var(--bap-new-art)!important;background-size:cover!important;background-position:center!important;opacity:1!important;filter:none!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-image::before,
+html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-image::after{display:none!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-content{position:relative;z-index:2}
+html[data-theme="light"] #corpo.bap-visual-corpo h2{color:#77101c!important;text-shadow:none!important}
+html[data-theme="light"] #corpo.bap-visual-corpo h2 em{color:#e10b29!important}
+html[data-theme="light"] #corpo.bap-visual-corpo :is(.intro,.body-copy>p){color:#364954!important;text-shadow:none!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-region-control button{color:#89172a!important;background:#fff!important;border:1px solid #d9a6af!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-region-control button:is(.active,[aria-pressed="true"]){color:#fff!important;background:#c80d28!important;border-color:#c80d28!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-region-control button:focus-visible{outline:3px solid #b10e27;outline-offset:3px}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-region-panel{background:#ffffffed!important;color:#273940!important;border:1px solid #e2bbc4!important;box-shadow:0 15px 45px #220b1821!important;backdrop-filter:blur(8px)}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-region-panel :is(h3,strong){color:#b40a26!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-region-panel p{color:#364954!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-region-panel button{color:#80111f!important}
+@media(max-width:850px){
+html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-image{background-image:linear-gradient(180deg,#ffffffea 0%,#fffffff0 55%,#ffffff9e 100%),var(--bap-new-art)!important;background-position:58% center!important}
+html[data-theme="light"] #corpo.bap-visual-corpo .body-experience-content{padding-top:54px;padding-bottom:54px}
+}
