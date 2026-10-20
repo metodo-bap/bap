@@ -1771,3 +1771,31 @@ html[data-theme="light"] #oferta .offer-box .btn span{color:#fff!important;-webk
 html[data-theme="light"] #oferta .offer-box .btn:hover{background:#a90828!important;border-color:#a90828!important}
 html[data-theme="light"] #oferta .offer-box .small{font-size:13px!important;color:#68747b!important;-webkit-text-fill-color:#68747b!important}
 @media(max-width:760px){html[data-theme="light"] #oferta .offer-grid{gap:28px!important}html[data-theme="light"] #oferta .offer-box{padding:26px 22px!important}html[data-theme="light"] #oferta .offer-checks>div{padding:15px 0!important}}
+
+
+/* FAQ 08 — fidelidade ao layout aprovado: cards brancos, ícones e identidade vermelha */
+html[data-theme="light"] #perguntas{background:#fff!important;color:#19222a!important}
+html[data-theme="light"] #perguntas .eyebrow{color:#34323b!important;-webkit-text-fill-color:#34323b!important}
+html[data-theme="light"] #perguntas .eyebrow b{color:#df002b!important;-webkit-text-fill-color:#df002b!important}
+html[data-theme="light"] #perguntas h2{color:#551020!important;-webkit-text-fill-color:#551020!important;text-shadow:none!important}
+html[data-theme="light"] #perguntas h2 em{color:#e0002b!important;-webkit-text-fill-color:#e0002b!important}
+html[data-theme="light"] #perguntas .bfaq-introduction p{color:#28323d!important;-webkit-text-fill-color:#28323d!important}
+html[data-theme="light"] #perguntas .bfaq-decor{background:#e0002b!important}
+html[data-theme="light"] #perguntas .bfaq-introduction a{color:#ca0029!important;-webkit-text-fill-color:#ca0029!important}
+html[data-theme="light"] #perguntas .bfaq-item{background:#fff!important;border:1px solid #e7e1e2!important;border-radius:17px!important;box-shadow:0 6px 22px rgba(47,21,29,.035)!important;overflow:hidden!important}
+html[data-theme="light"] #perguntas .bfaq-item[open]{border:1.5px solid #e0002b!important;background:#fffafa!important}
+html[data-theme="light"] #perguntas .bfaq-item summary{display:flex!important;align-items:center!important;gap:18px!important;color:#161d24!important;-webkit-text-fill-color:#161d24!important;padding:22px clamp(18px,2vw,31px)!important}
+html[data-theme="light"] #perguntas .bfaq-number,html[data-theme="light"] #perguntas .bfaq-aside-n{color:#e0002b!important;-webkit-text-fill-color:#e0002b!important;font-weight:800!important;flex-shrink:0}
+html[data-theme="light"] #perguntas .bfaq-question{color:#141920!important;-webkit-text-fill-color:#141920!important;font-weight:800!important;flex:1!important}
+html[data-theme="light"] #perguntas .bfaq-icon{display:inline-grid!important;place-items:center!important;width:45px!important;height:45px!important;min-width:45px!important;border-radius:50%!important;background:#ffeced!important;color:#18202a!important;-webkit-text-fill-color:#18202a!important}
+html[data-theme="light"] #perguntas .bfaq-icon svg{width:24px!important;height:24px!important;display:block!important}
+html[data-theme="light"] #perguntas .bfaq-trigger{border-color:#b3b6bc!important;color:#626a72!important}
+html[data-theme="light"] #perguntas .bfaq-item[open] .bfaq-trigger{background:#e0002b!important;color:#fff!important;border-color:#e0002b!important}
+html[data-theme="light"] #perguntas .bfaq-answer{color:#343d47!important;-webkit-text-fill-color:#343d47!important;background:transparent!important}
+html[data-theme="light"] #perguntas .bfaq-answer p{color:#343d47!important;-webkit-text-fill-color:#343d47!important}
+html[data-theme="light"] #perguntas .bfaq-aside{background:#faf9f9!important;border:1px solid #e8e2e3!important;border-top:3px solid #e0002b!important;color:#1a232b!important;box-shadow:0 12px 35px #300b1a0b!important;border-radius:18px!important}
+html[data-theme="light"] #perguntas .bfaq-aside-index,html[data-theme="light"] #perguntas .bfaq-aside-feature strong{color:#1c222c!important;-webkit-text-fill-color:#1c222c!important}
+html[data-theme="light"] #perguntas .bfaq-aside-feature{display:flex!important;gap:14px!important;align-items:flex-start!important;border-color:#e4dddf!important}
+html[data-theme="light"] #perguntas .bfaq-aside-feature p,html[data-theme="light"] #perguntas .bfaq-aside-note{color:#505b66!important;-webkit-text-fill-color:#505b66!important}
+html[data-theme="light"] #perguntas .bfaq-buy{background:#d5002c!important;border-color:#d5002c!important;color:white!important;-webkit-text-fill-color:white!important}
+@media(max-width:720px){html[data-theme="light"] #perguntas .bfaq-item summary{gap:10px!important;padding:17px 14px!important}html[data-theme="light"] #perguntas .bfaq-icon{width:36px!important;height:36px!important;min-width:36px!important}html[data-theme="light"] #perguntas .bfaq-icon svg{width:20px!important;height:20px!important}}
