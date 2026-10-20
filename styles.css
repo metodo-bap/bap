@@ -1749,3 +1749,25 @@ html[data-theme="light"] #depoimentos .actions .btn.secondary span{color:#fff!im
 html[data-theme="light"] #depoimentos .actions .btn.secondary:hover{background:#a90529!important;border-color:#a90529!important}
 html[data-theme="light"] #depoimentos .actions .btn.secondary:focus-visible{outline:3px solid #8f0a24!important;outline-offset:4px!important}
 @media(max-width:600px){html[data-theme="light"] #depoimentos .actions .btn.secondary{width:100%!important;gap:12px!important}}
+
+
+/* Dobra 07 — Oferta BAP: redesign editorial claro em vermelho */
+html[data-theme="light"] #oferta{background:#fff!important;padding-top:clamp(64px,7vw,112px)!important;padding-bottom:clamp(72px,8vw,120px)!important}
+html[data-theme="light"] #oferta>.eyebrow{color:#94162d!important;-webkit-text-fill-color:#94162d!important;letter-spacing:.17em!important}
+html[data-theme="light"] #oferta>.eyebrow b{color:#e30632!important;-webkit-text-fill-color:#e30632!important}
+html[data-theme="light"] #oferta .offer-grid{align-items:center!important;gap:clamp(32px,5vw,90px)!important}
+html[data-theme="light"] #oferta h2{color:#641426!important;-webkit-text-fill-color:#641426!important;text-shadow:none!important;line-height:.99!important}
+html[data-theme="light"] #oferta h2 em{color:#d30630!important;-webkit-text-fill-color:#d30630!important;font-style:normal!important}
+html[data-theme="light"] #oferta .intro{color:#44515b!important;-webkit-text-fill-color:#44515b!important;max-width:640px!important;line-height:1.55!important}
+html[data-theme="light"] #oferta .offer-checks{margin-top:32px!important;display:grid!important;gap:0!important}
+html[data-theme="light"] #oferta .offer-checks>div{display:flex!important;align-items:center!important;gap:14px!important;padding:17px 0!important;border-bottom:1px solid #ead9dd!important;color:#293a43!important;-webkit-text-fill-color:#293a43!important;font-size:clamp(15px,1.15vw,18px)!important;font-weight:550!important;line-height:1.35!important}
+html[data-theme="light"] #oferta .offer-checks>div::first-letter{color:#cd092f!important}
+html[data-theme="light"] #oferta .offer-box{background:#fff8f9!important;border:1px solid #edcdd4!important;border-top:4px solid #d40731!important;border-radius:24px!important;box-shadow:0 20px 58px rgba(81,14,32,.08)!important;padding:clamp(28px,3.5vw,52px)!important}
+html[data-theme="light"] #oferta .offer-box .tag{color:#b20b2b!important;-webkit-text-fill-color:#b20b2b!important;font-weight:800!important;letter-spacing:.15em!important}
+html[data-theme="light"] #oferta .offer-box h3{color:#681326!important;-webkit-text-fill-color:#681326!important;line-height:1.03!important}
+html[data-theme="light"] #oferta .offer-box p{color:#374750!important;-webkit-text-fill-color:#374750!important;line-height:1.55!important}
+html[data-theme="light"] #oferta .offer-box .btn{display:flex!important;justify-content:center!important;align-items:center!important;gap:20px!important;min-height:60px!important;width:100%!important;border-radius:14px!important;background:#d40731!important;border:1px solid #d40731!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-weight:800!important;box-shadow:0 10px 24px #a20d2b20!important}
+html[data-theme="light"] #oferta .offer-box .btn span{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] #oferta .offer-box .btn:hover{background:#a90828!important;border-color:#a90828!important}
+html[data-theme="light"] #oferta .offer-box .small{font-size:13px!important;color:#68747b!important;-webkit-text-fill-color:#68747b!important}
+@media(max-width:760px){html[data-theme="light"] #oferta .offer-grid{gap:28px!important}html[data-theme="light"] #oferta .offer-box{padding:26px 22px!important}html[data-theme="light"] #oferta .offer-checks>div{padding:15px 0!important}}
