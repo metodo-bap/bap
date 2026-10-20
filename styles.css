@@ -1740,3 +1740,12 @@ html[data-theme="light"] #depoimentos .quote-card .quote-front p,
 html[data-theme="light"] #depoimentos .quote-card .quote-front small,
 html[data-theme="light"] #depoimentos .quote-card .quote-hint{text-shadow:0 2px 8px rgba(0,0,0,.75)!important}
 html[data-theme="light"] #depoimentos .quote-reveal{background:rgba(11,17,22,.86)!important}
+
+
+/* Depoimentos: nota editorial e CTA conforme identidade vermelha BAP */
+html[data-theme="light"] #depoimentos .quote-disclaimer{color:#36434b!important;-webkit-text-fill-color:#36434b!important;font-size:clamp(14px,1.15vw,17px)!important;line-height:1.65!important;max-width:960px!important}
+html[data-theme="light"] #depoimentos .actions .btn.secondary{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:22px!important;min-height:56px!important;border-radius:999px!important;padding:14px 30px!important;background:#d4072f!important;border:1px solid #d4072f!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-weight:800!important;box-shadow:0 7px 20px rgba(165,0,34,.12)!important;text-shadow:none!important}
+html[data-theme="light"] #depoimentos .actions .btn.secondary span{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] #depoimentos .actions .btn.secondary:hover{background:#a90529!important;border-color:#a90529!important}
+html[data-theme="light"] #depoimentos .actions .btn.secondary:focus-visible{outline:3px solid #8f0a24!important;outline-offset:4px!important}
+@media(max-width:600px){html[data-theme="light"] #depoimentos .actions .btn.secondary{width:100%!important;gap:12px!important}}
