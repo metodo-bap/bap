@@ -164,7 +164,7 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   buttons.forEach((b,i)=>{b.classList.toggle('active',i===current);b.setAttribute('aria-pressed',String(i===current))});
   visual.style.backgroundImage="linear-gradient(0deg,#051018ed,#06101800 48%,#06101836),url('"+item.image+"')";
   visual.setAttribute('aria-label','Ilustração do programa: '+item.title.toLowerCase());
-  visualTitle.textContent=item.title;label.textContent=item.title;desc.textContent=item.text;
+  visualTitle.textContent=item.title;if(label)label.textContent=item.title;desc.textContent=item.text;
   count.textContent=String(current+1).padStart(2,'0')+' / 06';
   if(focus)tab.focus();
  }
