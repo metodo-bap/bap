@@ -1574,3 +1574,14 @@ html[data-theme="light"] .quote-card p {
   color:#e8edf0!important;
 }
 html[data-theme="light"] .method-foundations-grid article {background-color:#081922!important}
+
+
+/* Contraste correto dos textos sobre fotografia na ESQUERDA do programa */
+html[data-theme="light"] #preparacao .learning-photo .learning-photo-meta,
+html[data-theme="light"] #preparacao .learning-photo .learning-photo-meta span,
+html[data-theme="light"] #preparacao .learning-photo .learning-photo-meta strong,
+html[data-theme="light"] #preparacao .learning-photo #learning-photo-title{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.7)!important;
+}
+html[data-theme="light"] #preparacao .learning-photo .learning-photo-meta{position:relative;z-index:3}
