@@ -1638,3 +1638,12 @@ html[data-theme="light"] .bap-video-gallery h2 em{color:#cf062b!important}
 html[data-theme="light"] .bap-video-gallery .intro{color:#34434c!important}
 html[data-theme="light"] .bap-video-gallery .btn.secondary{border-color:#be092c!important;color:#a80725!important;background:#fff!important}
 html[data-theme="light"] .bap-video-gallery .btn.secondary:hover{background:#fff0f3!important}
+
+
+/* Fix definitivo: mostrar a arte final, não o antigo fundo fotográfico */
+#videos .bap-video-card.bap-video-new{position:relative!important;isolation:isolate!important;background:#fff!important}
+#videos .bap-video-card.bap-video-new .bap-video-full-art{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;z-index:3!important;pointer-events:none!important;border-radius:inherit!important}
+#videos .bap-video-card.bap-video-new .bap-video-art{display:none!important}
+#videos .bap-video-card.bap-video-new :is(.bap-video-play,.bap-video-copy){display:none!important}
+#videos .bap-video-card.bap-video-new::before,#videos .bap-video-card.bap-video-new::after{content:none!important;display:none!important}
+#videos .bap-video-card.bap-video-new{border-color:#e7d5db!important}
