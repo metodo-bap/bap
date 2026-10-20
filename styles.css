@@ -1912,3 +1912,33 @@ html[data-theme="light"] .bap-footer .bap-footer-logo img{mix-blend-mode:normal!
 html[data-theme="light"] .bap-footer .bap-footer-socials a{border-color:#e5b7c2!important}
 @media(max-width:980px){html[data-theme="light"] #comprar .bap-final-layout{grid-template-columns:1fr!important}html[data-theme="light"] #comprar .bap-final-aside{max-width:690px!important;width:100%!important}}
 @media(max-width:560px){html[data-theme="light"] #comprar .bap-final-aside{grid-template-columns:1fr!important}html[data-theme="light"] #comprar .bap-final-benefits{margin:0!important}html[data-theme="light"] #comprar .bap-final-photo{height:290px!important;min-height:290px!important}html[data-theme="light"] #comprar .actions .btn{width:100%!important;justify-content:space-between!important}}
+
+
+/* MÉTODO BAP — harmonização cromática 2026: apenas esta página */
+html[data-theme="light"] .bap-method-v2{
+ --method-red:#dc002d;--method-wine:#681426;--method-ink:#192b37;--method-copy:#41505b;
+}
+html[data-theme="light"] .bap-method-v2 :is(.method-opening,.method-pain,.method-second-video,.method-definition,.method-audience,.method-foundations,.method-author,.method-last){background:#fff!important}
+html[data-theme="light"] .bap-method-v2 .eyebrow{color:#8f172e!important;-webkit-text-fill-color:#8f172e!important}
+html[data-theme="light"] .bap-method-v2 .eyebrow b{color:#dc002d!important;-webkit-text-fill-color:#dc002d!important}
+html[data-theme="light"] .bap-method-v2 :is(h1,h2){color:#681426!important;-webkit-text-fill-color:#681426!important;text-shadow:none!important}
+html[data-theme="light"] .bap-method-v2 :is(h1,h2) em{color:#dc002d!important;-webkit-text-fill-color:#dc002d!important;font-style:normal!important}
+html[data-theme="light"] .bap-method-v2 :is(.method-opening-copy,.method-pain-copy,.method-second-video-heading,.method-definition-copy,.method-foundations-heading,.method-author-text,.method-last) :is(p,.method-lead,.method-pain-lead,small){color:#41505b!important;-webkit-text-fill-color:#41505b!important}
+html[data-theme="light"] .bap-method-v2 :is(.method-audience-grid,.method-foundations-grid) article{background:#fff!important;border-color:#ead9dd!important}
+html[data-theme="light"] .bap-method-v2 :is(.method-audience-grid,.method-foundations-grid) article :is(h3,strong){color:#681426!important;-webkit-text-fill-color:#681426!important}
+html[data-theme="light"] .bap-method-v2 :is(.method-audience-grid,.method-foundations-grid) article :is(span,b){color:#dc002d!important;-webkit-text-fill-color:#dc002d!important}
+html[data-theme="light"] .bap-method-v2 :is(.method-audience-grid,.method-foundations-grid) article p{color:#41505b!important;-webkit-text-fill-color:#41505b!important}
+html[data-theme="light"] .bap-method-v2 :is(.method-text-link,.method-material-action){color:#b5082b!important;-webkit-text-fill-color:#b5082b!important;border-color:#d50a33!important}
+html[data-theme="light"] .bap-method-v2 .btn:not(.secondary){background:#dc002d!important;border-color:#dc002d!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] .bap-method-v2 .btn:not(.secondary) span{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] .bap-method-v2 .method-opening-micro{color:#731c30!important;-webkit-text-fill-color:#731c30!important}
+html[data-theme="light"] .bap-method-v2 .method-opening-micro span{color:#dc002d!important;-webkit-text-fill-color:#dc002d!important}
+/* vídeo permanece em superfície escura: contraste alto */
+html[data-theme="light"] .bap-method-v2 .method-video-card{border-color:#e3ccd2!important}
+html[data-theme="light"] .bap-method-v2 .method-video-card :is(.method-video-meta,.method-video-footer){color:#f7f7f7!important}
+html[data-theme="light"] .bap-method-v2 .method-video-card .method-video-footer :is(strong,span,a){color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] .bap-method-v2 .method-pain-medianote{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] .bap-method-v2 .method-pain-medianote i{color:#ff3557!important}
+html[data-theme="light"] .bap-method-v2 .method-materials-actions{background:#fff!important}
+html[data-theme="light"] .bap-method-v2 .method-materials-actions p{color:#41505b!important;-webkit-text-fill-color:#41505b!important}
+html[data-theme="light"] .bap-method-v2 .method-last small{color:#5c6872!important;-webkit-text-fill-color:#5c6872!important}
