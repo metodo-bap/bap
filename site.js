@@ -87,6 +87,16 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
  if(!section||!section.classList.contains('body-experience'))return;
  const tabs=[...section.querySelectorAll('.region-tab')];
  const names=['ombros','costas','punhos'];
+ const regionImages={
+  ombros:'assets/novo-visual/drummer_s_shoulder_pain_analysis.png',
+  costas:'assets/novo-visual/biomechanical_drummer_spine_analysis.png',
+  punhos:'assets/desktop/punhos.webp'
+ };
+ const regionVisual=section.querySelector('.body-experience-image');
+ const cachedImages={};
+ for(const [key,url] of Object.entries(regionImages)){
+  const preloader=new Image(); preloader.src=url;cachedImages[key]=preloader;
+ }
  const descriptions={
   ombros:'Observe a participação dos ombros e dos braços nos movimentos repetitivos ao tocar.',
   costas:'Conheça a relação entre postura, permanência no instrumento e conforto durante a prática.',
@@ -101,6 +111,16 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   const selected=names[active];
   section.classList.remove(...names.map(n=>'area-'+n));
   section.classList.add('area-'+selected);
+  if(regionVisual){
+   const file=regionImages[selected];
+   const apply=()=>{
+    if(names[active]!==selected)return;
+    section.style.setProperty('--bap-region-art','url("'+file+'")');
+    regionVisual.setAttribute('aria-label','Ilustração anatômica: '+(selected==='costas'?'coluna e costas':selected));
+   };
+   if(cachedImages[selected].complete&&cachedImages[selected].naturalWidth)apply();
+   else cachedImages[selected].addEventListener('load',apply,{once:true});
+  }
   tabs.forEach((tab,i)=>{tab.classList.toggle('active',i===active);tab.setAttribute('aria-pressed',String(i===active))});
   if(title)title.textContent=selected==='costas'?'COLUNA':selected.toUpperCase();
   if(description)description.textContent=descriptions[selected];
