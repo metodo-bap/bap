@@ -1867,3 +1867,13 @@ html[data-theme="light"] #outras-solucoes .bap-solution-details p{margin-bottom:
 html[data-theme="light"] #outras-solucoes .bap-solution-link{margin-top:auto!important}
 @media(max-width:850px){html[data-theme="light"] #outras-solucoes .bap-solutions-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}html[data-theme="light"] #outras-solucoes .bap-solution-card{aspect-ratio:auto!important;min-height:0!important}html[data-theme="light"] #outras-solucoes .bap-solution-visual{aspect-ratio:1.06/1!important}}
 @media(max-width:560px){html[data-theme="light"] #outras-solucoes .bap-solutions-grid{grid-template-columns:1fr!important;gap:18px!important}html[data-theme="light"] #outras-solucoes .bap-solution-card{aspect-ratio:1122/1402!important;max-width:440px!important;margin-inline:auto!important}}
+
+
+/* 09: suporte às artes finais verticais 1122x1402 sem duplicar texto.
+   Enquanto as imagens antigas estiverem no servidor, preservar os detalhes e sua altura natural. */
+html[data-theme="light"] #outras-solucoes .bap-solution-card{aspect-ratio:auto!important;min-height:0!important;height:auto!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-card.bap-art-ready{aspect-ratio:1122/1402!important;overflow:hidden!important;position:relative!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-card.bap-art-ready .bap-solution-visual{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;aspect-ratio:auto!important;z-index:1!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-card.bap-art-ready .bap-solution-visual img{width:100%!important;height:100%!important;object-fit:fill!important;transform:none!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-card.bap-art-ready .bap-solution-details{display:none!important}
+html[data-theme="light"] #outras-solucoes .bap-solution-card.bap-art-ready:hover img{transform:none!important}
