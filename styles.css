@@ -1547,3 +1547,10 @@ html[data-theme="light"] #preparacao .learning-description p{color:#344755!impor
 html[data-theme="light"] #preparacao .learning-actions{grid-template-columns:1fr 1fr!important;margin-top:30px!important;gap:12px!important}
 html[data-theme="light"] #preparacao .learning-actions :is(.btn,.learning-buy){border-radius:12px!important;min-height:58px!important}
 @media(max-width:740px){html[data-theme="light"] #preparacao .learning-content{padding:20px!important}html[data-theme="light"] #preparacao .learning-topic{grid-template-columns:32px minmax(0,1fr) 35px!important;min-height:62px!important;padding:10px 12px!important;gap:8px!important}html[data-theme="light"] #preparacao .learning-topic span{padding-right:6px;font-size:14px!important}html[data-theme="light"] #preparacao .learning-topic em{height:30px;width:30px}html[data-theme="light"] #preparacao .learning-actions{grid-template-columns:1fr!important}}
+
+
+/* Divisor centralizado entre o cabeçalho e o primeiro card do programa */
+html[data-theme="light"] #preparacao .learning-kicker{position:relative!important;margin:0 0 54px!important;padding:0!important;border:0!important;min-height:26px!important;line-height:26px!important}
+html[data-theme="light"] #preparacao .learning-kicker::after{content:"";position:absolute;left:0;right:0;bottom:-27px;height:1px;background:#c5cfd4;pointer-events:none}
+html[data-theme="light"] #preparacao .learning-topics{margin-top:0!important}
+@media(max-width:740px){html[data-theme="light"] #preparacao .learning-kicker{margin-bottom:42px!important}html[data-theme="light"] #preparacao .learning-kicker::after{bottom:-21px}}
