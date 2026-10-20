@@ -113,6 +113,8 @@ document.querySelectorAll('[data-area]').forEach(p=>{p.setAttribute('aria-presse
   section.classList.add('area-'+selected);
   if(regionVisual){
    const file=regionImages[selected];
+   // Immediately clear previous anatomical image: never leave Coluna displayed for Punhos.
+   section.style.setProperty('--bap-region-art','none');
    const apply=()=>{
     if(names[active]!==selected)return;
     section.style.setProperty('--bap-region-art','url("'+file+'")');
