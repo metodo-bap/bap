@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  const files=['01-aquecimento.webp','02-postura.webp','03-coluna.webp','04-alongamento.webp','05-polegar.webp','06-ergonomia.webp'];
  document.querySelectorAll('#videos .bap-video-card').forEach((card,index)=>{
   if(index>=files.length)return;
-  const url='assets/videos/novo/'+files[index];
+  const url='assets/videos/'+files[index];
   const image=new Image();
   image.onload=()=>{
    card.style.setProperty('--bap-video-card-art','url("'+url+'")');
