@@ -2018,3 +2018,14 @@ html[data-theme="light"] body:has(#inicio.hero) #inicio.hero h1{color:#681426!im
 html[data-theme="light"] body:has(#inicio.hero) #inicio.hero h1 em{color:#df0031!important;-webkit-text-fill-color:#df0031!important}
 @media(max-width:1020px){html[data-theme="light"] body:has(#inicio.hero) #inicio.hero::before{background:linear-gradient(90deg,#fff 0%,#ffffffef 42%,#ffffff59 100%),url('assets/bap-hero-branco-foto.webp') right center / auto 100% no-repeat,url('assets/hero-desktop.webp') right center / auto 100% no-repeat!important}}
 @media(max-width:650px){html[data-theme="light"] body:has(#inicio.hero) #inicio.hero::before{background:linear-gradient(180deg,#fff 0%,#fffffff5 42%,#ffffffb9 100%),url('assets/bap-hero-branco-foto.webp') 68% center / auto 100% no-repeat,url('assets/hero-desktop.webp') 68% center / auto 100% no-repeat!important}}
+
+
+/* Método: preencher coluna direita vazia com foto branca aprovada, sem rasterizar texto. */
+html[data-theme="light"] .bap-method-v2 .method-opening{overflow:hidden!important;background:#fff!important;position:relative!important}
+html[data-theme="light"] .bap-method-v2 .method-opening-grid{display:grid!important;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;gap:clamp(24px,4vw,65px)!important;align-items:center!important;max-width:1500px!important}
+html[data-theme="light"] .bap-method-v2 .method-opening-copy{position:relative!important;z-index:2!important;max-width:750px!important}
+html[data-theme="light"] .bap-method-v2 .method-opening-grid::after{content:""!important;display:block!important;grid-column:2!important;grid-row:1!important;align-self:stretch!important;min-height:570px!important;background:url('assets/bap-hero-branco-foto.webp') center center / cover no-repeat!important;border-radius:24px!important}
+html[data-theme="light"] .bap-method-v2 .method-opening h1{color:#681426!important;-webkit-text-fill-color:#681426!important}
+html[data-theme="light"] .bap-method-v2 .method-opening h1 em{color:#df0031!important;-webkit-text-fill-color:#df0031!important}
+@media(max-width:900px){html[data-theme="light"] .bap-method-v2 .method-opening-grid{grid-template-columns:1fr!important}html[data-theme="light"] .bap-method-v2 .method-opening-grid::after{grid-column:1!important;grid-row:auto!important;min-height:430px!important;aspect-ratio:4/3!important;background-position:center!important}}
+@media(max-width:600px){html[data-theme="light"] .bap-method-v2 .method-opening-grid::after{min-height:310px!important;aspect-ratio:1/1!important}html[data-theme="light"] .bap-method-v2 .method-opening{padding-bottom:55px!important}}
