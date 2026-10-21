@@ -2073,3 +2073,11 @@ html[data-theme="light"] .bap-method-v2 .bap-method-pillars svg{display:block!im
 html[data-theme="light"] .bap-method-v2 .bap-method-pillars strong{font-size:11px!important;font-weight:800!important;line-height:1.35!important;letter-spacing:.105em!important;text-align:center!important;color:#253548!important;-webkit-text-fill-color:#253548!important}
 @media(hover:hover){html[data-theme="light"] .bap-method-v2 .bap-method-pillars>div:hover svg{transform:translateY(-3px)!important}}
 @media(max-width:700px){html[data-theme="light"] .bap-method-v2 .bap-method-pillars svg{width:33px!important;height:33px!important}html[data-theme="light"] .bap-method-v2 .bap-method-pillars>div{gap:8px!important;padding:3px 4px!important}html[data-theme="light"] .bap-method-v2 .bap-method-pillars strong{font-size:9px!important;letter-spacing:.035em!important}}
+
+
+/* Ícones da dobra Método — faixa inteiramente sobre branco, sem alterar CTA */
+html[data-theme="light"] .bap-method-v2 .method-opening .bap-method-pillars{position:relative!important;z-index:3!important;width:min(600px,100%)!important;max-width:100%!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;background:#ffffff!important;border-radius:12px!important;padding:12px 0!important;margin-top:33px!important}
+html[data-theme="light"] .bap-method-v2 .method-opening .bap-method-pillars>div{min-width:0!important;box-sizing:border-box!important;gap:11px!important;padding:4px 8px!important}
+html[data-theme="light"] .bap-method-v2 .method-opening .bap-method-pillars svg{width:38px!important;height:38px!important;stroke:#df0031!important;stroke-width:2.2!important;stroke-linecap:round!important;stroke-linejoin:round!important;overflow:visible!important}
+html[data-theme="light"] .bap-method-v2 .method-opening .bap-method-pillars strong{font-size:10px!important;line-height:1.3!important;letter-spacing:.075em!important;white-space:nowrap!important}
+@media(max-width:700px){html[data-theme="light"] .bap-method-v2 .method-opening .bap-method-pillars{width:100%!important;padding:9px 0!important}html[data-theme="light"] .bap-method-v2 .method-opening .bap-method-pillars svg{width:30px!important;height:30px!important}html[data-theme="light"] .bap-method-v2 .method-opening .bap-method-pillars strong{font-size:8px!important;letter-spacing:0!important}}
