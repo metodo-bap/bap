@@ -2099,3 +2099,25 @@ html[data-theme="light"] .bap-method-v2 .method-opening .bap-feature-v3>div:last
 html[data-theme="light"] .bap-method-v2 .method-opening .bap-feature-v3 svg{width:48px!important;height:48px!important;display:block!important;stroke:#e00030!important;stroke-width:2.8!important;fill:none!important;stroke-linecap:round!important;stroke-linejoin:round!important}
 html[data-theme="light"] .bap-method-v2 .method-opening .bap-feature-v3 strong{font-size:11px!important;letter-spacing:.09em!important;font-weight:850!important;color:#263646!important;-webkit-text-fill-color:#263646!important;white-space:nowrap!important}
 @media(max-width:700px){html[data-theme="light"] .bap-method-v2 .method-opening .bap-feature-v3{padding:12px 3px!important;border-radius:16px!important}html[data-theme="light"] .bap-method-v2 .method-opening .bap-feature-v3>div{gap:8px!important;padding:6px 2px!important}html[data-theme="light"] .bap-method-v2 .method-opening .bap-feature-v3 svg{width:32px!important;height:32px!important}html[data-theme="light"] .bap-method-v2 .method-opening .bap-feature-v3 strong{font-size:8px!important;letter-spacing:0!important}}
+
+
+/* BAP DESIGN SYSTEM 2026 — identidade tipográfica global aprovada em Vídeos */
+html[data-theme="light"]{--cyan:#d60030;--red:#db0030;--bg:#fff;--line:#e4e7e9;--muted:#485760}
+html[data-theme="light"] body{background:#fff;color:#28333c;font-family:Inter,Arial,sans-serif}
+html[data-theme="light"] main :is(h1,h2,h3,h4){font-family:'Barlow Condensed',Impact,sans-serif!important;font-weight:900!important;line-height:.98!important;text-transform:uppercase!important;letter-spacing:-.018em!important;color:#28333c!important;-webkit-text-fill-color:#28333c!important;text-shadow:none!important}
+html[data-theme="light"] main :is(h1,h2,h3,h4) em,
+html[data-theme="light"] main :is(h1,h2,h3,h4) .accent,
+html[data-theme="light"] main :is(h1,h2,h3,h4) .highlight{font-style:normal!important;color:#d90032!important;-webkit-text-fill-color:#d90032!important}
+html[data-theme="light"] main .eyebrow{font-weight:800!important;letter-spacing:.18em!important;color:#8a172e!important;-webkit-text-fill-color:#8a172e!important}
+html[data-theme="light"] main .eyebrow b{color:#dd0736!important;-webkit-text-fill-color:#dd0736!important}
+html[data-theme="light"] main :is(.intro,.lead,.method-lead,.method-pain-lead,.legal){color:#40505b!important;-webkit-text-fill-color:#40505b!important;line-height:1.58!important}
+html[data-theme="light"] main :is(.section,.pagehero){background-color:#fff}
+html[data-theme="light"] main :is(.card,.bap-solution-card) :is(h3,h4){color:#28333c!important;-webkit-text-fill-color:#28333c!important}
+html[data-theme="light"] main :is(.num,.ticker,.method-text-link){color:#c60934!important;-webkit-text-fill-color:#c60934!important}
+html[data-theme="light"] main .btn:not(.secondary){background-color:#dd0031!important;border-color:#dd0031!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] main .btn.secondary{background-color:#fff!important;border-color:#dd0031!important;color:#b9002c!important;-webkit-text-fill-color:#b9002c!important}
+html[data-theme="light"] main .btn span{color:inherit!important;-webkit-text-fill-color:inherit!important}
+/* Preservar contraste em cartões e superfícies intencionalmente escuras */
+html[data-theme="light"] main :is(.method-video-card,.method-video-card .method-video-footer,.method-video-card .method-video-meta) :is(h3,h4,strong){color:#fff!important;-webkit-text-fill-color:#fff!important}
+html[data-theme="light"] main .method-opening h1,html[data-theme="light"] main .method-pain h2{color:#28333c!important;-webkit-text-fill-color:#28333c!important}
+html[data-theme="light"] main .method-opening h1 em,html[data-theme="light"] main .method-pain h2 em{color:#d90032!important;-webkit-text-fill-color:#d90032!important}
