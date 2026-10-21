@@ -2007,3 +2007,14 @@ html[data-theme="light"] .bap-method-v2 .method-pain-grid .method-video-footer{d
 html[data-theme="light"] .bap-method-v2 .method-pain-grid .method-video-footer :is(strong,span,a){color:#fff!important;-webkit-text-fill-color:#fff!important}
 @media(max-width:1000px){html[data-theme="light"] .bap-method-v2 .method-pain-grid{grid-template-columns:1fr!important}html[data-theme="light"] .bap-method-v2 .method-pain-grid>.method-video-card{max-width:800px!important}}
 @media(max-width:600px){html[data-theme="light"] .bap-method-v2 .method-pain{padding-block:55px!important}html[data-theme="light"] .bap-method-v2 .method-pain-copy h2{font-size:clamp(43px,11vw,66px)!important}html[data-theme="light"] .bap-method-v2 .method-pain-grid .method-video-meta,html[data-theme="light"] .bap-method-v2 .method-pain-grid .method-video-footer{padding:18px!important}html[data-theme="light"] .bap-method-v2 .method-pain-grid .method-video-footer{flex-direction:column!important;align-items:flex-start!important}}
+
+
+/* HERO HOME — retrato aprovado branco (arte isolada sem texto rasterizado). */
+html[data-theme="light"] body:has(#inicio.hero) #inicio.hero::before{
+ background:linear-gradient(90deg,#fff 0%,#fff 34%,#ffffffd9 48%,#ffffff00 67%),url('assets/bap-hero-branco-foto.webp') right center / auto 100% no-repeat!important;
+ filter:none!important;
+}
+html[data-theme="light"] body:has(#inicio.hero) #inicio.hero h1{color:#681426!important;-webkit-text-fill-color:#681426!important;max-width:750px!important}
+html[data-theme="light"] body:has(#inicio.hero) #inicio.hero h1 em{color:#df0031!important;-webkit-text-fill-color:#df0031!important}
+@media(max-width:1020px){html[data-theme="light"] body:has(#inicio.hero) #inicio.hero::before{background:linear-gradient(90deg,#fff 0%,#ffffffef 42%,#ffffff59 100%),url('assets/bap-hero-branco-foto.webp') right center / auto 100% no-repeat!important}}
+@media(max-width:650px){html[data-theme="light"] body:has(#inicio.hero) #inicio.hero::before{background:linear-gradient(180deg,#fff 0%,#fffffff5 42%,#ffffffb9 100%),url('assets/bap-hero-branco-foto.webp') 68% center / auto 100% no-repeat!important}}
