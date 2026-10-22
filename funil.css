@@ -57,3 +57,19 @@
 .intro-editorial .intro-pillars small{font-size:13px;color:#5d6873;line-height:1.4}
 .intro-editorial .intro-image{position:absolute;inset:0 0 0 52%;background:linear-gradient(90deg,#fff 0%,#ffffffcf 15%,#ffffff00 49%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat;filter:grayscale(1);opacity:.93;pointer-events:none}
 @media(max-width:800px){.intro-editorial .intro-body{display:flex;flex-direction:column;min-height:0;padding-top:70px;padding-bottom:0}.intro-editorial .intro-content{width:100%}.intro-editorial h2{font-size:clamp(43px,8.8vw,76px);white-space:normal}.intro-editorial .intro-description{font-size:16px!important}.intro-editorial .intro-pillars{gap:0}.intro-editorial .intro-pillars>div{padding:8px 6px}.intro-editorial .intro-pillars strong{font-size:10px;letter-spacing:0}.intro-editorial .intro-pillars small{font-size:11px}.intro-editorial .intro-icon{width:55px;height:55px}.intro-editorial .intro-image{position:relative;inset:auto;height:280px;width:calc(100% + 40px);margin-top:28px;background:linear-gradient(180deg,#fff,transparent 40%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat}}
+
+
+/* DOBRA 02 — inversao de composicao aprovada: foto à esquerda e conteudo à direita */
+@media(min-width:801px){
+.intro-editorial .intro-body{justify-content:flex-end!important}
+.intro-editorial .intro-content{width:53%!important;max-width:910px!important;padding-left:35px!important}
+.intro-editorial .intro-image{inset:0 51% 0 0!important;background:linear-gradient(270deg,#fff 0%,#ffffffed 7%,#ffffff00 35%),url("assets/bap-hero-branco-foto.webp") left center / auto 100% no-repeat!important;transform:scaleX(-1);filter:grayscale(1)!important}
+.intro-editorial h2{font-size:clamp(43px,4.35vw,76px)!important;white-space:normal!important}
+.intro-editorial .intro-description{max-width:820px!important}
+.intro-editorial .intro-pillars{width:100%!important}
+}
+@media(max-width:800px){
+.intro-editorial .intro-body{display:flex!important;flex-direction:column!important}
+.intro-editorial .intro-image{order:-1!important;width:calc(100% + 40px)!important;height:310px!important;margin:-0px 0 24px!important;background:linear-gradient(180deg,transparent 72%,#fff 100%),url("assets/bap-hero-branco-foto.webp") left center / auto 100% no-repeat!important;transform:scaleX(-1);filter:grayscale(1)!important}
+.intro-editorial .intro-content{padding:0!important}
+}
