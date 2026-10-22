@@ -36,3 +36,24 @@
 .bap-hero-refined .watch-play{color:#db0031}
 .topbar .nav-cta{background:#df0033!important;color:#fff!important}
 @media(max-width:780px){.bap-hero-refined h1{font-size:clamp(60px,13.5vw,95px)!important}.bap-hero-refined .hero-visual{background:linear-gradient(180deg,#fff 0%,transparent 18%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat!important}}
+
+
+/* DOBRA 02 / educacao corporal: layout editorial aprovado */
+.intro-editorial{position:relative;max-width:none!important;padding:0!important;min-height:650px;text-align:left!important;overflow:hidden;background:#fff}
+.intro-editorial .intro-body{max-width:1700px;min-height:650px;position:relative;display:flex;align-items:center;padding-top:65px;padding-bottom:65px}
+.intro-editorial .intro-content{z-index:2;position:relative;width:66%;max-width:1050px}
+.intro-editorial .eyebrow{font-size:12px;letter-spacing:.18em;color:#781c2d;text-align:left;display:flex;align-items:center;gap:22px}
+.intro-editorial .eyebrow-line{width:90px;height:1px;background:#dc0034;display:inline-block}
+.intro-editorial h2{font-size:clamp(45px,5.5vw,92px);line-height:.92;letter-spacing:-.025em;white-space:nowrap;margin-bottom:20px;color:#101d26}
+.intro-editorial h2 em{color:#d90032}
+.intro-editorial .intro-description{color:#42515e!important;font-size:clamp(16px,1.22vw,20px)!important;line-height:1.42;max-width:790px!important;margin:0 0 30px!important;text-align:left}
+.intro-editorial .intro-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:min(800px,100%);gap:0}
+.intro-editorial .intro-pillars>div{display:flex;align-items:center;flex-direction:column;gap:8px;text-align:center;padding:5px 16px;border-right:1px solid #d5d9dd}
+.intro-editorial .intro-pillars>div:first-child{padding-left:0}.intro-editorial .intro-pillars>div:last-child{border:0}
+.intro-editorial .intro-icon{display:grid;place-items:center;background:#f6f6f6;border-radius:50%;height:64px;width:64px;color:#0d1c27;position:relative;margin-bottom:5px}
+.intro-editorial .intro-icon::after{content:"";height:3px;width:24px;position:absolute;bottom:-7px;background:#d90032}
+.intro-editorial .intro-icon svg{height:36px;width:36px}
+.intro-editorial .intro-pillars strong{font-weight:800;font-size:13px;letter-spacing:.12em;color:#152532}
+.intro-editorial .intro-pillars small{font-size:13px;color:#5d6873;line-height:1.4}
+.intro-editorial .intro-image{position:absolute;inset:0 0 0 52%;background:linear-gradient(90deg,#fff 0%,#ffffffcf 15%,#ffffff00 49%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat;filter:grayscale(1);opacity:.93;pointer-events:none}
+@media(max-width:800px){.intro-editorial .intro-body{display:flex;flex-direction:column;min-height:0;padding-top:70px;padding-bottom:0}.intro-editorial .intro-content{width:100%}.intro-editorial h2{font-size:clamp(43px,8.8vw,76px);white-space:normal}.intro-editorial .intro-description{font-size:16px!important}.intro-editorial .intro-pillars{gap:0}.intro-editorial .intro-pillars>div{padding:8px 6px}.intro-editorial .intro-pillars strong{font-size:10px;letter-spacing:0}.intro-editorial .intro-pillars small{font-size:11px}.intro-editorial .intro-icon{width:55px;height:55px}.intro-editorial .intro-image{position:relative;inset:auto;height:280px;width:calc(100% + 40px);margin-top:28px;background:linear-gradient(180deg,#fff,transparent 40%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat}}
