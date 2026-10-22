@@ -23,3 +23,16 @@
 .bap-hero-refined .hero-visual{position:absolute;inset:0 0 0 42%;height:100%;min-height:0;background:linear-gradient(90deg,#fff 0%,#ffffffed 9%,#ffffff00 43%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat;pointer-events:none}
 @media(max-width:1150px){.bap-hero-refined .hero-copy{width:min(630px,70%)}.bap-hero-refined h1{font-size:clamp(74px,10vw,120px)}.bap-hero-refined .hero-visual{left:39%}}
 @media(max-width:780px){.bap-hero-refined,.bap-hero-refined .hero-inner{min-height:0}.bap-hero-refined .hero-inner{display:flex;flex-direction:column;padding:0}.bap-hero-refined .hero-copy{width:100%;padding:60px 23px 22px}.bap-hero-refined .hero-side-index{display:none}.bap-hero-refined .eyebrow{letter-spacing:.18em;font-size:11px}.bap-hero-refined h1{font-size:clamp(65px,15vw,108px);white-space:normal;margin-bottom:20px}.bap-hero-refined .hero-copy>p:not(.eyebrow):not(.hero-micro){font-size:18px}.bap-hero-refined .hero-actions .btn{min-width:0;width:100%;font-size:12px;min-height:59px;padding:16px 20px}.bap-hero-refined .hero-watch{margin-top:16px}.bap-hero-refined .hero-proof{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 0;margin-top:32px}.bap-hero-refined .hero-proof>div:nth-child(2){border-right:0}.bap-hero-refined .hero-proof>div:nth-child(3){padding-left:0}.bap-hero-refined .hero-proof strong{font-size:12px}.bap-hero-refined .hero-visual{position:relative;inset:auto;height:330px;width:100%;background:linear-gradient(180deg,#fff 0%,#ffffff00 17%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat}}
+
+/* DOBRA 01 / identidade BAP preto e vermelho — revisão aprovada */
+.bap-hero-refined{background:#fff!important}
+.bap-hero-refined .hero-copy{z-index:3}
+.bap-hero-refined h1{color:#0b171f!important;font-weight:900!important;text-shadow:none!important;font-size:clamp(84px,8.9vw,150px)!important;letter-spacing:-.04em!important}
+.bap-hero-refined .eyebrow{color:#da0031!important}
+.bap-hero-refined .hero-copy>p:not(.eyebrow):not(.hero-micro){color:#111b24!important}
+.bap-hero-refined .hero-visual{filter:contrast(1.07) saturate(1.07);background:linear-gradient(90deg,#fff 0%,#ffffffed 11%,#ffffff1a 42%),url("assets/bap-hero-branco-foto.webp") center right /auto 100% no-repeat!important}
+.bap-hero-refined .hero-actions .btn{background:#df0033!important;border-color:#df0033!important;color:#fff!important}
+.bap-hero-refined .hero-proof strong{color:#0e1a24}
+.bap-hero-refined .watch-play{color:#db0031}
+.topbar .nav-cta{background:#df0033!important;color:#fff!important}
+@media(max-width:780px){.bap-hero-refined h1{font-size:clamp(60px,13.5vw,95px)!important}.bap-hero-refined .hero-visual{background:linear-gradient(180deg,#fff 0%,transparent 18%),url("assets/bap-hero-branco-foto.webp") right center /auto 100% no-repeat!important}}
