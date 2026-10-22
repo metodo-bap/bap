@@ -73,3 +73,11 @@
 .intro-editorial .intro-image{order:-1!important;width:calc(100% + 40px)!important;height:310px!important;margin:-0px 0 24px!important;background:linear-gradient(180deg,transparent 72%,#fff 100%),url("assets/bap-hero-branco-foto.webp") left center / auto 100% no-repeat!important;transform:scaleX(-1);filter:grayscale(1)!important}
 .intro-editorial .intro-content{padding:0!important}
 }
+
+
+/* Refinamento de transicao: delimita as duas dobras sem repeticao visual */
+.bap-hero-refined{min-height:690px!important}
+.bap-hero-refined .hero-inner{min-height:690px!important}
+.intro-editorial{border-top:1px solid #e9eaed;isolation:isolate}
+.intro-editorial .intro-body{min-height:690px}
+@media(max-width:780px){.bap-hero-refined,.bap-hero-refined .hero-inner{min-height:0!important}.intro-editorial .intro-body{min-height:0}}
