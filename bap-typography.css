@@ -43,3 +43,38 @@ h3{line-height:1.16}
 :is(.eyebrow,.tag,.step-label,.result-label){font-family:var(--bap-font-body);font-weight:700;letter-spacing:.14em}
 :is(.btn,.nav a,.topbar nav a){font-family:var(--bap-font-body);font-weight:700}
 @media(max-width:780px){h1{line-height:1.04;letter-spacing:-.04em}h2{line-height:1.12}h3{line-height:1.2}}
+
+/* Consistência nas dobras: substitui regras legadas com !important
+   sem modificar textos, cores ou a estrutura das seções. */
+body .bap-hero-refined h1,
+body .assessment-editorial .section-heading h2,
+body .intro-editorial h2,
+body .bap-motion-home .bap-region-panel strong,
+body .explore-grid strong,
+body .school-art-label{
+ font-family:var(--bap-font-display)!important;
+ font-weight:700!important;
+ letter-spacing:-.045em!important;
+}
+body .bap-hero-refined h1{
+ font-size:clamp(48px,6.1vw,104px)!important;
+ line-height:1.02!important;
+ white-space:normal!important;
+ max-width:100%;
+}
+body .assessment-editorial .section-heading h2{
+ font-size:clamp(39px,4.7vw,68px)!important;
+ line-height:1.06!important;
+ letter-spacing:-.048em!important;
+}
+body .intro-editorial h2{
+ font-size:clamp(38px,4.2vw,68px)!important;
+ line-height:1.08!important;
+}
+body .bap-motion-home .bap-region-panel strong{font-size:22px;line-height:1.15}
+body .explore-grid strong{font-size:clamp(22px,2.2vw,30px)}
+@media(max-width:780px){
+ body .bap-hero-refined h1{font-size:clamp(43px,11.5vw,76px)!important;line-height:1.06!important}
+ body .assessment-editorial .section-heading h2{font-size:clamp(35px,9vw,58px)!important;line-height:1.09!important}
+ body .intro-editorial h2{font-size:clamp(34px,8.4vw,56px)!important;line-height:1.1!important}
+}
