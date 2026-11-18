@@ -324,3 +324,24 @@
  .bap-motion-home .bap-region-panel p{font-size:12px;margin:6px 0 10px}
  .bap-motion-home .bap-region-panel strong{font-size:22px}
 }
+
+/* Alinhamento estrutural com a home editorial aprovada */
+.bap-pillars-reference{padding:clamp(50px,6vw,90px) 0;background:#fff}
+.bap-pillars-reference .eyebrow{letter-spacing:.3em}
+.bap-pillars-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:27px}
+.bap-pillars-grid>div{text-align:center;padding:12px 24px;border-right:1px solid #e8e8e8}
+.bap-pillars-grid>div:last-child{border:0}
+.bap-pillars-grid>div>span{display:block;color:#d90032;font-size:42px;line-height:1.2;margin-bottom:10px}
+.bap-pillars-grid h3{font:800 16px/1.1 Inter,Arial,sans-serif;margin:0 0 10px}
+.bap-pillars-grid p{font-size:13px;line-height:1.5;max-width:195px;margin:0 auto;color:#48515b}
+.bap-method-action{padding:clamp(65px,7vw,110px) 0;background:#fafafa}
+.bap-action-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(35px,5vw,85px);align-items:center}
+.bap-action-grid h2{font-size:clamp(56px,6vw,95px);margin:15px 0 20px}
+.bap-action-grid p:not(.eyebrow){max-width:470px;margin-bottom:25px}
+.bap-action-media{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;border-radius:12px;background:#171717;color:#fff}
+.bap-action-media img{width:100%;height:100%;object-fit:cover;display:block}
+.bap-action-media::after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#000b)}
+.bap-play-symbol{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:68px;height:68px;border-radius:50%;background:#fff;color:#d90032;font-size:24px;box-shadow:0 6px 30px #0005}
+.bap-media-caption{position:absolute;z-index:2;bottom:20px;left:22px;font-weight:800;font-size:16px}
+.bap-media-caption small{display:block;font-size:10px;font-weight:600;letter-spacing:.1em}
+@media(max-width:780px){.bap-pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:25px}.bap-pillars-grid>div:nth-child(2){border:0}.bap-action-grid{grid-template-columns:1fr}.bap-action-media{aspect-ratio:16/11}}
