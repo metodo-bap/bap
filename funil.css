@@ -398,3 +398,48 @@
  .funnel .answer,.funnel .profile,.progress span{transition:none}
  .funnel .answer:hover,.funnel .profile:hover{transform:none}
 }
+
+
+/* BAP Educação — dobra editorial redesenhada, isolada das demais. */
+.schools.school-redesign{background:#f7f7f7;padding:clamp(76px,8vw,126px) 0 70px}
+.school-redesign .school-redesign-grid{display:grid;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);gap:clamp(32px,5vw,90px);align-items:center}
+.school-redesign .school-redesign-copy{min-width:0;padding:8px 0}
+.school-redesign .eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 32px;color:#8a1833;font-size:11px;font-weight:800;letter-spacing:.15em}
+.school-redesign .school-redesign-line{display:inline-block;width:28px;height:2px;background:#d90032}
+.school-redesign .school-redesign-index{margin-left:auto;color:#a7a4a6}
+body .schools.school-redesign h2{font-family:var(--bap-font-display,"Space Grotesk",sans-serif)!important;font-size:clamp(48px,5.2vw,85px)!important;font-weight:700!important;line-height:1.02!important;letter-spacing:-.058em!important;color:#202930;max-width:770px;margin:0 0 27px}
+.school-redesign h2 em{color:#d90032}
+.school-redesign .school-redesign-lead{font-size:clamp(17px,1.45vw,22px)!important;line-height:1.4!important;font-weight:650;color:#222d35!important;max-width:520px;margin:0 0 19px}
+.school-redesign .school-redesign-description{font-size:15px!important;line-height:1.75!important;color:#5b6870!important;max-width:525px;margin-bottom:29px}
+.school-redesign .school-redesign-cta{margin:0;display:inline-flex;align-items:center;gap:20px;min-height:54px;padding:14px 23px;background:#d90032;color:#fff;border:0;border-radius:40px;font-size:11px;font-weight:750}
+.school-redesign .school-redesign-cta svg{width:19px;height:19px}
+.school-redesign .school-redesign-visual{position:relative;min-width:0;margin:0;aspect-ratio:4/4.6;border-radius:26px;overflow:hidden;background:#e8e5e4;isolation:isolate}
+.school-redesign .school-redesign-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:55% center}
+.school-redesign .school-redesign-visual:after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(0deg,rgba(18,23,26,.72),transparent);pointer-events:none}
+.school-redesign .school-redesign-visual figcaption{position:absolute;bottom:32px;left:34px;right:25px;z-index:1;color:white}
+.school-redesign .school-redesign-visual figcaption span{display:block;font-size:10px;font-weight:700;letter-spacing:.16em;color:#ffb7c7;margin-bottom:10px}
+.school-redesign .school-redesign-visual figcaption strong{font:600 clamp(19px,2vw,29px)/1.2 var(--bap-font-display,"Space Grotesk",sans-serif);letter-spacing:-.035em}
+.school-redesign .school-redesign-benefits{border-top:1px solid #d9dcdf;margin-top:53px;padding-top:26px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.school-redesign .school-redesign-benefits>div{display:flex;gap:18px;padding-right:14px}
+.school-redesign .school-benefit-number{font:700 13px var(--bap-font-body,Inter,sans-serif);color:#d90032;flex:none;padding-top:3px}
+.school-redesign .school-redesign-benefits strong{font:700 12px/1.4 var(--bap-font-body,Inter,sans-serif);letter-spacing:.02em;color:#29323a}
+.school-redesign .school-redesign-benefits p{font:400 12px/1.65 var(--bap-font-body,Inter,sans-serif)!important;color:#6b767e!important;margin:5px 0 0}
+@media(max-width:950px){
+ .school-redesign .school-redesign-grid{gap:28px}
+ body .schools.school-redesign h2{font-size:clamp(42px,5.8vw,64px)!important}
+ .school-redesign .school-redesign-visual{aspect-ratio:4/5}
+}
+@media(max-width:720px){
+ .schools.school-redesign{padding:68px 0 54px}
+ .school-redesign .school-redesign-grid{grid-template-columns:1fr;gap:34px}
+ .school-redesign .eyebrow{margin-bottom:23px}
+ body .schools.school-redesign h2{font-size:clamp(42px,10.4vw,72px)!important;line-height:1.04!important;margin-bottom:21px}
+ .school-redesign .school-redesign-lead{font-size:18px!important}
+ .school-redesign .school-redesign-description{font-size:14px!important;margin-bottom:25px}
+ .school-redesign .school-redesign-cta{width:100%;justify-content:space-between}
+ .school-redesign .school-redesign-visual{aspect-ratio:5/4.7;border-radius:20px}
+ .school-redesign .school-redesign-visual figcaption{left:23px;bottom:22px}
+ .school-redesign .school-redesign-benefits{grid-template-columns:1fr;gap:0;margin-top:30px;padding-top:0}
+ .school-redesign .school-redesign-benefits>div{padding:19px 0;border-bottom:1px solid #e1e3e5}
+}
+@media(prefers-reduced-motion:reduce){.school-redesign .school-redesign-cta{transition:none}}
