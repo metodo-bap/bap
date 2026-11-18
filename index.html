@@ -33,6 +33,6 @@
   panel.hidden=false;p.classList.add('is-selected');p.setAttribute('aria-expanded','true');
  }));
  panel.querySelector('.bap-region-close').addEventListener('click',close);
- hero.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden){close();hero.querySelector('.bap-pain-point.is-selected')?.focus()}});
+ hero.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden){const active=hero.querySelector('.bap-pain-point.is-selected');close();active?.focus()}});
 })();
 </script></body></html>
