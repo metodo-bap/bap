@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
 /* Método BAP | Sistema tipográfico unificado — homologação
    Preserva as cores, imagens, hierarquia e identidade existentes. */
 :root{
- --bap-font-display:"Barlow Condensed",Impact,"Arial Narrow",sans-serif;
+ --bap-font-display:"Space Grotesk",Arial,Helvetica,sans-serif;
  --bap-font-body:Inter,Arial,Helvetica,sans-serif;
- --bap-title-weight:800;
+ --bap-title-weight:600;
  --bap-body-leading:1.65;
 }
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{font-family:var(--bap-font-body);font-size:15px;line-height:var(--bap-body-leading);font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
-:is(h1,h2,h3,h4,h5,h6){font-family:var(--bap-font-display);font-weight:var(--bap-title-weight);font-synthesis:none;letter-spacing:-.018em;text-wrap:balance}
-h1{line-height:.92;letter-spacing:-.027em}
+:is(h1,h2,h3,h4,h5,h6){font-family:var(--bap-font-display);font-weight:var(--bap-title-weight);font-synthesis:none;letter-spacing:-.035em;text-wrap:balance}
+h1{line-height:.92;letter-spacing:-.045em}
 h2{line-height:.98}
 h3{line-height:1.08}
 :is(h4,h5,h6){line-height:1.2}
@@ -32,3 +33,13 @@ small,.small{line-height:1.55}
  h1,h2,h3{overflow-wrap:normal}
  :is(.eyebrow,.tag){letter-spacing:.09em}
 }
+
+/* Opção 02 aprovada: Performance Premium */
+:root{--bap-font-display:"Space Grotesk",Arial,Helvetica,sans-serif;--bap-font-body:Inter,Arial,Helvetica,sans-serif}
+:is(h1,h2,h3,h4,h5,h6){font-family:var(--bap-font-display)!important;font-weight:600!important;text-transform:uppercase;letter-spacing:-.035em}
+h1{font-weight:700!important;letter-spacing:-.045em;line-height:1.01}
+h2{line-height:1.09}
+h3{line-height:1.16}
+:is(.eyebrow,.tag,.step-label,.result-label){font-family:var(--bap-font-body);font-weight:700;letter-spacing:.14em}
+:is(.btn,.nav a,.topbar nav a){font-family:var(--bap-font-body);font-weight:700}
+@media(max-width:780px){h1{line-height:1.04;letter-spacing:-.04em}h2{line-height:1.12}h3{line-height:1.2}}
