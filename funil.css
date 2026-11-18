@@ -301,3 +301,26 @@
 .bap-motion-home .bap-region-panel a{font:800 10px/1.4 Inter,Arial,sans-serif;color:#c90031;text-decoration:none;letter-spacing:.05em}
 .bap-motion-home .bap-region-close{position:absolute;top:8px;right:10px;border:0;background:transparent;color:#333;font:400 26px/1 Arial,sans-serif;cursor:pointer}
 @media(max-width:800px){.bap-motion-home .bap-region-panel{display:none}}
+
+/* Correção do layout: mantém a foto ancorada ao hero no desktop.
+   Os pontos ficam sobre a imagem e recebem clique apesar da camada decorativa. */
+@media(min-width:781px){
+ .bap-motion-home .hero-visual{position:absolute;inset:0 0 0 42%;height:100%;width:auto;overflow:visible;pointer-events:none}
+ .bap-motion-home .bap-pain-layer{pointer-events:none}
+ .bap-motion-home .bap-pain-point{pointer-events:auto}
+ .bap-motion-home .bap-region-panel{pointer-events:auto}
+}
+@media(min-width:781px) and (max-width:1150px){.bap-motion-home .hero-visual{left:39%}}
+/* Mobile: pontos e conteúdo interativos, sem cobrir o texto inicial. */
+@media(max-width:780px){
+ .bap-motion-home .hero-visual{position:relative;inset:auto;width:100%;height:clamp(300px,86vw,430px);overflow:visible;pointer-events:none}
+ .bap-motion-home .bap-pain-layer{display:block;pointer-events:none}
+ .bap-motion-home .bap-pain-point{display:grid;width:22px;height:22px;pointer-events:auto}
+ .bap-motion-home .bap-pain-point span{opacity:0}
+ .bap-motion-home .bap-pain-point.shoulder{left:57%;top:29%}
+ .bap-motion-home .bap-pain-point.elbow{left:69%;top:54%}
+ .bap-motion-home .bap-pain-point.wrist{left:80%;top:72%}
+ .bap-motion-home .bap-region-panel{display:block;position:absolute;right:12px;left:12px;bottom:10px;width:auto;max-width:none;padding:17px 20px;pointer-events:auto}
+ .bap-motion-home .bap-region-panel p{font-size:12px;margin:6px 0 10px}
+ .bap-motion-home .bap-region-panel strong{font-size:22px}
+}
