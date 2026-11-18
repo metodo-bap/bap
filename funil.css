@@ -196,9 +196,9 @@
 .assessment-editorial .profile-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:15px!important;margin:0!important;align-items:stretch}
 .assessment-editorial .profile{padding:0!important;min-height:0!important;border:1px solid #e7e7e8!important;border-radius:13px!important;overflow:hidden!important;display:grid!important;grid-template-rows:144px auto!important;gap:0!important;box-shadow:0 2px 8px #14263105!important;transform:none!important;transition:box-shadow .2s,border-color .2s!important}
 .assessment-editorial .profile::before{content:"";display:block;width:100%;height:144px;background-size:cover;background-position:center 42%;background-repeat:no-repeat}
-.assessment-editorial .profile[data-profile="musico"]::before{background-image:url("assets/bap-hero-branco-foto.webp")}
-.assessment-editorial .profile[data-profile="familia"]::before{background-image:url("assets/desktop/curso-desktop.webp")}
-.assessment-editorial .profile[data-profile="escola"]::before{background-image:url("assets/desktop/tiago-banner.webp")}
+.assessment-editorial .profile[data-profile="musico"]::before{background-image:url("assets/bap-card-musico.webp")}
+.assessment-editorial .profile[data-profile="familia"]::before{background-image:url("assets/bap-card-familia.webp")}
+.assessment-editorial .profile[data-profile="escola"]::before{background-image:url("assets/bap-card-professor.webp")}
 .assessment-editorial .profile:hover{border-color:#dedee0!important;box-shadow:0 9px 22px #14263112!important;transform:translateY(-2px)!important}
 .assessment-editorial .profile-symbol{grid-row:2;grid-column:1;width:40px;height:42px;margin:15px 0 0 15px;padding:0;border-radius:0;background:transparent!important;color:#e00032!important;font-size:0!important;align-self:start}
 .assessment-editorial .profile-symbol::before{font-size:0}
