@@ -106,3 +106,45 @@ html[data-theme="light"] main h1{font-weight:700!important;line-height:1.04!impo
 @media(max-width:360px){
  html[data-theme="light"] main .pagehero h1{font-size:46px}
 }
+
+
+/* Homologação 18/11/2026 — componentes efetivamente usados na home bap-ten.
+   A tipografia antiga permanece nos estilos legados apenas como fallback;
+   estas regras consolidam Space Grotesk + Inter no visual ativo. */
+:root{--bap-red:#d90032;--bap-black:#17212a}
+body :is(.bap-hero-new h1,.assessment-editorial .section-heading h2,
+ .early-heading h2,.schools h2,.bap-method-action h2,.bap-pillars-reference h3,
+ .funnel h3,.result h3,.school-art-label,.explore-grid strong){
+ font-family:var(--bap-font-display)!important;
+ font-weight:700!important;
+ letter-spacing:-.042em!important;
+ text-wrap:balance;
+}
+body :is(.topbar,.topbar nav,.menu-toggle,.profile,.answer,.result-card,
+ .bh-primary,.bh-watch,.bh-ribbon,.early-benefits,.benefits,.bap-region-panel,
+ .bap-method-action,.bap-pillars-reference){
+ font-family:var(--bap-font-body);
+}
+body .bap-hero-new h1{line-height:1.035!important}
+body .assessment-editorial .section-heading h2{line-height:1.08!important}
+body :is(.profile strong,.result-card strong,.early-benefit strong){font-family:var(--bap-font-body)}
+body :is(a,button):focus-visible{outline:3px solid var(--bap-red);outline-offset:3px}
+html{scroll-padding-top:96px}
+@media(max-width:780px){
+ html{scroll-padding-top:84px}
+ body .bap-hero-new h1{font-size:clamp(34px,10.8vw,64px)!important;line-height:1.06!important}
+ body .assessment-editorial .section-heading h2{font-size:clamp(33px,8.5vw,58px)!important;line-height:1.09!important}
+ body .funnel h3{font-size:clamp(26px,7.2vw,39px)!important;line-height:1.14!important}
+ body .early-heading h2,body .schools h2,body .bap-method-action h2{
+  font-size:clamp(31px,8.3vw,56px)!important;line-height:1.1!important}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ :is(.profile,.answer,.btn,.progress span){transition:none!important}
+}
+
+/* Navegação e CTA de avaliação compartilhados nas páginas internas. */
+.bap-nav-diagnostic{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:#d90032;color:white!important;padding:11px 15px;font:700 10px/1.3 Inter,Arial,sans-serif;letter-spacing:.015em;white-space:nowrap}
+.bap-nav-diagnostic:hover{background:#a90027}
+.bap-drawer-diagnostic{display:block;margin:12px 0;padding:13px 16px;border-radius:12px;background:#d90032;color:white!important;font:700 12px/1.4 Inter,Arial,sans-serif;text-align:center}
+@media(max-width:1180px){.bap-nav-diagnostic{padding:9px 11px;font-size:9px}}
