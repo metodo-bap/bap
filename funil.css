@@ -225,3 +225,17 @@
  .assessment-editorial .profile>span:not(.profile-symbol){grid-column:2;grid-row:2;margin:5px 10px 0!important;min-height:0}
  .assessment-editorial .profile b{grid-column:2;grid-row:3;margin:10px!important;padding:9px 12px!important;min-height:32px;font-size:9px!important}
 }
+
+/* Diagnóstico: cartões de entrada versus perguntas e resultado */
+.assessment-editorial.assessment-in-progress .funnel-top{display:flex!important;margin-bottom:26px!important}
+.assessment-editorial.assessment-in-progress #funnel-content>h3{display:block!important}
+.assessment-editorial.assessment-in-progress #funnel-content>p{display:block!important}
+.assessment-editorial.assessment-in-progress .funnel-controls{border-top:1px solid #e7e8ec!important;padding-top:20px!important;margin-top:24px!important}
+.assessment-editorial.assessment-in-progress #privacy-note{display:inline!important}
+.assessment-editorial.assessment-in-progress .section-heading{margin-bottom:36px!important}
+.assessment-editorial.assessment-in-progress .answers{margin-top:22px!important}
+.assessment-editorial.assessment-in-progress .result h3{display:block!important}
+.assessment-editorial .profile-symbol{display:flex!important;align-items:center;justify-content:center}
+.assessment-editorial .profile-symbol::after{display:block}
+.assessment-editorial .profile b{font-size:10px!important}
+@media(max-width:780px){.assessment-editorial.assessment-in-progress .funnel-top{flex-wrap:wrap!important}.assessment-editorial .profile b{font-size:9px!important}}
