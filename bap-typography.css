@@ -78,3 +78,31 @@ body .explore-grid strong{font-size:clamp(22px,2.2vw,30px)}
  body .assessment-editorial .section-heading h2{font-size:clamp(35px,9vw,58px)!important;line-height:1.09!important}
  body .intro-editorial h2{font-size:clamp(34px,8.4vw,56px)!important;line-height:1.1!important}
 }
+
+/* As páginas internas possuem um tema legado com maior especificidade.
+   Manter a identidade aprovada também quando data-theme="light" está ativo. */
+html[data-theme="light"] main :is(h1,h2,h3,h4,h5,h6){
+ font-family:var(--bap-font-display)!important;
+ font-weight:600!important;
+ letter-spacing:-.035em!important;
+ line-height:1.12!important;
+ white-space:normal;
+ overflow-wrap:normal;
+}
+html[data-theme="light"] main h1{font-weight:700!important;line-height:1.04!important}
+/* Space Grotesk ocupa mais largura que a antiga fonte condensada.
+   Ajustes locais preservam palavras inteiras nos cartões e títulos mobile. */
+@media(max-width:780px){
+ html[data-theme="light"] main .card h3{font-size:clamp(22px,7.2vw,28px)}
+ html[data-theme="light"] main :is(.author-section-head,.author-equipment) h2{font-size:clamp(30px,10.8vw,46px)}
+}
+@media(max-width:360px){
+ html[data-theme="light"] main h2{font-size:clamp(28px,9.4vw,34px)!important}
+ .bap-pillars-reference h3{font-size:14px}
+}
+@media(min-width:701px) and (max-width:900px){
+ html[data-theme="light"] main .method-foundations-grid h3{font-size:22px}
+}
+@media(max-width:360px){
+ html[data-theme="light"] main .pagehero h1{font-size:46px}
+}
