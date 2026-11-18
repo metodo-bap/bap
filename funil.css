@@ -362,3 +362,8 @@
 .bap-testimonials p:not(.eyebrow){max-width:650px;color:#46505b}
 .bap-testimonials .btn{margin-top:15px}
 @media(max-width:780px){.schools .school-art-photo{min-height:300px;background-position:center}.bap-testimonials{padding:55px 0}}
+
+/* Integração animação → funil, sem saída da página */
+.bap-motion-home .bap-region-assessment{display:block;width:100%;padding:12px 10px;margin:10px 0 12px;border:0;border-radius:5px;background:#d90032;color:#fff;text-align:center;font:800 11px/1.35 Inter,Arial,sans-serif;letter-spacing:.02em;cursor:pointer;transition:background .2s}
+.bap-motion-home .bap-region-assessment:hover,.bap-motion-home .bap-region-assessment:focus-visible{background:#aa0028}
+.bap-motion-home .bap-region-panel>a{display:inline-block}
