@@ -1,0 +1,62 @@
+/* Família editorial BAP — SVG monocromático compartilhado entre as páginas. */
+.bap-icon{display:inline-block;width:1em;height:1em;flex-shrink:0;vertical-align:-.14em;color:inherit;fill:none;overflow:visible;pointer-events:none}
+:is(.btn,.text-link,.method-text-link,.result-cta a,.answer,.restart)>.bap-icon{width:19px;height:19px}
+:is(.hamb,.menu-toggle) .bap-icon{width:24px;height:24px;vertical-align:middle}
+.bap-region-close .bap-icon{width:19px;height:19px}
+.bottom a>span{display:grid;place-items:center}
+.bottom .bap-icon{width:23px;height:23px}
+.bap-pillars-grid>div>span .bap-icon{width:48px;height:48px}
+.bap-hero-pillars>div>span .bap-icon{width:44px;height:44px}
+.bap-feature-v3 .bap-icon{width:48px;height:48px}
+.assessment-editorial .profile .profile-symbol .bap-icon{width:38px;height:38px}
+.assessment-editorial .profile .profile-symbol::before,
+.assessment-editorial .profile .profile-symbol::after{content:none!important;display:none!important}
+.assessment-editorial .profile b::after{content:none;display:none}
+.assessment-editorial .profile b .bap-icon{width:19px;height:19px}
+.topbar nav a>.bap-icon{width:15px;height:15px;vertical-align:middle}
+.bap-hero-refined .watch-play::before{content:none;display:none}
+.bap-hero-refined .watch-play .bap-icon{width:24px;height:24px}
+:is(.bap-play-symbol,.author-video-play,.bap-video-play,.play) .bap-icon{width:25px;height:25px}
+.author-brand-external .bap-icon{width:17px;height:17px}
+.answer>.bap-icon{margin-left:8px;vertical-align:middle}
+.bap-book-zoom>.bap-icon{width:16px;height:16px;vertical-align:middle}
+.bap-final-icon .bap-icon{width:26px;height:26px}
+@media(max-width:780px){
+ .assessment-editorial .profile .profile-symbol .bap-icon{width:27px;height:27px}
+ .bap-pillars-grid>div>span .bap-icon{width:44px;height:44px}
+}
+
+/* Primeiros Ritmos — composição apresentada, com fotografia e paleta preservadas. */
+#primeiros-ritmos.bap-early-refined{padding-block:clamp(52px,6vw,90px);background:#fff;scroll-margin-top:84px}
+.bap-early-refined .early-grid{max-width:1380px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"photo heading" "photo content";column-gap:clamp(32px,4.5vw,64px);row-gap:24px}
+.bap-early-refined .early-heading{grid-area:heading;min-width:0}
+.bap-early-refined .early-heading .eyebrow{display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:.18em;margin-bottom:22px}
+.bap-early-refined .early-heading .eyebrow::before{content:"";width:30px;height:3px;flex-shrink:0;background:#d90032}
+.bap-early-refined .early-heading h2{font-size:clamp(36px,4vw,55px);line-height:1.08;letter-spacing:-.055em;margin:0;font-weight:700!important}
+.bap-early-refined .early-image{grid-area:photo;position:relative;min-width:0;min-height:490px;margin:0;border-radius:24px;overflow:hidden;background:#eee7e8}
+.bap-early-refined .early-image img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:57% center}
+.bap-early-refined .early-image::after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#17100cc9);pointer-events:none}
+.bap-early-refined figcaption{position:absolute;z-index:1;bottom:28px;left:28px;right:20px;color:#fff;font:500 23px/1.2 var(--bap-font-display);letter-spacing:-.025em}
+.bap-early-refined figcaption span{display:block;font:600 9px/1.5 var(--bap-font-body);letter-spacing:.15em;margin-bottom:10px;color:#fff}
+.bap-early-refined .early-content{grid-area:content;min-width:0}
+.bap-early-refined .early-intro{font-size:15px;line-height:1.7;color:#53616c;margin:0 0 24px;max-width:480px}
+.bap-early-refined .early-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding-block:20px;margin-bottom:24px;border-block:1px solid #ebe7e9}
+.bap-early-refined .early-benefit{min-width:0;padding-inline:16px;border-left:1px solid #ebe7e9}
+.bap-early-refined .early-benefit:first-child{padding-left:0;border:0}
+.bap-early-refined .early-benefit:last-child{padding-right:0}
+.bap-early-refined .early-benefit .bap-icon{display:block;width:40px;height:40px;margin-bottom:13px;color:#d90032}
+.bap-early-refined .early-benefit strong{display:block;font-size:11px;line-height:1.5;font-weight:600;color:#28333c}
+.bap-early-refined .early-cta{display:flex;width:100%;font-size:11px;justify-content:space-between;padding:18px 23px;min-height:54px}
+.bap-early-refined .early-note{font-size:10px;line-height:1.6;color:#707b83;margin:13px 0 0}
+@media(max-width:780px){
+ .bap-early-refined .early-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"heading" "photo" "content";gap:24px}
+ .bap-early-refined .early-heading h2{font-size:clamp(30px,9.2vw,44px)}
+ .bap-early-refined .early-heading .eyebrow{font-size:9px;margin-bottom:18px}
+ .bap-early-refined .early-image{min-height:0;height:auto;aspect-ratio:1.15;border-radius:18px}
+ .bap-early-refined figcaption{left:22px;bottom:22px;font-size:21px}
+ .bap-early-refined figcaption span{font-size:8px;letter-spacing:.1em}
+ .bap-early-refined .early-intro{font-size:14px;margin-bottom:20px}
+ .bap-early-refined .early-benefit{padding-inline:10px}
+ .bap-early-refined .early-benefit strong{font-size:10px}
+ .bap-early-refined .early-cta{font-size:10px;padding:17px 18px;gap:12px}
+}
