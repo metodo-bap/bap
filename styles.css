@@ -2121,3 +2121,32 @@ html[data-theme="light"] main .btn span{color:inherit!important;-webkit-text-fil
 html[data-theme="light"] main :is(.method-video-card,.method-video-card .method-video-footer,.method-video-card .method-video-meta) :is(h3,h4,strong){color:#fff!important;-webkit-text-fill-color:#fff!important}
 html[data-theme="light"] main .method-opening h1,html[data-theme="light"] main .method-pain h2{color:#28333c!important;-webkit-text-fill-color:#28333c!important}
 html[data-theme="light"] main .method-opening h1 em,html[data-theme="light"] main .method-pain h2 em{color:#d90032!important;-webkit-text-fill-color:#d90032!important}
+
+/* BAP 2026 • versão clara única — refinamento global de acabamento
+   Mantém fotografias e capas originais sem filtros que alterem a identidade. */
+:root{color-scheme:light;--bg:#fff;--line:#dfe5e9;--muted:#50616b;--cyan:#008ea2;--red:#d8072e}
+html[data-theme="light"]{--bg:#fff;--line:#dfe5e9;--muted:#50616b}
+html[data-theme="light"] body{background:#fff!important;color:#1e2a31!important}
+html[data-theme="light"] header{background:rgba(255,255,255,.97)!important;border-bottom:1px solid #e1e6e9!important;box-shadow:0 2px 14px rgba(7,28,39,.035)!important}
+html[data-theme="light"] :is(.section,.pagehero,.method-pain,.method-definition,.method-audience,.method-foundations,.method-second-video,.method-last,.book-overview,.book-audience,.book-samples,.book-value,.author-story,.author-section){background-color:#fff!important;border-color:#e2e8eb!important}
+html[data-theme="light"] :is(.card,.method-card,.book-item,.product-card,.book-audience-card,.offer-box,.faq details,.faq-list details){background:#fff!important;border:1px solid #dfe7eb!important;box-shadow:0 8px 28px rgba(32,53,67,.055)!important;color:#20323b!important}
+html[data-theme="light"] :is(.detail,.placeholder,.banner,.list a){background:#f6f8f9!important;color:#293b45!important;border-color:#dfe7eb!important}
+html[data-theme="light"] :is(.pagehero,.method-opening,.author-hero){background-color:#fff!important}
+html[data-theme="light"] main :is(p,li,dt,dd){text-wrap:pretty}
+html[data-theme="light"] main :is(h1,h2,h3){text-wrap:balance}
+html[data-theme="light"] main :is(.eyebrow,.tag,.ticker){letter-spacing:.09em}
+html[data-theme="light"] main :is(.intro,.lead,.small,.legal){color:#52616a!important}
+html[data-theme="light"] :is(.bap-footer,.bap-footer-inner){background-color:#f7f9fa!important;color:#24313b!important}
+html[data-theme="light"] .bap-footer :is(a,p,span){color:inherit}
+html[data-theme="light"] .bap-footer .bap-footer-button{background:#d8072e!important;color:#fff!important}
+html[data-theme="light"] :is(.bap-header-socials a,.bap-drawer-socials a){background:#fff!important;border-color:#dae4e8!important}
+html[data-theme="light"] :is(a,button):focus-visible{outline:3px solid #008ea2;outline-offset:3px}
+html[data-theme="light"] .bap-book-approved .bap-book-reference{background:#fff!important;border:0!important}
+html[data-theme="light"] .bap-book-approved .bap-book-reference>img{background:#fff!important}
+html[data-theme="light"] .bap-book-approved .bap-book-zoom{background:#fff!important;color:#24313b!important;border-color:#c7dbe2!important}
+html[data-theme="light"] .bap-book-image-dialog{background:#fff!important}
+html[data-theme="light"] .bap-book-image-dialog img{background:#fff}
+html[data-theme="light"] .bap-book-dialog-close{background:#fff!important;color:#24313b!important;border:1px solid #d2e0e6!important}
+/* Filmes e imagens originais mantidos com contraste natural, em molduras claras */
+html[data-theme="light"] :is(.method-video-card,.method-video-frame,.author-media,.method-materials-visual){border-color:#e0e7eb!important;box-shadow:0 12px 34px rgba(27,42,53,.08)}
+@media(max-width:850px){html[data-theme="light"] .drawer{background:#fff!important}html[data-theme="light"] .bap-book-approved .bap-book-reference{border-radius:0}}
