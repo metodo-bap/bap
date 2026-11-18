@@ -290,3 +290,14 @@
 @keyframes bap-pain-ring{0%{opacity:.8;transform:scale(.55)}100%{opacity:0;transform:scale(1.5)}}
 @media(max-width:800px){.bap-motion-home .bap-pain-layer{display:none}}
 @media(prefers-reduced-motion:reduce){.bap-motion-home .bap-pain-point,.bap-motion-home .bap-pain-point::before{animation:none!important}}
+
+/* Painel interativo da animação corporal */
+.bap-motion-home .bap-pain-point.is-selected{background:#e80036;box-shadow:0 0 0 7px #e8003633,0 0 22px #e80036}
+.bap-motion-home .bap-region-panel{position:absolute;z-index:7;right:5%;bottom:9%;width:min(310px,78%);padding:22px 23px 20px;background:#fffefaed;backdrop-filter:blur(15px);border:1px solid #e8dfe0;border-left:3px solid #dc0037;box-shadow:0 12px 40px #11182724;color:#1a1a1a}
+.bap-motion-home .bap-region-panel[hidden]{display:none!important}
+.bap-motion-home .bap-region-panel small{display:block;color:#c90031;font:800 10px/1.4 Inter,Arial,sans-serif;letter-spacing:.12em;margin-bottom:9px}
+.bap-motion-home .bap-region-panel strong{display:block;font:800 25px/1.1 "Barlow Condensed",Inter,sans-serif}
+.bap-motion-home .bap-region-panel p{font:400 12px/1.65 Inter,Arial,sans-serif;margin:9px 0 15px}
+.bap-motion-home .bap-region-panel a{font:800 10px/1.4 Inter,Arial,sans-serif;color:#c90031;text-decoration:none;letter-spacing:.05em}
+.bap-motion-home .bap-region-close{position:absolute;top:8px;right:10px;border:0;background:transparent;color:#333;font:400 26px/1 Arial,sans-serif;cursor:pointer}
+@media(max-width:800px){.bap-motion-home .bap-region-panel{display:none}}
