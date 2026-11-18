@@ -467,3 +467,44 @@ body .schools.school-redesign h2{font-family:var(--bap-font-display,"Space Grote
  .school-redesign .school-redesign-visual figcaption strong{font-size:18px}
  .school-redesign .school-redesign-benefits strong{font-size:11px}
 }
+
+/* Home | novas dobras Método BAP e Livro — sistema visual aprovado */
+.bap-home-feature{background:#fff;padding:clamp(76px,8vw,132px) 0;overflow:hidden}
+.bap-feature-book{background:#f7f7f7}
+.bap-home-feature .bap-feature-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(32px,5vw,88px)}
+.bap-home-feature .bap-feature-copy{min-width:0;max-width:630px}
+.bap-home-feature .bap-feature-kicker{display:flex;align-items:center;gap:12px;color:#8a1833;font:800 11px/1.45 var(--bap-font-body,Inter,sans-serif);letter-spacing:.13em;margin:0 0 28px}
+.bap-home-feature .bap-feature-kicker span{color:#d90032}
+body .bap-home-feature h2{font-family:var(--bap-font-display,"Space Grotesk",sans-serif)!important;font-size:clamp(43px,5vw,78px)!important;line-height:1.05!important;letter-spacing:-.05em!important;font-weight:700!important;color:#202930;margin:0 0 26px;text-wrap:balance}
+.bap-home-feature h2 em{color:#d90032}
+.bap-home-feature .bap-feature-lead{font:600 clamp(18px,1.6vw,23px)/1.4 var(--bap-font-body,Inter,sans-serif);color:#222d35;margin:0 0 20px}
+.bap-home-feature .bap-feature-description{font:400 15px/1.8 var(--bap-font-body,Inter,sans-serif);color:#5b6870;max-width:540px;margin:0 0 30px}
+.bap-home-feature .bap-feature-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px}
+.bap-home-feature .bap-feature-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:22px;background:#d90032;color:#fff;border-radius:99px;min-height:56px;padding:16px 22px;font:800 11px/1.4 var(--bap-font-body,Inter,sans-serif);letter-spacing:.02em}
+.bap-home-feature .bap-feature-primary span{font-size:20px;font-weight:400}
+.bap-home-feature .bap-feature-secondary{font:700 11px/1.5 var(--bap-font-body,Inter,sans-serif);color:#303a42;text-decoration:underline;text-underline-offset:5px;padding:14px 3px}
+.bap-home-feature .bap-feature-figure{position:relative;min-width:0;margin:0;min-height:430px;aspect-ratio:1/1.02;border-radius:24px;overflow:hidden;background:#ececef}
+.bap-home-feature .bap-feature-figure img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.bap-feature-method .bap-feature-figure:after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(0deg,#0c1019bb,transparent);pointer-events:none}
+.bap-feature-method .bap-feature-figure figcaption{position:absolute;bottom:28px;left:28px;right:28px;display:flex;flex-wrap:wrap;gap:7px 14px;color:#fff;z-index:1;font:700 10px/1.5 var(--bap-font-body,Inter,sans-serif);letter-spacing:.04em}
+.bap-feature-book .bap-feature-figure{background:#ecebee}
+.bap-feature-book .bap-feature-figure img{object-fit:contain}
+.bap-feature-book .bap-feature-figure figcaption{position:absolute;bottom:15px;left:18px;right:18px;color:#69747b;font:700 10px/1.4 var(--bap-font-body,Inter,sans-serif);letter-spacing:.08em;text-align:center}
+.bap-home-feature :is(a):focus-visible{outline:3px solid #9f0025;outline-offset:4px}
+@media(max-width:900px){
+  .bap-home-feature .bap-feature-layout{gap:30px}
+  body .bap-home-feature h2{font-size:clamp(35px,4.9vw,55px)!important}
+  .bap-home-feature .bap-feature-figure{min-height:340px}
+}
+@media(max-width:720px){
+  .bap-home-feature{padding:68px 0}
+  .bap-home-feature .bap-feature-layout{display:flex;flex-direction:column;align-items:stretch;gap:30px}
+  .bap-home-feature .bap-feature-copy{max-width:100%}
+  body .bap-home-feature h2{font-size:clamp(37px,10vw,62px)!important;line-height:1.08!important}
+  .bap-home-feature .bap-feature-figure{aspect-ratio:1/0.92;min-height:0;border-radius:20px}
+  .bap-feature-book .bap-feature-book-layout .bap-feature-figure{order:2}
+  .bap-feature-book .bap-feature-book-layout .bap-feature-copy{order:1}
+  .bap-home-feature .bap-feature-primary{width:100%}
+  .bap-home-feature .bap-feature-secondary{min-height:44px}
+}
+@media(max-width:375px){body .bap-home-feature h2{font-size:clamp(33px,9.8vw,40px)!important}.bap-home-feature .bap-feature-figure{aspect-ratio:1/1}}
