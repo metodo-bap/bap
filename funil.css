@@ -443,3 +443,27 @@ body .schools.school-redesign h2{font-family:var(--bap-font-display,"Space Grote
  .school-redesign .school-redesign-benefits>div{padding:19px 0;border-bottom:1px solid #e1e3e5}
 }
 @media(prefers-reduced-motion:reduce){.school-redesign .school-redesign-cta{transition:none}}
+
+/* BAP Educação — polish for mid-size screens, tiny mobiles and touch targets. */
+.school-redesign{overflow:clip}
+.school-redesign .school-redesign-visual{box-shadow:0 20px 45px rgba(20,29,35,.075)}
+.school-redesign .school-redesign-cta:focus-visible{outline:3px solid #791026;outline-offset:4px}
+@media(min-width:721px) and (max-width:1050px){
+ .school-redesign .school-redesign-grid{grid-template-columns:1fr 1fr;gap:30px}
+ body .schools.school-redesign h2{font-size:clamp(37px,5vw,54px)!important}
+ .school-redesign .school-redesign-visual{aspect-ratio:3/4}
+ .school-redesign .school-redesign-benefits{gap:12px}
+ .school-redesign .school-redesign-benefits>div{gap:10px}
+}
+@media(max-width:720px){
+ .school-redesign .school-redesign-grid{gap:26px}
+ .school-redesign .school-redesign-visual{aspect-ratio:1/1;max-height:500px}
+ .school-redesign .school-redesign-visual img{object-position:60% 38%}
+ .school-redesign .school-redesign-cta{min-height:56px;font-size:12px}
+}
+@media(max-width:375px){
+ body .schools.school-redesign h2{font-size:clamp(36px,10vw,40px)!important;letter-spacing:-.065em!important}
+ .school-redesign .school-redesign-visual figcaption{left:16px;bottom:16px;right:16px}
+ .school-redesign .school-redesign-visual figcaption strong{font-size:18px}
+ .school-redesign .school-redesign-benefits strong{font-size:11px}
+}
