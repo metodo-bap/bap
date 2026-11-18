@@ -274,3 +274,19 @@
 @keyframes bap-visual-sheen{0%,60%{transform:translateX(-110%)}77%,100%{transform:translateX(110%)}}
 @media(max-width:780px){.bap-motion-home .bap-motion-arc{display:none}.bap-motion-home .bap-motion-beat{bottom:18px;right:20px;opacity:.48}.bap-motion-home .hero-visual::after{display:none}}
 @media(prefers-reduced-motion:reduce){.bap-motion-home .hero-visual,.bap-motion-home .hero-copy>*,.bap-motion-home .red-period,.bap-motion-home .bap-motion-beat span,.bap-motion-home .bap-motion-arc,.bap-motion-home .hero-visual::after{animation:none!important;transform:none!important;opacity:1!important}.bap-motion-home .bap-motion-arc,.bap-motion-home .bap-motion-beat{display:none}}
+
+/* Restauração da experiência corporal: 3 indicadores exploráveis na abertura.
+   Posicionamento relativo ao recorte atual da foto; ajuste fino após revisão visual. */
+.bap-motion-home .bap-pain-layer{position:absolute;inset:0;z-index:5;pointer-events:none}
+.bap-motion-home .bap-pain-point{position:absolute;pointer-events:auto;display:grid;place-items:center;width:18px;height:18px;padding:0;border:3px solid #e80036;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #e8003625,0 0 18px #e8003666;cursor:pointer;animation:bap-pain-restored 2.9s ease-in-out infinite;transition:scale .2s}
+.bap-motion-home .bap-pain-point::before{content:"";position:absolute;inset:-13px;border:1px solid #e8003680;border-radius:50%;animation:bap-pain-ring 2.9s ease-out infinite}
+.bap-motion-home .bap-pain-point span{position:absolute;top:25px;left:50%;transform:translateX(-50%);padding:5px 8px;border-radius:4px;background:#142631e8;color:#fff;font:700 9px/1.2 Inter,Arial,sans-serif;letter-spacing:.08em;white-space:nowrap;opacity:0;transition:opacity .2s}
+.bap-motion-home .bap-pain-point:is(:hover,:focus-visible) span{opacity:1}
+.bap-motion-home .bap-pain-point:is(:hover,:focus-visible){scale:1.2;outline-offset:8px}
+.bap-motion-home .bap-pain-point.shoulder{left:59%;top:28%}
+.bap-motion-home .bap-pain-point.elbow{left:69%;top:54%;animation-delay:.6s}
+.bap-motion-home .bap-pain-point.wrist{left:78%;top:70%;animation-delay:1.2s}
+@keyframes bap-pain-restored{0%,100%{box-shadow:0 0 0 4px #e8003620,0 0 12px #e8003640}50%{box-shadow:0 0 0 8px #e8003638,0 0 25px #e8003690}}
+@keyframes bap-pain-ring{0%{opacity:.8;transform:scale(.55)}100%{opacity:0;transform:scale(1.5)}}
+@media(max-width:800px){.bap-motion-home .bap-pain-layer{display:none}}
+@media(prefers-reduced-motion:reduce){.bap-motion-home .bap-pain-point,.bap-motion-home .bap-pain-point::before{animation:none!important}}
