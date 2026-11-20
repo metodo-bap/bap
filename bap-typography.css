@@ -148,3 +148,8 @@ html{scroll-padding-top:96px}
 .bap-nav-diagnostic:hover{background:#a90027}
 .bap-drawer-diagnostic{display:block;margin:12px 0;padding:13px 16px;border-radius:12px;background:#d90032;color:white!important;font:700 12px/1.4 Inter,Arial,sans-serif;text-align:center}
 @media(max-width:1180px){.bap-nav-diagnostic{padding:9px 11px;font-size:9px}}
+
+/* Keep the diagnostic CTA independent from ordinary navigation links. */
+.nav a.bap-nav-diagnostic{padding:11px 18px;flex-shrink:0;text-decoration:none}
+.nav a.bap-nav-diagnostic::after{display:none;content:none}
+@media(max-width:1180px){.nav a.bap-nav-diagnostic{padding:9px 14px}}
